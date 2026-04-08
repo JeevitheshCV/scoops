@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scoops @ Peachtree</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/announcement-bar.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/menu-tier-1.css" />
+  <link rel="stylesheet" href="css/menu-tier-2.css" />
+  <link rel="stylesheet" href="css/testimonials.css" />
+</head>
+<body>
+  <section class="announcement-bar" aria-label="Store announcement">
+    <a href="#" class="announcement-bar__link">
+      New pastries just dropped
+    </a>
+  </section>
+
+  <header class="site-header" aria-label="Main site header">
+    <div class="site-header__inner">
+      <button
+        class="site-header__menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="mobile-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav site-nav--left" aria-label="Primary navigation">
+        <ul class="site-nav__list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Catering</a></li>
+          <li><a href="#">Visit</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="site-logo" aria-label="Scoops @ Peachtree home">
+        <img
+          src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+          alt="Scoops @ Peachtree logo"
+        />
+      </a>
+
+      <div class="site-header__right">
+        <nav class="site-nav site-nav--right" aria-label="Secondary navigation">
+          <ul class="site-nav__list">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="site-header__cta">Order Now</a>
+      </div>
+
+      <a href="#" class="site-header__cta site-header__cta--mobile">Order</a>
+    </div>
+
+    <aside
+      class="mobile-menu"
+      id="mobile-menu"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <div class="mobile-menu__panel">
+        <div class="mobile-menu__top">
+          <a href="#" class="mobile-menu__logo" aria-label="Scoops @ Peachtree home">
+            <img
+              src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+              alt="Scoops @ Peachtree logo"
+            />
+          </a>
+
+          <button
+            class="mobile-menu__close"
+            type="button"
+            aria-label="Close navigation menu"
+          >
+            &times;
+          </button>
+        </div>
+
+        <nav class="mobile-menu__nav" aria-label="Mobile site navigation">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Catering</a></li>
+            <li><a href="#">Visit</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="mobile-menu__cta">Order Now</a>
+
+        <div class="mobile-menu__info">
+          <p>Scoops @ Peachtree</p>
+          <p>300 Peachtree St NE, CS-2, Atlanta</p>
+          <p><a href="tel:4044617290">404-461-7290</a></p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="mobile-menu__overlay"></div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Scoops hero section">
+      <div class="hero__bg hero__bg--pink"></div>
+      <div class="hero__bg hero__bg--blue"></div>
+      <div class="hero__bg hero__bg--mint"></div>
+
+      <div class="hero__inner">
+        <div class="hero__content">
+          <span class="hero__eyebrow">Downtown Atlanta’s sweet stop</span>
+
+          <h1 class="hero__title">
+            Best Locally Made Ice Cream in Georgia
+          </h1>
+
+          <p class="hero__text">
+            Handcrafted ice cream, bubble tea, shakes &amp; pastries in Downtown Atlanta.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#" class="hero__button hero__button--primary">Order Now</a>
+            <a href="#" class="hero__button hero__button--secondary">Visit Us Today</a>
+          </div>
+
+          <div class="hero__highlights" aria-label="Scoops highlights">
+            <span>Ice Cream</span>
+            <span>Bubble Tea</span>
+            <span>Milkshakes</span>
+            <span>Pastries</span>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__visual-stage">
+            <div class="hero__spark hero__spark--one"></div>
+            <div class="hero__spark hero__spark--two"></div>
+            <div class="hero__spark hero__spark--three"></div>
+
+            <lottie-player
+              class="hero__lottie"
+              src="assets/lottie/hero_section.json"
+              background="transparent"
+              speed="1"
+              loop
+              autoplay
+              aria-label="Animated dessert illustration"
+            ></lottie-player>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tier 1 Menu Overview -->
+    <section class="menu-tier-1" id="menu-tier-1" aria-label="Ice cream menu preview">
+      <div class="menu-tier-1__bg menu-tier-1__bg--pink"></div>
+      <div class="menu-tier-1__bg menu-tier-1__bg--blue"></div>
+      <div class="menu-tier-1__bg menu-tier-1__bg--mint"></div>
+
+      <div class="menu-tier-1__scroll">
+        <div class="menu-tier-1__stage">
+          <div class="menu-tier-1__content">
+            <span class="menu-tier-1__eyebrow">Menu Preview · Tier 1</span>
+
+            <h2 class="menu-tier-1__title">Ice Cream That Builds the Craving</h2>
+
+            <p class="menu-tier-1__text">
+              Locally made scoops with playful flavors, creamy textures, and colorful toppings made for dessert runs in Downtown Atlanta.
+            </p>
+
+            <div class="menu-tier-1__chips" aria-label="Ice cream features">
+              <span>Customer Favorites</span>
+              <span>Seasonal Flavors</span>
+              <span>Fresh Toppings</span>
+            </div>
+
+            <div class="menu-tier-1__cards">
+              <article class="tier-card tier-card--featured">
+                <div class="tier-card__image tier-card__image--strawberry"></div>
+                <div class="tier-card__body">
+                  <span class="tier-card__badge">Customer Favorite</span>
+                  <h3 class="tier-card__title">Strawberry Dream</h3>
+                  <p class="tier-card__text">Creamy strawberry ice cream finished with soft swirls and sweet berry bites.</p>
+                  <span class="tier-card__price">$6.95</span>
+                </div>
+              </article>
+
+              <article class="tier-card">
+                <div class="tier-card__image tier-card__image--cookie"></div>
+                <div class="tier-card__body">
+                  <span class="tier-card__badge tier-card__badge--blue">New</span>
+                  <h3 class="tier-card__title">Cookie Crunch</h3>
+                  <p class="tier-card__text">Rich vanilla ice cream loaded with cookie crumble and crunchy topping.</p>
+                  <span class="tier-card__price">$6.75</span>
+                </div>
+              </article>
+
+              <article class="tier-card">
+                <div class="tier-card__image tier-card__image--mint"></div>
+                <div class="tier-card__body">
+                  <span class="tier-card__badge tier-card__badge--mint">Seasonal</span>
+                  <h3 class="tier-card__title">Mint Sprinkle</h3>
+                  <p class="tier-card__text">A cool mint scoop with candy sparkle and a soft whipped finish.</p>
+                  <span class="tier-card__price">$6.75</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-tier-1__visual" aria-hidden="true">
+            <div class="menu-tier-1__orb menu-tier-1__orb--one"></div>
+            <div class="menu-tier-1__orb menu-tier-1__orb--two"></div>
+            <div class="menu-tier-1__orb menu-tier-1__orb--three"></div>
+            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--one"></div>
+            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--two"></div>
+            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--three"></div>
+            <div class="menu-tier-1__lottie" id="menu-tier-1-lottie"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tier 2 Menu Overview -->
+    <section class="menu-tier-2" id="menu-tier-2" aria-label="Drinks and milkshakes menu preview">
+      <div class="menu-tier-2__bg menu-tier-2__bg--pink"></div>
+      <div class="menu-tier-2__bg menu-tier-2__bg--blue"></div>
+      <div class="menu-tier-2__bg menu-tier-2__bg--mint"></div>
+
+      <div class="menu-tier-2__scroll">
+        <div class="menu-tier-2__stage">
+          <div class="menu-tier-2__visual" aria-hidden="true">
+            <div class="menu-tier-2__bubble menu-tier-2__bubble--one"></div>
+            <div class="menu-tier-2__bubble menu-tier-2__bubble--two"></div>
+            <div class="menu-tier-2__bubble menu-tier-2__bubble--three"></div>
+            <div class="menu-tier-2__lottie" id="menu-tier-2-lottie"></div>
+          </div>
+
+          <div class="menu-tier-2__content">
+            <span class="menu-tier-2__eyebrow">Menu Preview · Tier 2</span>
+
+            <h2 class="menu-tier-2__title">Sweet Sips in Motion</h2>
+
+            <p class="menu-tier-2__text">
+              Bubble tea, iced drinks, and creamy milkshakes layered with texture, flavor, and playful color.
+            </p>
+
+            <div class="menu-tier-2__chips" aria-label="Drinks highlights">
+              <span>Bubble Tea</span>
+              <span>Milkshakes</span>
+              <span>Fresh Mix-Ins</span>
+            </div>
+          </div>
+
+          <div class="menu-tier-2__cards">
+            <article class="tier2-card">
+              <div class="tier2-card__image tier2-card__image--boba"></div>
+              <div class="tier2-card__body">
+                <span class="tier2-card__badge">Customer Favorite</span>
+                <h3 class="tier2-card__title">Brown Sugar Boba</h3>
+                <p class="tier2-card__text">Creamy tea layered with chewy pearls and smooth caramel sweetness.</p>
+                <span class="tier2-card__price">$6.95</span>
+              </div>
+            </article>
+
+            <article class="tier2-card">
+              <div class="tier2-card__image tier2-card__image--berry"></div>
+              <div class="tier2-card__body">
+                <span class="tier2-card__badge tier2-card__badge--blue">New</span>
+                <h3 class="tier2-card__title">Berry Splash</h3>
+                <p class="tier2-card__text">A bright fruit drink with layered color, soft ice, and a refreshing finish.</p>
+                <span class="tier2-card__price">$6.50</span>
+              </div>
+            </article>
+
+            <article class="tier2-card">
+              <div class="tier2-card__image tier2-card__image--shake"></div>
+              <div class="tier2-card__body">
+                <span class="tier2-card__badge tier2-card__badge--mint">Seasonal</span>
+                <h3 class="tier2-card__title">Vanilla Cloud Shake</h3>
+                <p class="tier2-card__text">A thick, creamy milkshake topped with whipped sweetness and silky texture.</p>
+                <span class="tier2-card__price">$7.25</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Spotlight -->
+    <!-- Testimonials Section -->
+    <section class="testimonials-showcase" aria-label="Customer testimonials">
+    <div class="testimonials-showcase__bg testimonials-showcase__bg--pink"></div>
+    <div class="testimonials-showcase__bg testimonials-showcase__bg--blue"></div>
+    <div class="testimonials-showcase__bg testimonials-showcase__bg--mint"></div>
+
+    <div class="testimonials-showcase__inner">
+        <div class="testimonials-showcase__content reveal-on-scroll">
+        <p class="testimonials-showcase__eyebrow">what our customers are saying</p>
+
+        <h2 class="testimonials-showcase__title">
+            Sweet moments, real smiles, and dessert runs people keep coming back for.
+        </h2>
+
+        <blockquote class="testimonials-showcase__quote">
+            “Scoops’ ice cream is pure magic—every scoop is packed with fun flavor, the drinks are amazing, and it’s always our favorite dessert stop downtown.”
+        </blockquote>
+
+        <div class="testimonials-showcase__meta">
+            <span class="testimonials-showcase__name">Jeff S.</span>
+            <span class="testimonials-showcase__stars" aria-label="5 star review">★★★★★</span>
+        </div>
+
+        <div class="testimonials-showcase__mini-cards">
+            <article class="testimonial-mini reveal-on-scroll">
+            <p>“Bubble tea is amazing and the whole place feels fun every time.”</p>
+            <span>- Downtown Atlanta Guest</span>
+            </article>
+
+            <article class="testimonial-mini reveal-on-scroll">
+            <p>“Perfect dessert stop after work. The scoops are always fresh.”</p>
+            <span>- Local Customer</span>
+            </article>
+        </div>
+        </div>
+
+        <div class="testimonials-showcase__visual reveal-on-scroll" aria-hidden="true">
+        <div class="testimonials-showcase__burst"></div>
+
+        <figure class="testimonial-photo testimonial-photo--main reveal-on-scroll">
+            <img
+            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
+            alt=""
+            />
+        </figure>
+
+        <figure class="testimonial-photo testimonial-photo--top reveal-on-scroll">
+            <img
+            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
+            alt=""
+            />
+        </figure>
+
+        <figure class="testimonial-photo testimonial-photo--bottom reveal-on-scroll">
+            <img
+            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
+            alt=""
+            />
+        </figure>
+        </div>
+    </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/menu-tier-1.js"></script>
+  <script src="js/menu-tier-2.js"></script>
+  <script src="js/testimonials.js"></script>
+</body>
+</html>
