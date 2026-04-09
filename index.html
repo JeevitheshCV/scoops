@@ -1,381 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Scoops @ Peachtree</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scoops at Peachtree</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="css/announcement-bar.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/hero.css" />
-  <link rel="stylesheet" href="css/menu-tier-1.css" />
-  <link rel="stylesheet" href="css/menu-tier-2.css" />
-  <link rel="stylesheet" href="css/testimonials.css" />
-</head>
-<body>
-  <section class="announcement-bar" aria-label="Store announcement">
-    <a href="#" class="announcement-bar__link">
-      New pastries just dropped
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/hero-section-2.css" />
+    <link rel="stylesheet" href="./css/menu-preview.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <a href="#specials" class="announcement-bar" aria-label="See latest updates and specials">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
     </a>
-  </section>
 
-  <header class="site-header" aria-label="Main site header">
-    <div class="site-header__inner">
-      <button
-        class="site-header__menu-toggle"
-        type="button"
-        aria-label="Open navigation menu"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="/" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
 
-      <nav class="site-nav site-nav--left" aria-label="Primary navigation">
-        <ul class="site-nav__list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Catering</a></li>
-          <li><a href="#">Visit</a></li>
-        </ul>
-      </nav>
-
-      <a href="#" class="site-logo" aria-label="Scoops @ Peachtree home">
-        <img
-          src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
-          alt="Scoops @ Peachtree logo"
-        />
-      </a>
-
-      <div class="site-header__right">
-        <nav class="site-nav site-nav--right" aria-label="Secondary navigation">
-          <ul class="site-nav__list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#hero">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#catering">Catering</a>
+          <a href="#visit">Visit</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#" class="site-header__cta">Order Now</a>
-      </div>
-
-      <a href="#" class="site-header__cta site-header__cta--mobile">Order</a>
-    </div>
-
-    <aside
-      class="mobile-menu"
-      id="mobile-menu"
-      aria-label="Mobile navigation"
-      aria-hidden="true"
-    >
-      <div class="mobile-menu__panel">
-        <div class="mobile-menu__top">
-          <a href="#" class="mobile-menu__logo" aria-label="Scoops @ Peachtree home">
-            <img
-              src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
-              alt="Scoops @ Peachtree logo"
-            />
-          </a>
+        <div class="site-header__actions">
+          <a href="#order" class="order-btn">Order Now</a>
 
           <button
-            class="mobile-menu__close"
+            class="menu-toggle"
+            id="menuToggle"
             type="button"
-            aria-label="Close navigation menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
           >
-            &times;
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
+      </div>
 
-        <nav class="mobile-menu__nav" aria-label="Mobile site navigation">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Catering</a></li>
-            <li><a href="#">Visit</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="#hero">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#catering">Catering</a>
+          <a href="#visit">Visit</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+          <a href="#order" class="mobile-order-btn">Order Now</a>
         </nav>
-
-        <a href="#" class="mobile-menu__cta">Order Now</a>
-
-        <div class="mobile-menu__info">
-          <p>Scoops @ Peachtree</p>
-          <p>300 Peachtree St NE, CS-2, Atlanta</p>
-          <p><a href="tel:4044617290">404-461-7290</a></p>
-        </div>
       </div>
-    </aside>
+    </header>
 
-    <div class="mobile-menu__overlay"></div>
-  </header>
+    <!-- Spacer so fixed top UI doesn't overlap content -->
+    <div class="top-offset"></div>
 
-  <main>
-    <section class="hero" aria-label="Scoops hero section">
-      <div class="hero__bg hero__bg--pink"></div>
-      <div class="hero__bg hero__bg--blue"></div>
-      <div class="hero__bg hero__bg--mint"></div>
-
-      <div class="hero__inner">
-        <div class="hero__content">
-          <span class="hero__eyebrow">Downtown Atlanta’s sweet stop</span>
-
-          <h1 class="hero__title">
-            Best Locally Made Ice Cream in Georgia
-          </h1>
-
-          <p class="hero__text">
-            Handcrafted ice cream, bubble tea, shakes &amp; pastries in Downtown Atlanta.
+    <!-- hero placeholder -->
+    <main>
+      <section class="hero-placeholder" id="hero">
+        <div class="hero-placeholder__content">
+          <p class="eyebrow">Scoops at Peachtree</p>
+          <h1>Best Locally Made Ice Cream in Georgia</h1>
+          <p>
+            Handcrafted ice cream, bubble tea, shakes, pastries, and downtown dessert vibes.
           </p>
+        </div>
+      </section>
+      <section class="hero-section-two" aria-labelledby="hero-two-title">
+        <div class="hero-section-two__shell">
+          <div class="hero-section-two__media">
+            <img
+              src="./assets/images/hero_section-2.png"
+              alt="Spring ice cream flavors and blueberry muffin-inspired treats"
+              class="hero-section-two__image"
+            />
 
-          <div class="hero__actions">
-            <a href="#" class="hero__button hero__button--primary">Order Now</a>
-            <a href="#" class="hero__button hero__button--secondary">Visit Us Today</a>
+            <div class="hero-section-two__overlay">
+              <div class="hero-section-two__card">
+                <h2 id="hero-two-title">Spring Flavors Are Here!</h2>
+                <p class="hero-section-two__text">
+                  Spring flavors have bloomed in store and online!
+                </p>
+
+                <div class="hero-section-two__actions">
+                  <a href="#menu" class="hero-section-two__btn hero-section-two__btn--primary">
+                    Go to Menu
+                  </a>
+                  <a href="#visit" class="hero-section-two__btn hero-section-two__btn--secondary">
+                    Find Us
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="hero__highlights" aria-label="Scoops highlights">
-            <span>Ice Cream</span>
-            <span>Bubble Tea</span>
-            <span>Milkshakes</span>
-            <span>Pastries</span>
+          <div class="hero-section-two__wave" aria-hidden="true">
+            <svg
+              viewBox="0 0 1440 170"
+              preserveAspectRatio="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0,42 C92,92 206,100 327,82 C451,64 554,30 688,40 C819,50 911,103 1056,104 C1190,104 1294,69 1440,92 L1440,170 L0,170 Z"
+                fill="#f5f2ed"
+              />
+            </svg>
           </div>
         </div>
+      </section>
 
-        <div class="hero__visual">
-          <div class="hero__visual-stage">
-            <div class="hero__spark hero__spark--one"></div>
-            <div class="hero__spark hero__spark--two"></div>
-            <div class="hero__spark hero__spark--three"></div>
-
-            <lottie-player
-              class="hero__lottie"
-              src="assets/lottie/hero_section.json"
-              background="transparent"
-              speed="1"
-              loop
-              autoplay
-              aria-label="Animated dessert illustration"
-            ></lottie-player>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tier 1 Menu Overview -->
-    <section class="menu-tier-1" id="menu-tier-1" aria-label="Ice cream menu preview">
-      <div class="menu-tier-1__bg menu-tier-1__bg--pink"></div>
-      <div class="menu-tier-1__bg menu-tier-1__bg--blue"></div>
-      <div class="menu-tier-1__bg menu-tier-1__bg--mint"></div>
-
-      <div class="menu-tier-1__scroll">
-        <div class="menu-tier-1__stage">
-          <div class="menu-tier-1__content">
-            <span class="menu-tier-1__eyebrow">Menu Preview · Tier 1</span>
-
-            <h2 class="menu-tier-1__title">Ice Cream That Builds the Craving</h2>
-
-            <p class="menu-tier-1__text">
-              Locally made scoops with playful flavors, creamy textures, and colorful toppings made for dessert runs in Downtown Atlanta.
+      <section class="menu-preview" aria-labelledby="menu-preview-title">
+        <div class="menu-preview__inner">
+          <div class="menu-preview__intro">
+            <p class="menu-preview__eyebrow">Menu Preview</p>
+            <h2 id="menu-preview-title">Pick Your Craving</h2>
+            <p class="menu-preview__lead">
+              Scoops, sips, shakes, and pastries made for every kind of sweet craving.
             </p>
-
-            <div class="menu-tier-1__chips" aria-label="Ice cream features">
-              <span>Customer Favorites</span>
-              <span>Seasonal Flavors</span>
-              <span>Fresh Toppings</span>
-            </div>
-
-            <div class="menu-tier-1__cards">
-              <article class="tier-card tier-card--featured">
-                <div class="tier-card__image tier-card__image--strawberry"></div>
-                <div class="tier-card__body">
-                  <span class="tier-card__badge">Customer Favorite</span>
-                  <h3 class="tier-card__title">Strawberry Dream</h3>
-                  <p class="tier-card__text">Creamy strawberry ice cream finished with soft swirls and sweet berry bites.</p>
-                  <span class="tier-card__price">$6.95</span>
-                </div>
-              </article>
-
-              <article class="tier-card">
-                <div class="tier-card__image tier-card__image--cookie"></div>
-                <div class="tier-card__body">
-                  <span class="tier-card__badge tier-card__badge--blue">New</span>
-                  <h3 class="tier-card__title">Cookie Crunch</h3>
-                  <p class="tier-card__text">Rich vanilla ice cream loaded with cookie crumble and crunchy topping.</p>
-                  <span class="tier-card__price">$6.75</span>
-                </div>
-              </article>
-
-              <article class="tier-card">
-                <div class="tier-card__image tier-card__image--mint"></div>
-                <div class="tier-card__body">
-                  <span class="tier-card__badge tier-card__badge--mint">Seasonal</span>
-                  <h3 class="tier-card__title">Mint Sprinkle</h3>
-                  <p class="tier-card__text">A cool mint scoop with candy sparkle and a soft whipped finish.</p>
-                  <span class="tier-card__price">$6.75</span>
-                </div>
-              </article>
-            </div>
           </div>
 
-          <div class="menu-tier-1__visual" aria-hidden="true">
-            <div class="menu-tier-1__orb menu-tier-1__orb--one"></div>
-            <div class="menu-tier-1__orb menu-tier-1__orb--two"></div>
-            <div class="menu-tier-1__orb menu-tier-1__orb--three"></div>
-            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--one"></div>
-            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--two"></div>
-            <div class="menu-tier-1__sprinkle menu-tier-1__sprinkle--three"></div>
-            <div class="menu-tier-1__lottie" id="menu-tier-1-lottie"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tier 2 Menu Overview -->
-    <section class="menu-tier-2" id="menu-tier-2" aria-label="Drinks and milkshakes menu preview">
-      <div class="menu-tier-2__bg menu-tier-2__bg--pink"></div>
-      <div class="menu-tier-2__bg menu-tier-2__bg--blue"></div>
-      <div class="menu-tier-2__bg menu-tier-2__bg--mint"></div>
-
-      <div class="menu-tier-2__scroll">
-        <div class="menu-tier-2__stage">
-          <div class="menu-tier-2__visual" aria-hidden="true">
-            <div class="menu-tier-2__bubble menu-tier-2__bubble--one"></div>
-            <div class="menu-tier-2__bubble menu-tier-2__bubble--two"></div>
-            <div class="menu-tier-2__bubble menu-tier-2__bubble--three"></div>
-            <div class="menu-tier-2__lottie" id="menu-tier-2-lottie"></div>
-          </div>
-
-          <div class="menu-tier-2__content">
-            <span class="menu-tier-2__eyebrow">Menu Preview · Tier 2</span>
-
-            <h2 class="menu-tier-2__title">Sweet Sips in Motion</h2>
-
-            <p class="menu-tier-2__text">
-              Bubble tea, iced drinks, and creamy milkshakes layered with texture, flavor, and playful color.
-            </p>
-
-            <div class="menu-tier-2__chips" aria-label="Drinks highlights">
-              <span>Bubble Tea</span>
-              <span>Milkshakes</span>
-              <span>Fresh Mix-Ins</span>
-            </div>
-          </div>
-
-          <div class="menu-tier-2__cards">
-            <article class="tier2-card">
-              <div class="tier2-card__image tier2-card__image--boba"></div>
-              <div class="tier2-card__body">
-                <span class="tier2-card__badge">Customer Favorite</span>
-                <h3 class="tier2-card__title">Brown Sugar Boba</h3>
-                <p class="tier2-card__text">Creamy tea layered with chewy pearls and smooth caramel sweetness.</p>
-                <span class="tier2-card__price">$6.95</span>
+          <div class="menu-preview__grid">
+            <a href="./menu.html#ice-cream" class="menu-card menu-card--icecream">
+              <div class="menu-card__media">
+                <img src="./assets/images/icecream-card.png" alt="Ice cream scoops and treats" />
               </div>
-            </article>
-
-            <article class="tier2-card">
-              <div class="tier2-card__image tier2-card__image--berry"></div>
-              <div class="tier2-card__body">
-                <span class="tier2-card__badge tier2-card__badge--blue">New</span>
-                <h3 class="tier2-card__title">Berry Splash</h3>
-                <p class="tier2-card__text">A bright fruit drink with layered color, soft ice, and a refreshing finish.</p>
-                <span class="tier2-card__price">$6.50</span>
+              <div class="menu-card__overlay"></div>
+              <div class="menu-card__content">
+                <span class="menu-card__kicker">Ice Cream</span>
+                <h3>More Taste, More Fun</h3>
+                <p>Handcrafted scoops made to satisfy every craving.</p>
+                <span class="menu-card__cta">Explore Menu</span>
               </div>
-            </article>
+            </a>
 
-            <article class="tier2-card">
-              <div class="tier2-card__image tier2-card__image--shake"></div>
-              <div class="tier2-card__body">
-                <span class="tier2-card__badge tier2-card__badge--mint">Seasonal</span>
-                <h3 class="tier2-card__title">Vanilla Cloud Shake</h3>
-                <p class="tier2-card__text">A thick, creamy milkshake topped with whipped sweetness and silky texture.</p>
-                <span class="tier2-card__price">$7.25</span>
+            <a href="./menu.html#bubble-tea-drinks" class="menu-card menu-card--drinks">
+              <div class="menu-card__media">
+                <img
+                  src="./assets/images/BubbleTea andDrinks-card.png"
+                  alt="Bubble tea and refreshing drinks"
+                />
               </div>
-            </article>
+              <div class="menu-card__overlay"></div>
+              <div class="menu-card__content">
+                <span class="menu-card__kicker">Bubble Tea / Drinks</span>
+                <h3>Sip Bold, Chill Easy</h3>
+                <p>Cool drinks and tea blends packed with flavor.</p>
+                <span class="menu-card__cta">Explore Menu</span>
+              </div>
+            </a>
+
+            <a href="./menu.html#milkshakes" class="menu-card menu-card--milkshakes">
+              <div class="menu-card__media">
+                <img src="./assets/images/Milkshakes-card.png" alt="Creamy milkshakes" />
+              </div>
+              <div class="menu-card__overlay"></div>
+              <div class="menu-card__content">
+                <span class="menu-card__kicker">Milkshakes</span>
+                <h3>Thick, Creamy, Worth It</h3>
+                <p>Blended sweet, smooth, and made for dessert lovers.</p>
+                <span class="menu-card__cta">Explore Menu</span>
+              </div>
+            </a>
+
+            <a href="./menu.html#pastries" class="menu-card menu-card--pastries">
+              <div class="menu-card__media">
+                <img src="./assets/images/Pastries- card.png" alt="Fresh pastries and baked treats" />
+              </div>
+              <div class="menu-card__overlay"></div>
+              <div class="menu-card__content">
+                <span class="menu-card__kicker">Pastries</span>
+                <h3>Fresh Bakes, Daily Joy</h3>
+                <p>Soft, flaky, sweet bites ready to pair with every visit.</p>
+                <span class="menu-card__cta">Explore Menu</span>
+              </div>
+            </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Testimonial Spotlight -->
-    <!-- Testimonials Section -->
-    <section class="testimonials-showcase" aria-label="Customer testimonials">
-    <div class="testimonials-showcase__bg testimonials-showcase__bg--pink"></div>
-    <div class="testimonials-showcase__bg testimonials-showcase__bg--blue"></div>
-    <div class="testimonials-showcase__bg testimonials-showcase__bg--mint"></div>
 
-    <div class="testimonials-showcase__inner">
-        <div class="testimonials-showcase__content reveal-on-scroll">
-        <p class="testimonials-showcase__eyebrow">what our customers are saying</p>
 
-        <h2 class="testimonials-showcase__title">
-            Sweet moments, real smiles, and dessert runs people keep coming back for.
-        </h2>
+    
 
-        <blockquote class="testimonials-showcase__quote">
-            “Scoops’ ice cream is pure magic—every scoop is packed with fun flavor, the drinks are amazing, and it’s always our favorite dessert stop downtown.”
-        </blockquote>
+      <section id="menu"></section>
+      <section id="catering"></section>
+      <section id="visit"></section>
+      <section id="about"></section>
+      <section id="gallery"></section>
+      <section id="contact"></section>
+      <section id="order"></section>
+      <section id="specials"></section>
+    </main>
 
-        <div class="testimonials-showcase__meta">
-            <span class="testimonials-showcase__name">Jeff S.</span>
-            <span class="testimonials-showcase__stars" aria-label="5 star review">★★★★★</span>
-        </div>
-
-        <div class="testimonials-showcase__mini-cards">
-            <article class="testimonial-mini reveal-on-scroll">
-            <p>“Bubble tea is amazing and the whole place feels fun every time.”</p>
-            <span>- Downtown Atlanta Guest</span>
-            </article>
-
-            <article class="testimonial-mini reveal-on-scroll">
-            <p>“Perfect dessert stop after work. The scoops are always fresh.”</p>
-            <span>- Local Customer</span>
-            </article>
-        </div>
-        </div>
-
-        <div class="testimonials-showcase__visual reveal-on-scroll" aria-hidden="true">
-        <div class="testimonials-showcase__burst"></div>
-
-        <figure class="testimonial-photo testimonial-photo--main reveal-on-scroll">
-            <img
-            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
-            alt=""
-            />
-        </figure>
-
-        <figure class="testimonial-photo testimonial-photo--top reveal-on-scroll">
-            <img
-            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
-            alt=""
-            />
-        </figure>
-
-        <figure class="testimonial-photo testimonial-photo--bottom reveal-on-scroll">
-            <img
-            src="https://cauldronicecream.com/wp-content/uploads/2023/12/img_jeff-639x649.png"
-            alt=""
-            />
-        </figure>
-        </div>
-    </div>
-    </section>
-  </main>
-
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/menu-tier-1.js"></script>
-  <script src="js/menu-tier-2.js"></script>
-  <script src="js/testimonials.js"></script>
-</body>
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/hero-section-2.js"></script>
+    <script src="./js/menu-preview.js"></script>
+  </body>
 </html>
