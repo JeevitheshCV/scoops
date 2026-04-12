@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/announcement-header.css" />
     <link rel="stylesheet" href="./css/hero-section-2.css" />
     <link rel="stylesheet" href="./css/menu-preview.css" />
+    <link rel="stylesheet" href="./css/testimonial-slider.css" />
   </head>
   <body>
     <!-- Announcement Bar -->
@@ -227,6 +228,109 @@
         </div>
       </section>
 
+<!-- Testimonial Slider -->
+
+      <section class="testimonial-slider" aria-labelledby="testimonial-slider-title">
+        <div class="testimonial-slider__inner">
+          <div class="testimonial-slider__intro">
+            <p class="testimonial-slider__eyebrow" id="testimonial-slider-title">
+              What Our Customers Are Saying
+            </p>
+          </div>
+
+          <div
+            class="testimonial-slider__stage"
+            id="testimonialStage"
+            data-autoplay="true"
+            data-interval="5000"
+          >
+            <article class="testimonial-slide is-active" data-index="0" aria-hidden="false">
+              <div class="testimonial-slide__card">
+                <div class="testimonial-slide__blob" aria-hidden="true"></div>
+                <div class="testimonial-slide__line" aria-hidden="true"></div>
+
+                <div class="testimonial-slide__content">
+                  <p class="testimonial-slide__kicker">Customer Love</p>
+                  <p class="testimonial-slide__quote-mark" aria-hidden="true">“</p>
+
+                  <blockquote class="testimonial-slide__quote">
+                    Scoops at Peachtree is my favorite dessert stop downtown. The ice cream tastes
+                    fresh, the flavors are fun, and every visit feels like a treat worth coming back for.
+                  </blockquote>
+
+                  <p class="testimonial-slide__name">Brian</p>
+                </div>
+
+                <div class="testimonial-slide__media">
+                  <img
+                    src="./assets/images/persons/brian.png"
+                    alt="Brian holding an ice cream cone"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide" data-index="1" aria-hidden="true">
+              <div class="testimonial-slide__card">
+                <div class="testimonial-slide__blob" aria-hidden="true"></div>
+                <div class="testimonial-slide__line" aria-hidden="true"></div>
+
+                <div class="testimonial-slide__content">
+                  <p class="testimonial-slide__kicker">Customer Love</p>
+                  <p class="testimonial-slide__quote-mark" aria-hidden="true">“</p>
+
+                  <blockquote class="testimonial-slide__quote">
+                    I came in for a quick dessert and ended up loving everything about the place. The
+                    shakes are rich, the service is warm, and the whole shop has such a fun energy.
+                  </blockquote>
+
+                  <p class="testimonial-slide__name">Carla</p>
+                </div>
+
+                <div class="testimonial-slide__media">
+                  <img
+                    src="./assets/images/persons/carla.png"
+                    alt="Carla smiling with dessert"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-slide" data-index="2" aria-hidden="true">
+              <div class="testimonial-slide__card">
+                <div class="testimonial-slide__blob" aria-hidden="true"></div>
+                <div class="testimonial-slide__line" aria-hidden="true"></div>
+
+                <div class="testimonial-slide__content">
+                  <p class="testimonial-slide__kicker">Customer Love</p>
+                  <p class="testimonial-slide__quote-mark" aria-hidden="true">“</p>
+
+                  <blockquote class="testimonial-slide__quote">
+                    The pastries and ice cream together are such a good combo. Everything tastes
+                    thoughtfully made, and Scoops always feels like the perfect place to end the day.
+                  </blockquote>
+
+                  <p class="testimonial-slide__name">Dana</p>
+                </div>
+
+                <div class="testimonial-slide__media">
+                  <img
+                    src="./assets/images/persons/dana.png"
+                    alt="Dana holding a dessert"
+                  />
+                </div>
+              </div>
+            </article>
+
+            <div class="testimonial-slider__progress" aria-hidden="true">
+              <span class="testimonial-slider__progress-bar"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
 
 
     
@@ -244,5 +348,6 @@
     <script src="./js/announcement-header.js"></script>
     <script src="./js/hero-section-2.js"></script>
     <script src="./js/menu-preview.js"></script>
+    <script src="./js/testimonial-slider.js"></script>
   </body>
 </html>
