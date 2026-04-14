@@ -474,6 +474,8 @@
     width: 100%;
     min-height: 52px;
     font-size: 0.95rem;
+    flex: none;          /* FIX: prevents vertical stretching */
+    border-radius: 28px;
   }
 
   .hero-section-two__wave svg {
