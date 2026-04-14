@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Scoops at Peachtree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/menu-hero.css" />
+    <link rel="stylesheet" href="./css/menu-page.css" />
+  </head>
+  <body>
+    <a href="./menu.html" class="announcement-bar" aria-label="See latest updates and specials">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
+    </a>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html" aria-current="page">Menu</a>
+          <a href="./catering.html">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a href="#menu-categories" class="order-btn">Explore Menu</a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html" aria-current="page">Menu</a>
+          <a href="./catering.html">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+          <a href="#menu-categories" class="mobile-order-btn">Explore Menu</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-offset"></div>
+
+    <main>
+      <section class="menu-hero" id="menuHero" aria-labelledby="menu-hero-title">
+        <div class="menu-hero__inner">
+          <div class="menu-hero__content">
+            <p class="menu-hero__eyebrow">Scoops @ Peachtree Menu</p>
+
+            <h1 id="menu-hero-title" class="menu-hero__title">
+              <span>DOUBLE THE JOY:</span>
+              <span>BLISSFUL SCOOPS</span>
+              <span>&amp; BOLD BOBA SIPS</span>
+            </h1>
+
+            <p class="menu-hero__text">
+              Immerse yourself in a sea of flavors with Peachtree, where creamy Red Velvet
+              and unique Brown Sugar Bubble Tea come together. Experience happiness, one sip
+              and scoop at a time.
+            </p>
+
+            <div class="menu-hero__actions">
+              <a href="#menu-categories" class="menu-hero__btn menu-hero__btn--primary">
+                Explore the Menu
+              </a>
+              <a href="#order" class="menu-hero__btn menu-hero__btn--secondary">
+                Order Online
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-hero__media" aria-hidden="true">
+          <img
+            src="./assets/images/background/hero-menu.png"
+            alt=""
+            class="menu-hero__image"
+          />
+        </div>
+      </section>
+
+      <section class="menu-jump" id="menu-categories" aria-label="Menu categories">
+        <div class="menu-jump__inner">
+          <p class="menu-jump__eyebrow">Browse the Menu</p>
+          <div class="menu-jump__nav" role="navigation" aria-label="Jump to menu sections">
+            <a class="menu-jump__link is-active" href="#ice-cream">Ice Cream</a>
+            <a class="menu-jump__link" href="#milkshakes">Milkshakes</a>
+            <a class="menu-jump__link" href="#bubble-tea">Bubble Tea</a>
+            <a class="menu-jump__link" href="#coffee-pops">Coffee &amp; Pops</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--icecream" id="ice-cream" data-menu-section>
+        <div class="menu-section__inner menu-section__inner--media-left">
+          <div class="menu-section__media">
+            <img
+              src="./assets/images/icecream-card.png"
+              alt="Ice cream scoops and treats"
+              class="menu-section__image"
+            />
+          </div>
+
+          <div class="menu-section__panel">
+            <div class="menu-section__header">
+              <p class="menu-section__kicker">Ice Cream</p>
+              <h2 class="menu-section__title">Handcrafted scoops with southern-inspired flavor.</h2>
+              <p class="menu-section__lead">
+                Pick your favorite flavor, choose your scoop size, choose your cone, and finish
+                with toppings you love.
+              </p>
+            </div>
+
+            <div class="menu-groups menu-groups--icecream">
+              <article class="menu-group menu-group--wide">
+                <h3 class="menu-group__title">Flavors</h3>
+                <ul class="menu-list menu-list--grid">
+                  <li>Chocolate</li>
+                  <li>Vanilla</li>
+                  <li>Strawberry</li>
+                  <li>Apple Pie</li>
+                  <li>Banana Pudding</li>
+                  <li>Cookies N’ Cream</li>
+                  <li>Coffee</li>
+                  <li>GA Peach Cobbler</li>
+                  <li>Pecans N’ Cream</li>
+                  <li>Pistachio</li>
+                  <li>Red Velvet</li>
+                  <li>Salted Caramel</li>
+                  <li>Strawberry Cheesecake</li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Sizes</h3>
+                <ul class="menu-price-list">
+                  <li><span>Single Scoop</span><strong>$5.99</strong></li>
+                  <li><span>Double Scoop</span><strong>$8.99</strong></li>
+                  <li><span>Kids Scoop</span><strong>$3.99</strong></li>
+                </ul>
+                <p class="menu-note">Kids scoop available for children under 12 only.</p>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Cones</h3>
+                <ul class="menu-price-list">
+                  <li><span>Waffle Cone</span><strong>$1.49</strong></li>
+                  <li><span>Sugar Cone</span><strong>$0.99</strong></li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Toppings</h3>
+                <ul class="menu-list">
+                  <li>Oreo Chunks</li>
+                  <li>Chocolate Drizzle</li>
+                  <li>Caramel Drizzle</li>
+                  <li>Sprinkles</li>
+                  <li>Whipped Cream</li>
+                  <li>Cherries</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--milkshakes" id="milkshakes" data-menu-section>
+        <div class="menu-section__inner menu-section__inner--media-right">
+          <div class="menu-section__panel">
+            <div class="menu-section__header">
+              <p class="menu-section__kicker">Milkshakes</p>
+              <h2 class="menu-section__title">Thick, creamy, and made for dessert lovers.</h2>
+              <p class="menu-section__lead">
+                Rich blended shakes that turn your favorite sweet cravings into a sip-worthy treat.
+              </p>
+            </div>
+
+            <div class="menu-groups menu-groups--single">
+              <article class="menu-group menu-group--compact">
+                <h3 class="menu-group__title">Sizes</h3>
+                <ul class="menu-price-list menu-price-list--large">
+                  <li><span>Medium (12 oz)</span><strong>$8.99</strong></li>
+                  <li><span>Large (16 oz)</span><strong>$11.99</strong></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-section__media">
+            <img
+              src="./assets/images/Milkshakes-card.png"
+              alt="Creamy milkshakes"
+              class="menu-section__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--bubbletea" id="bubble-tea" data-menu-section>
+        <div class="menu-section__inner menu-section__inner--media-left">
+          <div class="menu-section__media">
+            <img
+              src="./assets/images/BubbleTea andDrinks-card.png"
+              alt="Bubble tea and fruit drinks"
+              class="menu-section__image"
+            />
+          </div>
+
+          <div class="menu-section__panel">
+            <div class="menu-section__header">
+              <p class="menu-section__kicker">Bubble Tea</p>
+              <h2 class="menu-section__title">Fresh, fruity, and full of bold boba flavor.</h2>
+              <p class="menu-section__lead">
+                Choose from creamy milk teas, fruit teas, and refreshing fruit drinks with your
+                favorite topping.
+              </p>
+            </div>
+
+            <div class="menu-groups menu-groups--bubbletea">
+              <article class="menu-group">
+                <h3 class="menu-group__title">Milk Tea</h3>
+                <ul class="menu-list">
+                  <li>Brown Sugar Milk Tea</li>
+                  <li>Taro Milk Tea</li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Fruit Tea</h3>
+                <p class="menu-subnote">(Made with Jasmine Tea)</p>
+                <ul class="menu-list">
+                  <li>Mango Fruit Tea</li>
+                  <li>Peach Fruit Tea</li>
+                  <li>Lychee Fruit Tea</li>
+                  <li>Passion Fruit Tea</li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Fruit Drinks</h3>
+                <ul class="menu-list">
+                  <li>Mango Fruit Drink</li>
+                  <li>Strawberry Fruit Drink</li>
+                  <li>Peach Fruit Drink</li>
+                  <li>Lychee Fruit Drink</li>
+                  <li>Passion Fruit Drink</li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Toppings</h3>
+                <ul class="menu-list">
+                  <li>Classic Tapioca Boba</li>
+                  <li>Strawberry Popping</li>
+                  <li>Mango Popping</li>
+                  <li>Lychee Popping</li>
+                  <li>Lychee Jelly</li>
+                </ul>
+                <p class="menu-note">Any topping +95¢</p>
+              </article>
+
+              <article class="menu-group menu-group--highlight">
+                <h3 class="menu-group__title">Drink Price</h3>
+                <p class="menu-highlight-price">20 oz · All Drinks $6.99</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section menu-section--coffee" id="coffee-pops" data-menu-section>
+        <div class="menu-section__inner menu-section__inner--media-right">
+          <div class="menu-section__panel">
+            <div class="menu-section__header">
+              <p class="menu-section__kicker">Coffee &amp; Pops</p>
+              <h2 class="menu-section__title">Small extras, big treat energy.</h2>
+              <p class="menu-section__lead">
+                Warm coffee favorites and colorful frozen treats to round out your visit.
+              </p>
+            </div>
+
+            <div class="menu-groups menu-groups--two">
+              <article class="menu-group">
+                <h3 class="menu-group__title">Coffee</h3>
+                <ul class="menu-price-list">
+                  <li><span>Regular</span><strong>$2.99</strong></li>
+                  <li><span>Large</span><strong>$3.99</strong></li>
+                  <li><span>Cold</span><strong>$4.99</strong></li>
+                </ul>
+              </article>
+
+              <article class="menu-group">
+                <h3 class="menu-group__title">Popsicles</h3>
+                <ul class="menu-price-list">
+                  <li><span>King of Pops</span><strong>$4.99 each</strong></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="menu-section__media">
+            <img
+              src="./assets/images/coffee-pops-card.png"
+              alt="Coffee and frozen pops"
+              class="menu-section__image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-cta" id="order" aria-labelledby="menu-cta-title">
+        <div class="menu-cta__inner">
+          <p class="menu-cta__eyebrow">Ready to Order?</p>
+          <h2 id="menu-cta-title" class="menu-cta__title">
+            Bring home your favorite scoops, shakes, and boba sips.
+          </h2>
+          <p class="menu-cta__text">
+            Visit us in Downtown Atlanta or reach out for the fastest way to place your order.
+          </p>
+
+          <div class="menu-cta__actions">
+            <a href="./contact.html" class="menu-cta__btn menu-cta__btn--primary">Contact Us</a>
+            <a href="./index.html#visit" class="menu-cta__btn menu-cta__btn--secondary">Find Us</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="contact" aria-labelledby="footer-title">
+        <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
+        <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
+
+        <div class="site-footer__inner">
+          <div class="site-footer__top">
+            <div class="site-footer__brand">
+              <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
+                <img
+                  src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+                  alt="Scoops @ Peachtree"
+                />
+              </a>
+
+              <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
+              <p class="site-footer__tagline">
+                True southern ice cream flavors in the heart of Downtown Atlanta.
+              </p>
+            </div>
+
+            <div class="site-footer__contact">
+              <p class="site-footer__label">Visit</p>
+              <p class="site-footer__text">300 Peachtree St NE, CS-2, Atlanta</p>
+              <a class="site-footer__phone" href="tel:+14044617290">+1 404-461-7290</a>
+              <a class="site-footer__directions" href="./index.html#visit">Get Directions</a>
+            </div>
+
+            <div class="site-footer__social">
+              <p class="site-footer__label">Stay Connected</p>
+              <p class="site-footer__social-text">
+                Follow for flavors, specials, and limited drops.
+              </p>
+
+              <div class="site-footer__icons" aria-label="Footer social media links">
+                <a class="site-footer__icon" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H7.2v3h2.8v8h3.5Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="X" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.9 3H21l-6.9 7.9L22.2 21h-6.4l-5-6-5.2 6H3.5l7.4-8.4L2.2 3h6.5l4.5 5.4L18.9 3Zm-1.1 16h1.8L7.2 4.9H5.3L17.8 19Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21.6 8.4a2.9 2.9 0 0 0-2-2.1C17.8 5.8 12 5.8 12 5.8s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2.1C2 10.2 2 12 2 12s0 1.8.4 3.6a2.9 2.9 0 0 0 2 2.1c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2.1c.4-1.8.4-3.6.4-3.6s0-1.8-.4-3.6ZM10 15.2V8.8l5.2 3.2L10 15.2Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M14.7 3c.4 2 1.6 3.5 3.5 4.2v2.7a7.1 7.1 0 0 1-3.4-1v5.8a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.8a2.7 2.7 0 1 0 1.9 2.6V3h2.7Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <p>© 2026 Scoops @ Peachtree. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/menu-hero.js"></script>
+    <script src="./js/menu-page.js"></script>
+  </body>
+</html>
