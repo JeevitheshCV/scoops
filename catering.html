@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering & Events | Scoops at Peachtree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/catering-page.css" />
+  </head>
+  <body>
+    <!-- Announcement Bar -->
+    <a href="./catering.html" class="announcement-bar" aria-label="See latest catering updates">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>Now booking private events.</span>
+          <span class="dot">•</span>
+          <span>Ice cream, bubble tea & dessert catering.</span>
+          <span class="dot">•</span>
+          <span>Perfect for birthdays, corporate events & festivals.</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>Now booking private events.</span>
+          <span class="dot">•</span>
+          <span>Ice cream, bubble tea & dessert catering.</span>
+          <span class="dot">•</span>
+          <span>Perfect for birthdays, corporate events & festivals.</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./catering.html" aria-current="page">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <button
+            class="order-btn js-open-inquiry"
+            type="button"
+            data-service="General Catering Inquiry"
+          >
+            Inquire Now
+          </button>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./catering.html" aria-current="page">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+          <button
+            class="mobile-order-btn js-open-inquiry"
+            type="button"
+            data-service="General Catering Inquiry"
+          >
+            Inquire Now
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-offset"></div>
+
+    <main>
+      <!-- Hero -->
+      <section class="catering-hero" id="cateringHero" aria-labelledby="catering-hero-title">
+        <div class="catering-hero__shell">
+          <img
+            src="./assets/images/catering/hero.png"
+            alt="Scoops catering setup for events"
+            class="catering-hero__image"
+          />
+
+          <div class="catering-hero__overlay"></div>
+
+          <div class="catering-hero__content">
+            <p class="catering-hero__eyebrow">Scoops Catering & Events</p>
+
+            <h1 id="catering-hero-title" class="catering-hero__title">
+              Make your event sweeter with scoops, sips, and crowd-pleasing dessert setups.
+            </h1>
+
+            <p class="catering-hero__text">
+              From ice cream carts and bubble tea stations to dessert bars and branded event
+              setups, Scoops brings a playful, polished experience to private parties,
+              corporate gatherings, and festivals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Intro -->
+      <section class="catering-services" id="catering-services" aria-labelledby="catering-services-title">
+        <div class="catering-services__inner">
+          <div class="catering-services__intro">
+            <p class="catering-services__eyebrow">Choose Your Experience</p>
+            <h2 id="catering-services-title">Click any service to explore the gallery.</h2>
+            <p>
+              Browse the catering options below to see the setups, presentation, and event style
+              for each experience.
+            </p>
+          </div>
+
+          <div class="catering-grid">
+            <!-- Ice Cream Cart -->
+            <button
+              class="catering-card js-open-gallery"
+              type="button"
+              data-gallery="gallery-icecream"
+              aria-label="Open Ice Cream Cart gallery"
+            >
+              <div class="catering-card__media">
+                <img
+                  src="./assets/images/catering/Ice Cream Cart - Main Card.png"
+                  alt="Ice cream cart catering"
+                />
+              </div>
+              <div class="catering-card__body">
+                <p class="catering-card__kicker">Ice Cream Service</p>
+                <h3>Ice Cream Cart</h3>
+                <p>
+                  A scoop-focused setup that brings fun, flavor, and a premium dessert moment to
+                  birthdays, parties, office events, and celebrations.
+                </p>
+                <p class="catering-card__meta">
+                  Best for: birthdays, office parties, social gatherings
+                </p>
+              </div>
+            </button>
+
+            <!-- Bubble Tea -->
+            <button
+              class="catering-card js-open-gallery"
+              type="button"
+              data-gallery="gallery-bubbletea"
+              aria-label="Open Bubble Tea Catering gallery"
+            >
+              <div class="catering-card__media">
+                <img
+                  src="./assets/images/catering/Bubble Tea Catering - Main card.png"
+                  alt="Bubble tea catering"
+                />
+              </div>
+              <div class="catering-card__body">
+                <p class="catering-card__kicker">Drink Catering</p>
+                <h3>Bubble Tea Catering</h3>
+                <p>
+                  Bright, refreshing, and customizable bubble tea service that adds color,
+                  variety, and fun to private events and brand activations.
+                </p>
+                <p class="catering-card__meta">
+                  Best for: youth events, launches, pop-ups, campus events
+                </p>
+              </div>
+            </button>
+
+            <!-- Dessert Bar -->
+            <button
+              class="catering-card js-open-gallery"
+              type="button"
+              data-gallery="gallery-dessertbar"
+              aria-label="Open Dessert Bar and Mixed Treat Table gallery"
+            >
+              <div class="catering-card__media">
+                <img
+                  src="./assets/images/catering/Dessert Bar and Mixed Treat Table - Main card image.png"
+                  alt="Dessert bar and mixed treat table"
+                />
+              </div>
+              <div class="catering-card__body">
+                <p class="catering-card__kicker">Dessert Display</p>
+                <h3>Dessert Bar &amp; Mixed Treat Table</h3>
+                <p>
+                  A styled dessert experience with a fuller table presentation for events that
+                  need both visual impact and sweet variety.
+                </p>
+                <p class="catering-card__meta">
+                  Best for: showers, receptions, styled parties, special celebrations
+                </p>
+              </div>
+            </button>
+
+            <!-- Events -->
+            <button
+              class="catering-card js-open-gallery"
+              type="button"
+              data-gallery="gallery-events"
+              aria-label="Open Corporate, Private Events and Festivals gallery"
+            >
+              <div class="catering-card__media">
+                <img
+                  src="./assets/images/catering/Corporate, Private Events & Festivals - Main card.png"
+                  alt="Corporate, private events and festival catering"
+                />
+              </div>
+              <div class="catering-card__body">
+                <p class="catering-card__kicker">Event Activation</p>
+                <h3>Corporate, Private Events &amp; Festivals</h3>
+                <p>
+                  Event-ready service for larger gatherings, branded experiences, community
+                  activations, and crowd-pleasing dessert moments.
+                </p>
+                <p class="catering-card__meta">
+                  Best for: corporate activations, festivals, larger crowds
+                </p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Inquiry CTA -->
+      <section class="catering-cta" aria-labelledby="catering-cta-title">
+        <div class="catering-cta__inner">
+          <p class="catering-cta__eyebrow">Ready to Plan Your Event?</p>
+          <h2 id="catering-cta-title">Tell us what you need and we’ll help shape the right setup.</h2>
+          <button
+            class="catering-cta__btn js-open-inquiry"
+            type="button"
+            data-service="General Catering Inquiry"
+          >
+            Inquire Now
+          </button>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer" id="contact" aria-labelledby="footer-title">
+        <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
+        <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
+
+        <div class="site-footer__inner">
+          <div class="site-footer__top">
+            <div class="site-footer__brand">
+              <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
+                <img
+                  src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+                  alt="Scoops @ Peachtree"
+                />
+              </a>
+
+              <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
+              <p class="site-footer__tagline">
+                True southern ice cream flavors in the heart of Downtown Atlanta.
+              </p>
+            </div>
+
+            <div class="site-footer__contact">
+              <p class="site-footer__label">Visit</p>
+              <p class="site-footer__text">300 Peachtree St NE, CS-2, Atlanta</p>
+              <a class="site-footer__phone" href="tel:+14044617290">+1 404-461-7290</a>
+              <a class="site-footer__directions" href="./index.html#visit">Get Directions</a>
+            </div>
+
+            <div class="site-footer__social">
+              <p class="site-footer__label">Stay Connected</p>
+              <p class="site-footer__social-text">
+                Follow for flavors, specials, and limited drops.
+              </p>
+
+              <div class="site-footer__icons" aria-label="Footer social media links">
+                <a class="site-footer__icon" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H7.2v3h2.8v8h3.5Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="X" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.9 3H21l-6.9 7.9L22.2 21h-6.4l-5-6-5.2 6H3.5l7.4-8.4L2.2 3h6.5l4.5 5.4L18.9 3Zm-1.1 16h1.8L7.2 4.9H5.3L17.8 19Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21.6 8.4a2.9 2.9 0 0 0-2-2.1C17.8 5.8 12 5.8 12 5.8s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2.1C2 10.2 2 12 2 12s0 1.8.4 3.6a2.9 2.9 0 0 0 2 2.1c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2.1c.4-1.8.4-3.6.4-3.6s0-1.8-.4-3.6ZM10 15.2V8.8l5.2 3.2L10 15.2Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M14.7 3c.4 2 1.6 3.5 3.5 4.2v2.7a7.1 7.1 0 0 1-3.4-1v5.8a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.8a2.7 2.7 0 1 0 1.9 2.6V3h2.7Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <p>© 2026 Scoops @ Peachtree. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Inquiry Modal -->
+    <div class="modal" id="inquiryModal" aria-hidden="true" role="dialog" aria-labelledby="inquiry-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog modal__dialog--form">
+        <button class="modal__close" type="button" aria-label="Close inquiry form" data-close-modal>×</button>
+
+        <div class="modal__header">
+          <p class="modal__eyebrow">Event Inquiry</p>
+          <h2 id="inquiry-title" class="modal__title">Tell us about your event</h2>
+          <p class="modal__text">
+            Share a few details and we’ll help guide the right catering setup for your event.
+          </p>
+        </div>
+
+        <form class="inquiry-form" novalidate>
+          <div class="inquiry-form__grid">
+            <label class="inquiry-form__field">
+              <span>Full Name</span>
+              <input type="text" name="full_name" placeholder="Your full name" required />
+            </label>
+
+            <label class="inquiry-form__field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label class="inquiry-form__field">
+              <span>Phone Number</span>
+              <input type="tel" name="phone" placeholder="(123) 456-7890" required />
+            </label>
+
+            <label class="inquiry-form__field">
+              <span>Event Type</span>
+              <input type="text" name="event_type" placeholder="Birthday, corporate event, shower..." required />
+            </label>
+
+            <label class="inquiry-form__field">
+              <span>Event Date</span>
+              <input type="date" name="event_date" required />
+            </label>
+
+            <label class="inquiry-form__field">
+              <span>Guest Count</span>
+              <input type="number" name="guest_count" min="1" placeholder="Approximate guest count" required />
+            </label>
+
+            <label class="inquiry-form__field inquiry-form__field--full">
+              <span>Catering Service Needed</span>
+              <input id="cateringServiceInput" type="text" name="service_needed" placeholder="Ice Cream Cart, Bubble Tea Catering..." required />
+            </label>
+
+            <label class="inquiry-form__field inquiry-form__field--full">
+              <span>Event Location</span>
+              <input type="text" name="event_location" placeholder="Venue name or address" required />
+            </label>
+
+            <label class="inquiry-form__field inquiry-form__field--full">
+              <span>Message / Event Details</span>
+              <textarea name="details" rows="5" placeholder="Tell us about your event, what kind of setup you’re looking for, and any special details." required></textarea>
+            </label>
+          </div>
+
+          <div class="inquiry-form__actions">
+            <button type="submit" class="inquiry-form__submit">Submit Inquiry</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Gallery Modal: Ice Cream -->
+    <div class="modal" id="gallery-icecream" aria-hidden="true" role="dialog" aria-labelledby="gallery-icecream-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog modal__dialog--gallery">
+        <button class="modal__close" type="button" aria-label="Close gallery" data-close-modal>×</button>
+
+        <div class="gallery-modal__header">
+          <p class="modal__eyebrow">Ice Cream Service</p>
+          <h2 id="gallery-icecream-title" class="modal__title">Ice Cream Cart</h2>
+          <p class="modal__text">
+            A playful, premium scoop experience that shows the setup, display, and guest-ready presentation.
+          </p>
+        </div>
+
+        <div class="gallery-modal__grid">
+          <figure class="gallery-modal__item gallery-modal__item--large">
+            <img src="./assets/images/catering/Ice Cream Cart - Main Card.png" alt="Ice cream cart main view" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/ice cream cart gallery - full setup.png" alt="Ice cream cart full setup" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/ice cream cart gallery - products on display.png" alt="Ice cream products on display" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Modal: Bubble Tea -->
+    <div class="modal" id="gallery-bubbletea" aria-hidden="true" role="dialog" aria-labelledby="gallery-bubbletea-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog modal__dialog--gallery">
+        <button class="modal__close" type="button" aria-label="Close gallery" data-close-modal>×</button>
+
+        <div class="gallery-modal__header">
+          <p class="modal__eyebrow">Drink Catering</p>
+          <h2 id="gallery-bubbletea-title" class="modal__title">Bubble Tea Catering</h2>
+          <p class="modal__text">
+            A bright and flexible bubble tea setup that highlights the station, drink lineup, and serving moment.
+          </p>
+        </div>
+
+        <div class="gallery-modal__grid">
+          <figure class="gallery-modal__item gallery-modal__item--large">
+            <img src="./assets/images/catering/Bubble Tea Catering - Main card.png" alt="Bubble tea catering main card" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/Bubble Tea Catering - full bubble tea station.png" alt="Bubble tea full station" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png" alt="Bubble tea drink lineup" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/Bubble Tea Catering - Serving moment.png" alt="Bubble tea serving moment" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Modal: Dessert Bar -->
+    <div class="modal" id="gallery-dessertbar" aria-hidden="true" role="dialog" aria-labelledby="gallery-dessertbar-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog modal__dialog--gallery">
+        <button class="modal__close" type="button" aria-label="Close gallery" data-close-modal>×</button>
+
+        <div class="gallery-modal__header">
+          <p class="modal__eyebrow">Dessert Display</p>
+          <h2 id="gallery-dessertbar-title" class="modal__title">Dessert Bar &amp; Mixed Treat Table</h2>
+          <p class="modal__text">
+            A fuller dessert presentation built for events that want visual abundance and a styled sweet table.
+          </p>
+        </div>
+
+        <div class="gallery-modal__grid">
+          <figure class="gallery-modal__item gallery-modal__item--large">
+            <img src="./assets/images/catering/Dessert Bar and Mixed Treat Table - Main card image.png" alt="Dessert bar main card" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/Dessert Bar and Mixed Treat Table - Full dessert table.png" alt="Full dessert table setup" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Modal: Events -->
+    <div class="modal" id="gallery-events" aria-hidden="true" role="dialog" aria-labelledby="gallery-events-title">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__dialog modal__dialog--gallery">
+        <button class="modal__close" type="button" aria-label="Close gallery" data-close-modal>×</button>
+
+        <div class="gallery-modal__header">
+          <p class="modal__eyebrow">Event Activation</p>
+          <h2 id="gallery-events-title" class="modal__title">Corporate, Private Events &amp; Festivals</h2>
+          <p class="modal__text">
+            Built for larger gatherings, crowd energy, and polished event-ready service.
+          </p>
+        </div>
+
+        <div class="gallery-modal__grid">
+          <figure class="gallery-modal__item gallery-modal__item--large">
+            <img src="./assets/images/catering/Corporate, Private Events & Festivals - Main card.png" alt="Corporate events main card" />
+          </figure>
+          <figure class="gallery-modal__item">
+            <img src="./assets/images/catering/Corporate, Private Events & Festivals - crowd reaction.png" alt="Crowd reaction at event" />
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/catering-page.js"></script>
+  </body>
+</html>
