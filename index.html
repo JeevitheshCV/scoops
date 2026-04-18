@@ -19,9 +19,10 @@
     <link rel="stylesheet" href="./css/announcement-header.css" />
     <link rel="stylesheet" href="./css/hero-section-2.css" />
     <link rel="stylesheet" href="./css/menu-preview.css" />
+    <link rel="stylesheet" href="./css/large-order-section.css" />
     <link rel="stylesheet" href="./css/testimonial-slider.css" />
+    <link rel="stylesheet" href="./css/google-reviews-section.css" />
     <link rel="stylesheet" href="./css/visit-us.css" />
-    <link rel="stylesheet" href="./css/social-section.css" />
     <link rel="stylesheet" href="./css/footer.css" />
   </head>
   <body>
@@ -59,7 +60,6 @@
     <!-- Header -->
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
-        
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
           <img
             src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
@@ -70,7 +70,6 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-          <a href="./catering.html">Catering</a>
           <a href="./index.html#visit">Visit</a>
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
@@ -78,7 +77,7 @@
         </nav>
 
         <div class="site-header__actions">
-          <a href="#order" class="order-btn">Order Now</a>
+          <a href="./order.html" class="order-btn">Order Online</a>
 
           <button
             class="menu-toggle"
@@ -97,26 +96,21 @@
 
       <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
-
-
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-          <a href="./catering.html">Catering</a>
           <a href="./index.html#visit">Visit</a>
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
-          <a href="./menu.html" class="mobile-order-btn">Order Now</a>
+          <a href="./order.html" class="mobile-order-btn">Order Online</a>
         </nav>
-
       </div>
     </header>
 
     <!-- Spacer so fixed top UI doesn't overlap content -->
     <div class="top-offset"></div>
 
-    <!-- hero placeholder -->
     <main>
       <section class="hero-placeholder" id="hero">
         <div class="hero-placeholder__content">
@@ -127,6 +121,7 @@
           </p>
         </div>
       </section>
+
       <section class="hero-section-two" aria-labelledby="hero-two-title">
         <div class="hero-section-two__shell">
           <div class="hero-section-two__media">
@@ -239,8 +234,73 @@
         </div>
       </section>
 
-<!-- Testimonial Slider -->
+      <!-- Large Order Section -->
+      <section class="large-order" aria-labelledby="large-order-title">
+        <div class="large-order__inner">
+          <div class="large-order__content">
+            <p class="large-order__eyebrow">Planning a Large Order?</p>
+            <h2 id="large-order-title">Large Orders Made Easy</h2>
+            <p class="large-order__lead">
+              Ordering for the office, school, team, church group, family gathering, or a larger
+              downtown dessert run? We can help coordinate larger orders with delivery availability
+              for qualifying order sizes.
+            </p>
 
+            <div class="large-order__chips" aria-label="Large order highlights">
+              <span class="large-order__chip">Delivery Available</span>
+              <span class="large-order__chip">Group Orders</span>
+              <span class="large-order__chip">Desserts for Teams</span>
+            </div>
+
+            <!-- <div class="large-order__note">
+              <strong>No staffed event service.</strong>
+              <span>
+                We do accept larger dessert orders and can help guide the best option for pickup or
+                delivery coordination.
+              </span>
+            </div> -->
+
+            <div class="large-order__actions">
+              <a href="./contact.html" class="large-order__btn large-order__btn--primary">
+                Contact Us
+              </a>
+              <a href="./menu.html" class="large-order__btn large-order__btn--secondary">
+                View Menu
+              </a>
+            </div>
+          </div>
+
+          <div class="large-order__visual" aria-hidden="true">
+            <div class="large-order__badge large-order__badge--top">Delivery Available</div>
+            <div class="large-order__badge large-order__badge--bottom">Large Orders</div>
+
+            <div class="large-order__collage">
+              <figure class="large-order__card large-order__card--primary">
+                <img
+                  src="./assets/images/catering/ice cream cart gallery - products on display.png"
+                  alt=""
+                />
+              </figure>
+
+              <figure class="large-order__card large-order__card--secondary">
+                <img
+                  src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png"
+                  alt=""
+                />
+              </figure>
+
+              <figure class="large-order__card large-order__card--accent">
+                <img
+                  src="./assets/images/catering/Dessert Bar and Mixed Treat Table - Main card image.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial Slider -->
       <section class="testimonial-slider" aria-labelledby="testimonial-slider-title">
         <div class="testimonial-slider__inner">
           <div class="testimonial-slider__intro">
@@ -340,8 +400,39 @@
         </div>
       </section>
 
-<!-- Visit Us -->
-  
+      <!-- Google Reviews -->
+      <section class="google-reviews" aria-labelledby="google-reviews-title">
+        <div class="google-reviews__inner">
+          <div class="google-reviews__intro">
+            <p class="google-reviews__eyebrow">Google Reviews</p>
+            <h2 id="google-reviews-title">Love from Downtown Atlanta</h2>
+            <p class="google-reviews__lead">
+              See what guests are saying about Scoops @ Peachtree through our live Google review feed.
+            </p>
+          </div>
+
+          <div class="google-reviews__shell">
+            <div class="google-reviews__glow google-reviews__glow--one" aria-hidden="true"></div>
+            <div class="google-reviews__glow google-reviews__glow--two" aria-hidden="true"></div>
+
+            <div class="google-reviews__meta">
+              <div class="google-reviews__meta-badge">Live Feed</div>
+              <div class="google-reviews__meta-stars" aria-label="Five star reviews">
+                <span>★★★★★</span>
+              </div>
+            </div>
+
+            <div class="google-reviews__widget">
+              <div
+                class="elfsight-app-a44f3460-19a2-4ec0-bb60-834c1dbb4e0c"
+                data-elfsight-app-lazy
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visit Us -->
       <section class="visit-us" id="visit" aria-labelledby="visit-us-title">
         <div class="visit-us__inner">
           <div class="visit-us__intro">
@@ -438,8 +529,7 @@
         </div>
       </section>
 
-<!-- Footer -->
-
+      <!-- Footer -->
       <footer class="site-footer" id="contact" aria-labelledby="footer-title">
         <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
         <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
@@ -515,12 +605,7 @@
         </div>
       </footer>
 
-
-
-    
-
       <section id="menu"></section>
-      <section id="catering"></section>
       <!-- <section id="visit"></section> -->
       <section id="about"></section>
       <section id="gallery"></section>
@@ -528,6 +613,8 @@
       <section id="order"></section>
       <section id="specials"></section>
     </main>
+
+    <script src="https://elfsightcdn.com/platform.js" async></script>
 
     <script src="./js/announcement-header.js"></script>
     <script src="./js/hero-section-2.js"></script>

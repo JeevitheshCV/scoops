@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Online | Scoops at Peachtree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/order-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body class="page-order">
+    <a href="./menu.html" class="announcement-bar" aria-label="See latest updates and specials">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
+    </a>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./catering.html">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./catering.html">Catering</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-offset"></div>
+
+    <main>
+      <section class="order-hero" aria-labelledby="order-hero-title">
+        <div class="order-hero__inner">
+          <p class="order-hero__eyebrow">Order Online</p>
+          <h1 id="order-hero-title">Choose Your Delivery Partner</h1>
+          <p class="order-hero__lead">
+            Order your Scoops favorites online through our delivery partners and enjoy a simple,
+            familiar checkout experience.
+          </p>
+
+          <div class="order-hero__note">
+            <strong>Delivery available with large order.</strong>
+            <span>For larger requests, please contact the store directly for coordination.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-platforms" aria-labelledby="order-platforms-title">
+        <div class="order-platforms__inner">
+          <div class="order-platforms__intro">
+            <p class="order-platforms__eyebrow">Delivery Platforms</p>
+            <h2 id="order-platforms-title">Start Your Order</h2>
+            <p class="order-platforms__text">
+              Choose your preferred platform below and continue directly to the live Scoops listing.
+            </p>
+          </div>
+
+          <div class="order-platforms__grid">
+            <article class="order-card order-card--doordash">
+              <div class="order-card__badge">Fast Delivery</div>
+
+              <div class="order-card__logo-wrap">
+                <img
+                  class="order-card__logo order-card__logo--doordash"
+                  src="./assets/images/delivery/doordash-logo.svg"
+                  alt="DoorDash"
+                />
+              </div>
+
+              <!-- <h3>DoorDash</h3> -->
+              <p>
+                Browse the Scoops @ Peachtree listing on DoorDash and place your order online.
+              </p>
+
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-card__button"
+              >
+                Order on DoorDash
+              </a>
+            </article>
+
+            <article class="order-card order-card--grubhub">
+              <div class="order-card__badge">Popular Pickup & Delivery</div>
+
+              <div class="order-card__logo-wrap">
+                <img
+                  class="order-card__logo order-card__logo--grubhub"
+                  src="./assets/images/delivery/grubhub-logo.svg"
+                  alt="Grubhub"
+                />
+              </div>
+
+              <!-- <h3>Grubhub</h3> -->
+              <p>
+                Continue to Scoops@Peachtree on Grubhub for online ordering and checkout.
+              </p>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-card__button"
+              >
+                Order on Grubhub
+              </a>
+            </article>
+
+            <article class="order-card order-card--uber is-coming-soon" aria-disabled="true">
+              <div class="order-card__badge">Coming Soon</div>
+
+              <div class="order-card__logo-wrap">
+                <img
+                  class="order-card__logo order-card__logo--uber"
+                  src="./assets/images/delivery/ubereats-logo.svg"
+                  alt="Uber Eats"
+                />
+              </div>
+
+              <!-- <h3>Uber Eats</h3> -->
+              <p>
+                We are currently onboarding with Uber Eats. This option will be added once it is live.
+              </p>
+
+              <span class="order-card__button order-card__button--disabled">Coming Soon</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-help" aria-labelledby="order-help-title">
+        <div class="order-help__inner">
+          <div class="order-help__content">
+            <p class="order-help__eyebrow">Need Help?</p>
+            <h2 id="order-help-title">Large order or special request?</h2>
+            <p>
+              If you are ordering for a group, office, or event-sized delivery, contact the store directly.
+              We can help guide the best ordering option based on your request.
+            </p>
+
+            <div class="order-help__actions">
+              <a href="./contact.html" class="order-help__button order-help__button--primary">
+                Contact Us
+              </a>
+              <a href="./menu.html" class="order-help__button order-help__button--secondary">
+                View Menu
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
+      <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
+
+      <div class="site-footer__inner">
+        <div class="site-footer__top">
+          <div class="site-footer__brand">
+            <a href="./index.html" class="site-footer__logo" aria-label="Scoops at Peachtree home">
+              <img
+                src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+                alt="Scoops at Peachtree"
+              />
+            </a>
+            <h2 class="site-footer__title">Scoops at Peachtree</h2>
+            <p class="site-footer__tagline">
+              Handcrafted ice cream, shakes, pastries, and sweet moments in Downtown Atlanta.
+            </p>
+          </div>
+
+          <div class="site-footer__contact">
+            <p class="site-footer__label">Visit</p>
+            <p class="site-footer__text">
+              300 Peachtree St NE, CS-2<br />
+              Atlanta, GA
+            </p>
+            <a href="tel:+14040000000" class="site-footer__phone">(404) 000-0000</a>
+          </div>
+
+          <div class="site-footer__social">
+            <p class="site-footer__label">Follow Along</p>
+            <p class="site-footer__social-text">
+              Follow Scoops for fresh drops, pints, seasonal flavors, and downtown dessert moments.
+            </p>
+          </div>
+        </div>
+
+        <div class="site-footer__bottom">
+          <p>© 2026 Scoops at Peachtree. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/footer.js"></script>
+  </body>
+</html>
