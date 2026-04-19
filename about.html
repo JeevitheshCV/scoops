@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Scoops at Peachtree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/about-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <a href="./menu.html" class="announcement-bar" aria-label="See latest updates and specials">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
+    </a>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <!-- <a href="./index.html#visit">Visit</a> -->
+          <a href="./about.html" aria-current="page">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a href="./order.html" class="order-btn">Order Online</a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+ 
+          <a href="./about.html" aria-current="page">About</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./order.html" class="mobile-order-btn">Order Online</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-offset"></div>
+
+    <main>
+      <section class="about-hero" aria-labelledby="about-hero-title">
+        <div class="about-hero__media">
+          <div class="about-hero__image about-hero__image--one">
+            <img src="./assets/images/hero_section-2.png" alt="Scoops signature desserts and spring flavors" />
+          </div>
+          <div class="about-hero__image about-hero__image--two">
+            <img src="./assets/images/icecream-card.png" alt="Handcrafted ice cream scoops" />
+          </div>
+          <div class="about-hero__orb about-hero__orb--pink" aria-hidden="true"></div>
+          <div class="about-hero__orb about-hero__orb--blue" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-hero__inner">
+          <p class="about-eyebrow about-hero__eyebrow reveal">About Scoops @ Peachtree</p>
+          <h1 id="about-hero-title" class="about-hero__title">
+            <span class="reveal reveal--delay-1">Sweet Moments</span>
+            <span class="reveal reveal--delay-2">in the Heart</span>
+            <span class="reveal reveal--delay-3">of Downtown Atlanta</span>
+          </h1>
+          <p class="about-hero__lead reveal reveal--delay-4">
+            Scoops @ Peachtree is where handcrafted ice cream, bold bubble tea, milkshakes,
+            pastries, and downtown dessert energy all come together in one joyful stop.
+          </p>
+
+          <div class="about-hero__actions reveal reveal--delay-5">
+            <a href="./menu.html" class="about-hero__btn about-hero__btn--primary">View Menu</a>
+            <a href="./order.html" class="about-hero__btn about-hero__btn--secondary">Order Online</a>
+          </div>
+
+          <div class="about-hero__tags reveal reveal--delay-6" aria-label="Brand highlights">
+            <span>Handcrafted Favorites</span>
+            <span>Downtown Atlanta</span>
+            <span>Sweet Stop Energy</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-marquee" aria-label="Brand statements">
+        <div class="about-marquee__track">
+          <div class="about-marquee__content">
+            <span>Handcrafted Flavor</span>
+            <span>Downtown Energy</span>
+            <span>Sweet Comfort</span>
+            <span>Bold Sips</span>
+            <span>Fresh Scoops</span>
+            <span>Memorable Treats</span>
+          </div>
+          <div class="about-marquee__content" aria-hidden="true">
+            <span>Handcrafted Flavor</span>
+            <span>Downtown Energy</span>
+            <span>Sweet Comfort</span>
+            <span>Bold Sips</span>
+            <span>Fresh Scoops</span>
+            <span>Memorable Treats</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-story section-reveal" aria-labelledby="about-story-title">
+        <div class="about-story__inner">
+          <div class="about-story__sticky">
+            <p class="about-eyebrow">Our Story</p>
+            <h2 id="about-story-title">A dessert stop built for cravings worth remembering.</h2>
+            <p>
+              Scoops @ Peachtree blends handcrafted flavor, comforting classics, and playful
+              modern treats for downtown visitors, locals, and anyone chasing a good dessert moment.
+            </p>
+          </div>
+
+          <div class="about-story__panels">
+            <article class="story-panel section-reveal">
+              <span class="story-panel__number">01</span>
+              <h3>Made for the sweet side of the city</h3>
+              <p>
+                From a quick scoop after a long day to a stop before exploring downtown Atlanta,
+                the shop is designed to feel fun, welcoming, and easy to love.
+              </p>
+            </article>
+
+            <article class="story-panel section-reveal">
+              <span class="story-panel__number">02</span>
+              <h3>More than just ice cream</h3>
+              <p>
+                Scoops brings together creamy ice cream, thick milkshakes, bubble tea, pastries,
+                and dessert favorites so every visit has something to crave.
+              </p>
+            </article>
+
+            <article class="story-panel section-reveal">
+              <span class="story-panel__number">03</span>
+              <h3>Built around the experience</h3>
+              <p>
+                It is not only about flavor. It is about atmosphere, color, downtown energy,
+                and small moments that feel like a reward.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-banners" aria-labelledby="about-banners-title">
+        <div class="about-banners__intro section-reveal">
+          <p class="about-eyebrow">Signature Offerings</p>
+          <h2 id="about-banners-title">A menu built for every kind of craving</h2>
+        </div>
+
+        <div class="about-banner about-banner--icecream section-reveal">
+          <div class="about-banner__content">
+            <p class="about-banner__label">Ice Cream</p>
+            <h3>Handcrafted scoops with playful, southern-inspired flavor.</h3>
+            <p>
+              Signature scoops made for comfort, fun, and that perfect dessert break.
+            </p>
+          </div>
+          <div class="about-banner__media">
+            <img src="./assets/images/icecream-card.png" alt="Scoops ice cream selection" />
+          </div>
+        </div>
+
+        <div class="about-banner about-banner--drinks section-reveal">
+          <div class="about-banner__content">
+            <p class="about-banner__label">Bubble Tea & Drinks</p>
+            <h3>Bold sips, cool blends, and bright flavor in every cup.</h3>
+            <p>
+              Fruit-forward teas and creamy drinks that bring a fresh twist to the menu.
+            </p>
+          </div>
+          <div class="about-banner__media">
+            <img src="./assets/images/BubbleTea andDrinks-card.png" alt="Bubble tea and drinks" />
+          </div>
+        </div>
+
+        <div class="about-banner about-banner--milkshakes section-reveal">
+          <div class="about-banner__content">
+            <p class="about-banner__label">Milkshakes</p>
+            <h3>Thick, creamy, rich, and unapologetically dessert-first.</h3>
+            <p>
+              Blended favorites that turn classic sweetness into something sip-worthy.
+            </p>
+          </div>
+          <div class="about-banner__media">
+            <img src="./assets/images/Milkshakes-card.png" alt="Milkshakes at Scoops" />
+          </div>
+        </div>
+
+        <div class="about-banner about-banner--pastries section-reveal">
+          <div class="about-banner__content">
+            <p class="about-banner__label">Pastries</p>
+            <h3>Fresh baked sweetness to round out every visit.</h3>
+            <p>
+              Soft, flaky, and ready to pair with scoops, sips, or a slower downtown moment.
+            </p>
+          </div>
+          <div class="about-banner__media">
+            <img src="./assets/images/Pastries- card.png" alt="Fresh pastries and baked treats" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about-collage section-reveal" aria-labelledby="about-collage-title">
+        <div class="about-collage__inner">
+          <div class="about-collage__statement">
+            <p class="about-eyebrow">The Experience</p>
+            <h2 id="about-collage-title">Made for cravings, color, and sweet downtown pauses.</h2>
+            <p>
+              Scoops is designed to feel bright, uplifting, and memorable — the kind of place
+              that turns a simple dessert run into part of the day’s best moment.
+            </p>
+          </div>
+
+          <div class="about-collage__visuals">
+            <figure class="about-collage__card about-collage__card--one">
+              <img src="./assets/images/hero_section-2.png" alt="Spring desserts and signature flavors" />
+            </figure>
+            <figure class="about-collage__card about-collage__card--two">
+              <img src="./assets/images/coffee-pops-card.png" alt="Coffee and pops at Scoops" />
+            </figure>
+            <figure class="about-collage__card about-collage__card--three">
+              <img src="./assets/images/Milkshakes-card.png" alt="Signature milkshake lineup" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-location section-reveal" aria-labelledby="about-location-title">
+        <div class="about-location__backdrop" aria-hidden="true"></div>
+        <div class="about-location__inner">
+          <p class="about-eyebrow about-location__eyebrow">Downtown Atlanta</p>
+          <h2 id="about-location-title">Right where the city meets dessert time.</h2>
+          <p class="about-location__text">
+            Located in the heart of downtown, Scoops @ Peachtree is an easy stop for families,
+            locals, visitors, and anyone exploring nearby attractions with room for one more treat.
+          </p>
+
+          <div class="about-location__chips" aria-label="Location highlights">
+            <span>Easy to Visit</span>
+            <span>Sweet Downtown Stop</span>
+            <span>Near Atlanta Attractions</span>
+          </div>
+
+          <a href="./index.html#visit" class="about-location__button">Plan Your Visit</a>
+        </div>
+      </section>
+
+      <section class="about-large-order section-reveal" aria-labelledby="about-large-order-title">
+        <div class="about-large-order__inner">
+          <div class="about-large-order__copy">
+            <p class="about-eyebrow">Large Orders</p>
+            <h2 id="about-large-order-title">Planning something bigger?</h2>
+            <p>
+              Larger dessert orders are always welcome. If you are ordering for a group, office,
+              or gathering, reach out and we can help point you in the right direction.
+            </p>
+          </div>
+
+          <div class="about-large-order__actions">
+            <span class="about-large-order__badge">Delivery Available</span>
+            <a href="./contact.html" class="about-large-order__btn about-large-order__btn--primary">Contact Us</a>
+            <a href="./order.html" class="about-large-order__btn about-large-order__btn--secondary">Order Online</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-final-cta section-reveal" aria-labelledby="about-final-cta-title">
+        <div class="about-final-cta__inner">
+          <p class="about-eyebrow">Take the Next Step</p>
+          <h2 id="about-final-cta-title">Come for the flavor. Stay for the moment.</h2>
+          <p>
+            Explore the menu, order online, or make Scoops @ Peachtree part of your next downtown stop.
+          </p>
+
+          <div class="about-final-cta__actions">
+            <a href="./menu.html" class="about-final-cta__btn about-final-cta__btn--primary">View Menu</a>
+            <a href="./order.html" class="about-final-cta__btn about-final-cta__btn--secondary">Order Online</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="contact" aria-labelledby="footer-title">
+        <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
+        <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
+
+        <div class="site-footer__inner">
+          <div class="site-footer__top">
+            <div class="site-footer__brand">
+              <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
+                <img
+                  src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+                  alt="Scoops @ Peachtree"
+                />
+              </a>
+
+              <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
+              <p class="site-footer__tagline">
+                True southern ice cream flavors in the heart of Downtown Atlanta.
+              </p>
+            </div>
+
+            <div class="site-footer__contact">
+              <p class="site-footer__label">Visit</p>
+              <p class="site-footer__text">300 Peachtree St NE, CS-2, Atlanta</p>
+              <a class="site-footer__phone" href="tel:+14044617290">+1 404-461-7290</a>
+              <a class="site-footer__directions" href="./index.html#visit">Get Directions</a>
+            </div>
+
+            <div class="site-footer__social">
+              <p class="site-footer__label">Stay Connected</p>
+              <p class="site-footer__social-text">
+                Follow for flavors, specials, and limited drops.
+              </p>
+
+              <div class="site-footer__icons" aria-label="Footer social media links">
+                <a class="site-footer__icon" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H7.2v3h2.8v8h3.5Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="X" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.9 3H21l-6.9 7.9L22.2 21h-6.4l-5-6-5.2 6H3.5l7.4-8.4L2.2 3h6.5l4.5 5.4L18.9 3Zm-1.1 16h1.8L7.2 4.9H5.3L17.8 19Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21.6 8.4a2.9 2.9 0 0 0-2-2.1C17.8 5.8 12 5.8 12 5.8s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2.1C2 10.2 2 12 2 12s0 1.8.4 3.6a2.9 2.9 0 0 0 2 2.1c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2.1c.4-1.8.4-3.6.4-3.6s0-1.8-.4-3.6ZM10 15.2V8.8l5.2 3.2L10 15.2Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M14.7 3c.4 2 1.6 3.5 3.5 4.2v2.7a7.1 7.1 0 0 1-3.4-1v5.8a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.8a2.7 2.7 0 1 0 1.9 2.6V3h2.7Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <p>© 2026 Scoops @ Peachtree. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/about-page.js"></script>
+  </body>
+</html>

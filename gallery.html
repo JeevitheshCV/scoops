@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Scoops at Peachtree</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/announcement-header.css" />
+    <link rel="stylesheet" href="./css/gallery-page.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <a href="./menu.html" class="announcement-bar" aria-label="See latest updates and specials">
+      <div class="announcement-bar__track">
+        <div class="announcement-bar__content">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+
+        <div class="announcement-bar__content" aria-hidden="true">
+          <span>NEW! Spring flavors just dropped.</span>
+          <span class="dot">•</span>
+          <span>NEW! Pastries just dropped.</span>
+          <span class="dot">•</span>
+          <span>Flavor of the Week</span>
+          <span class="dot">•</span>
+          <span>Open late for your dessert cravings</span>
+          <span class="dot">•</span>
+          <span>Fast delivery in Downtown Atlanta</span>
+          <span class="dot">•</span>
+        </div>
+      </div>
+    </a>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
+          <img
+            src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+            alt="Scoops at Peachtree"
+          />
+        </a>
+
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html" aria-current="page">Gallery</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+
+        <div class="site-header__actions">
+          <a href="./order.html" class="order-btn">Order Online</a>
+
+          <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="mobileMenu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-menu__nav" aria-label="Mobile navigation">
+          <a href="./index.html">Home</a>
+          <a href="./menu.html">Menu</a>
+          <a href="./index.html#visit">Visit</a>
+          <a href="./about.html">About</a>
+          <a href="./gallery.html" aria-current="page">Gallery</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./order.html" class="mobile-order-btn">Order Online</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="top-offset"></div>
+
+    <main>
+      <section class="gallery-hero" aria-labelledby="gallery-hero-title">
+        <div class="gallery-hero__media">
+          <figure class="gallery-hero__card gallery-hero__card--main">
+            <!-- Replace with: best high-quality signature hero image showing premium desserts / signature products / strongest brand visual -->
+            <img src="./assets/images/hero_section-2.png" alt="Scoops signature desserts and seasonal flavors" />
+          </figure>
+
+          <figure class="gallery-hero__card gallery-hero__card--secondary">
+            <!-- Replace with: strong bubble tea or drink close-up with clean background -->
+            <img src="./assets/images/BubbleTea andDrinks-card.png" alt="Bubble tea and refreshing drinks" />
+          </figure>
+        </div>
+
+        <div class="gallery-hero__inner">
+          <p class="gallery-eyebrow reveal">Gallery</p>
+          <h1 id="gallery-hero-title" class="gallery-hero__title">
+            <span class="reveal reveal--delay-1">Flavor, Color,</span>
+            <span class="reveal reveal--delay-2">and Sweet Moments</span>
+            <span class="reveal reveal--delay-3">at Scoops @ Peachtree</span>
+          </h1>
+          <p class="gallery-hero__lead reveal reveal--delay-4">
+            A closer look at the scoops, sips, shakes, pastries, and downtown dessert energy that
+            make every visit feel a little sweeter.
+          </p>
+
+          <div class="gallery-hero__actions reveal reveal--delay-5">
+            <a href="./menu.html" class="gallery-hero__btn gallery-hero__btn--primary">View Menu</a>
+            <a href="./order.html" class="gallery-hero__btn gallery-hero__btn--secondary">Order Online</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-featured section-reveal" aria-labelledby="gallery-featured-title">
+        <div class="gallery-featured__inner">
+          <div class="gallery-featured__intro">
+            <p class="gallery-eyebrow">Featured Moments</p>
+            <h2 id="gallery-featured-title">A quick look at the signatures</h2>
+          </div>
+
+          <div class="gallery-featured__grid">
+            <figure class="gallery-tile gallery-tile--large">
+              <!-- Replace with: best ice cream hero shot / signature scoop close-up -->
+              <img src="./assets/images/icecream-card.png" alt="Ice cream scoops and treats" />
+            </figure>
+
+            <figure class="gallery-tile">
+              <!-- Replace with: premium milkshake image with strong lighting -->
+              <img src="./assets/images/Milkshakes-card.png" alt="Creamy milkshakes" />
+            </figure>
+
+            <figure class="gallery-tile">
+              <!-- Replace with: detailed pastry image or plated baked item -->
+              <img src="./assets/images/Pastries- card.png" alt="Pastries and baked treats" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-band section-reveal" aria-labelledby="gallery-icecream-title">
+        <div class="gallery-band__inner">
+          <div class="gallery-band__intro">
+            <p class="gallery-band__label">Ice Cream</p>
+            <h2 id="gallery-icecream-title">Fresh scoops, rich color, and dessert comfort</h2>
+          </div>
+
+          <div class="gallery-band__layout gallery-band__layout--editorial">
+            <figure class="gallery-frame gallery-frame--feature">
+              <!-- Replace with: strongest real scoop image / signature flavor close-up / cone shot -->
+              <img src="./assets/images/icecream-card.png" alt="Signature ice cream scoops" />
+            </figure>
+
+            <div class="gallery-band__stack">
+              <figure class="gallery-frame">
+                <!-- Replace with: alternate ice cream detail shot / toppings / cup presentation -->
+                <img src="./assets/images/hero_section-2.png" alt="Seasonal dessert presentation" />
+              </figure>
+
+              <figure class="gallery-frame">
+                <!-- Replace with: second supporting ice cream image / customer-ready serving shot -->
+                <img src="./assets/images/icecream-card.png" alt="Ice cream treat presentation" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-band section-reveal" aria-labelledby="gallery-drinks-title">
+        <div class="gallery-band__inner">
+          <div class="gallery-band__intro">
+            <p class="gallery-band__label">Bubble Tea & Drinks</p>
+            <h2 id="gallery-drinks-title">Bright, bold, and made to sip slow</h2>
+          </div>
+
+          <div class="gallery-band__layout gallery-band__layout--mosaic">
+            <figure class="gallery-frame gallery-frame--wide">
+              <!-- Replace with: standout bubble tea lineup / multiple drinks together / premium drink arrangement -->
+              <img src="./assets/images/BubbleTea andDrinks-card.png" alt="Bubble tea and fruit drinks" />
+            </figure>
+
+            <figure class="gallery-frame">
+              <!-- Replace with: close-up of one drink / topping detail / fruit tea shot -->
+              <img src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png" alt="Drink lineup" />
+            </figure>
+
+            <figure class="gallery-frame">
+              <!-- Replace with: second drink detail shot / cup branding / colorful boba scene -->
+              <img src="./assets/images/BubbleTea andDrinks-card.png" alt="Refreshing drinks" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-banner section-reveal" aria-labelledby="gallery-banner-title">
+        <div class="gallery-banner__media">
+          <!-- Replace with: premium wide atmosphere image / signature product spread / best full-width visual -->
+          <img src="./assets/images/hero_section-2.png" alt="Scoops dessert spread" />
+        </div>
+
+        <div class="gallery-banner__content">
+          <p class="gallery-eyebrow gallery-banner__eyebrow">The Mood</p>
+          <h2 id="gallery-banner-title">Every stop should feel a little more colorful</h2>
+          <p>
+            Scoops blends handcrafted dessert favorites with downtown energy, easy indulgence,
+            and a bright visual identity that makes every visit memorable.
+          </p>
+        </div>
+      </section>
+
+      <section class="gallery-collage section-reveal" aria-labelledby="gallery-collage-title">
+        <div class="gallery-collage__inner">
+          <div class="gallery-collage__intro">
+            <p class="gallery-eyebrow">Milkshakes & Pastries</p>
+            <h2 id="gallery-collage-title">Rich, creamy, flaky, and worth the detour</h2>
+          </div>
+
+          <div class="gallery-collage__layout">
+            <figure class="gallery-collage__card gallery-collage__card--main">
+              <!-- Replace with: best premium milkshake hero image -->
+              <img src="./assets/images/Milkshakes-card.png" alt="Milkshakes at Scoops" />
+            </figure>
+
+            <figure class="gallery-collage__card gallery-collage__card--top">
+              <!-- Replace with: pastry detail shot / baked item close-up / plated pastry -->
+              <img src="./assets/images/Pastries- card.png" alt="Pastries and baked treats" />
+            </figure>
+
+            <figure class="gallery-collage__card gallery-collage__card--bottom">
+              <!-- Replace with: coffee, dessert pairing, or second pastry image -->
+              <img src="./assets/images/coffee-pops-card.png" alt="Coffee and pops" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-store section-reveal" aria-labelledby="gallery-store-title">
+        <div class="gallery-store__inner">
+          <div class="gallery-store__copy">
+            <p class="gallery-eyebrow">Store & Space</p>
+            <h2 id="gallery-store-title">A downtown dessert stop with real energy</h2>
+            <p>
+              The gallery is not only about products. It is also about the feeling of stepping into
+              a bright, memorable sweet stop in the heart of Atlanta.
+            </p>
+
+            <a href="./index.html#visit" class="gallery-store__button">Plan Your Visit</a>
+          </div>
+
+          <div class="gallery-store__visuals">
+            <figure class="gallery-frame gallery-store__visual gallery-store__visual--primary">
+              <!-- Replace with: storefront / interior / counter shot / space atmosphere image -->
+              <img src="./assets/images/catering/hero.png" alt="Scoops brand atmosphere" />
+            </figure>
+
+            <figure class="gallery-frame gallery-store__visual gallery-store__visual--secondary">
+              <!-- Replace with: second store/interior shot or downtown-related visual -->
+              <img src="./assets/images/catering/Ice Cream Cart - Main Card.png" alt="Sweet shop experience" />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-large-order section-reveal" aria-labelledby="gallery-large-order-title">
+        <div class="gallery-large-order__inner">
+          <div class="gallery-large-order__intro">
+            <p class="gallery-eyebrow">Larger Orders</p>
+            <h2 id="gallery-large-order-title">Bigger dessert energy, same Scoops feel</h2>
+            <p>
+              Larger dessert orders can still feel vibrant, shareable, and made for the moment.
+            </p>
+          </div>
+
+          <div class="gallery-large-order__grid">
+            <figure class="gallery-frame">
+              <!-- Replace with: grouped product lineup for larger order / dessert-ready arrangement -->
+              <img src="./assets/images/catering/ice cream cart gallery - products on display.png" alt="Larger order product display" />
+            </figure>
+
+            <figure class="gallery-frame">
+              <!-- Replace with: boxed desserts / grouped pastries / pickup-ready arrangement -->
+              <img src="./assets/images/catering/Dessert Bar and Mixed Treat Table - Main card image.png" alt="Dessert arrangement" />
+            </figure>
+
+            <figure class="gallery-frame">
+              <!-- Replace with: drinks lineup for larger order / multiple items together -->
+              <img src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png" alt="Drink lineup for larger order" />
+            </figure>
+          </div>
+
+          <div class="gallery-large-order__actions">
+            <a href="./contact.html" class="gallery-large-order__btn gallery-large-order__btn--primary">Contact Us</a>
+            <a href="./order.html" class="gallery-large-order__btn gallery-large-order__btn--secondary">Order Online</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-final-cta section-reveal" aria-labelledby="gallery-final-cta-title">
+        <div class="gallery-final-cta__inner">
+          <p class="gallery-eyebrow">Ready for More?</p>
+          <h2 id="gallery-final-cta-title">See the menu, order online, or stop by in person</h2>
+          <p>
+            Explore the full menu and make Scoops @ Peachtree part of your next downtown dessert run.
+          </p>
+
+          <div class="gallery-final-cta__actions">
+            <a href="./menu.html" class="gallery-final-cta__btn gallery-final-cta__btn--primary">View Menu</a>
+            <a href="./order.html" class="gallery-final-cta__btn gallery-final-cta__btn--secondary">Order Online</a>
+          </div>
+        </div>
+      </section>
+
+      <footer class="site-footer" id="contact" aria-labelledby="footer-title">
+        <div class="site-footer__glow site-footer__glow--left" aria-hidden="true"></div>
+        <div class="site-footer__glow site-footer__glow--right" aria-hidden="true"></div>
+
+        <div class="site-footer__inner">
+          <div class="site-footer__top">
+            <div class="site-footer__brand">
+              <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
+                <img
+                  src="https://scoopsatpeachtree.com/wp-content/uploads/2025/05/scoops_logo.png"
+                  alt="Scoops @ Peachtree"
+                />
+              </a>
+
+              <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
+              <p class="site-footer__tagline">
+                True southern ice cream flavors in the heart of Downtown Atlanta.
+              </p>
+            </div>
+
+            <div class="site-footer__contact">
+              <p class="site-footer__label">Visit</p>
+              <p class="site-footer__text">300 Peachtree St NE, CS-2, Atlanta</p>
+              <a class="site-footer__phone" href="tel:+14044617290">+1 404-461-7290</a>
+              <a class="site-footer__directions" href="./index.html#visit">Get Directions</a>
+            </div>
+
+            <div class="site-footer__social">
+              <p class="site-footer__label">Stay Connected</p>
+              <p class="site-footer__social-text">
+                Follow for flavors, specials, and limited drops.
+              </p>
+
+              <div class="site-footer__icons" aria-label="Footer social media links">
+                <a class="site-footer__icon" href="#" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.6-1.6h1.7V4.8c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.4V11H7.2v3h2.8v8h3.5Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="X" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M18.9 3H21l-6.9 7.9L22.2 21h-6.4l-5-6-5.2 6H3.5l7.4-8.4L2.2 3h6.5l4.5 5.4L18.9 3Zm-1.1 16h1.8L7.2 4.9H5.3L17.8 19Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                    <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M21.6 8.4a2.9 2.9 0 0 0-2-2.1C17.8 5.8 12 5.8 12 5.8s-5.8 0-7.6.5a2.9 2.9 0 0 0-2 2.1C2 10.2 2 12 2 12s0 1.8.4 3.6a2.9 2.9 0 0 0 2 2.1c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.9 2.9 0 0 0 2-2.1c.4-1.8.4-3.6.4-3.6s0-1.8-.4-3.6ZM10 15.2V8.8l5.2 3.2L10 15.2Z"/>
+                  </svg>
+                </a>
+
+                <a class="site-footer__icon" href="#" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M14.7 3c.4 2 1.6 3.5 3.5 4.2v2.7a7.1 7.1 0 0 1-3.4-1v5.8a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.8a2.7 2.7 0 1 0 1.9 2.6V3h2.7Z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="site-footer__bottom">
+            <p>© 2026 Scoops @ Peachtree. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/announcement-header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/gallery-page.js"></script>
+  </body>
+</html>
