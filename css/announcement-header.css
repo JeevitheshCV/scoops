@@ -11,8 +11,8 @@
   --cta-hover: #5f1313;
   --container: 1320px;
   --announcement-height: 38px;
-  --header-height: 94px;
-  --header-height-scrolled: 78px;
+  --header-height: 118px;
+  --header-height-scrolled: 96px;
   --radius-pill: 999px;
   --transition: 0.35s ease;
 }
@@ -197,7 +197,7 @@ body {
 
 .site-logo img {
   width: auto;
-  height: 58px;
+  height: 82px;
   display: block;
   object-fit: contain;
   transition:
@@ -207,7 +207,7 @@ body {
 }
 
 .site-header.is-condensed .site-logo img {
-  height: 50px;
+  height: 68px;
 }
 
 .site-nav {
@@ -413,8 +413,8 @@ body {
 
 @media (max-width: 980px) {
   :root {
-    --header-height: 82px;
-    --header-height-scrolled: 74px;
+    --header-height: 96px;
+    --header-height-scrolled: 84px;
   }
 
   .site-header__inner {
@@ -437,7 +437,7 @@ body {
   }
 
   .site-logo img {
-    height: 52px;
+    height: 64px;
   }
 
   .site-header.is-condensed .site-logo img {
@@ -462,7 +462,7 @@ body {
   .site-header__inner {
     width: min(calc(100% - 20px), var(--container));
     margin-top: 8px;
-    padding: 0 12px 0 14px;
+    padding: 0 18px 0 20px;
     border-radius: 20px;
   }
 
@@ -471,11 +471,11 @@ body {
   }
 
   .site-logo img {
-    height: 46px;
+    height: 64px;
   }
 
   .site-header.is-condensed .site-logo img {
-    height: 42px;
+    height: 56px;
   }
 
   .order-btn {
