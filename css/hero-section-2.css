@@ -101,10 +101,10 @@
   overflow: hidden;
   padding: clamp(4.75rem, 8vw, 7.25rem) 1.25rem clamp(3.4rem, 5vw, 5rem);
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 211, 223, 0.72), transparent 26%),
-    radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.42), transparent 22%),
-    radial-gradient(circle at 50% 100%, rgba(255, 234, 238, 0.65), transparent 28%),
-    linear-gradient(180deg, #fffaf8 0%, #fff5f0 54%, #fffaf7 100%);
+    radial-gradient(circle at 12% 12%, rgba(255, 211, 223, 0.28), transparent 26%),
+    radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.18), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.18), transparent 28%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 54%, #dfead8 100%);
 }
 
 .hero-placeholder::before {
@@ -319,7 +319,7 @@
   position: relative;
   margin: 0;
   padding: 1rem 0 2rem;
-  background: linear-gradient(180deg, #fffdfa 0%, #f8f4ee 100%);
+  background: linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .hero-section-two__shell {

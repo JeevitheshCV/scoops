@@ -2,12 +2,13 @@
   position: relative;
   padding: 4.5rem 1rem 1.4rem;
   background:
-    radial-gradient(circle at 14% 18%, rgba(255, 208, 154, 0.18), transparent 22%),
-    radial-gradient(circle at 86% 22%, rgba(232, 140, 162, 0.14), transparent 20%),
-    linear-gradient(180deg, #e7c9aa 0%, #d8ae86 36%, #c18d67 100%);
-  color: #3e241d;
+    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.07), transparent 22%),
+    radial-gradient(circle at 86% 22%, rgba(232, 140, 162, 0.06), transparent 20%),
+    linear-gradient(180deg, #97ab88 0%, #839773 38%, #6f8461 100%);
+  color: #1e271c;
   overflow: hidden;
 }
+
 
 .site-footer__glow {
   position: absolute;
@@ -68,10 +69,10 @@
   max-width: 190px;
   padding: 0.6rem 0.9rem;
   border-radius: 22px;
-  background: rgba(255, 248, 239, 0.55);
+  background: rgba(245, 248, 240, 0.6);
   backdrop-filter: blur(6px);
   box-shadow:
-    0 16px 36px rgba(109, 63, 36, 0.08),
+    0 16px 36px rgba(60, 72, 56, 0.08),
     inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
@@ -175,9 +176,16 @@
   height: 20px;
 }
 
-.site-footer__bottom {
-  padding-top: 1.3rem;
-  border-top: 1px solid rgba(103, 59, 47, 0.14);
+.site-footer__logo {
+  display: inline-flex;
+  max-width: 190px;
+  padding: 0.6rem 0.9rem;
+  border-radius: 22px;
+  background: rgba(245, 248, 240, 0.6);
+  backdrop-filter: blur(6px);
+  box-shadow:
+    0 16px 36px rgba(60, 72, 56, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 }
 
 .site-footer__bottom p {

@@ -15,8 +15,8 @@ body.page-order {
   font-family: "Manrope", sans-serif;
   color: var(--order-text);
   background:
-    radial-gradient(circle at top left, rgba(255, 228, 228, 0.46), transparent 28%),
-    linear-gradient(180deg, #fffdfb 0%, #fff8f4 46%, #fffdfb 100%);
+    radial-gradient(circle at top left, rgba(255, 228, 228, 0.16), transparent 28%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 46%, #dfead8 100%);
   overflow-x: hidden;
 }
 
@@ -116,9 +116,9 @@ body.page-order {
   position: relative;
   padding: clamp(3.5rem, 6vw, 5.5rem) 1rem;
   background:
-    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.22), transparent 18%),
-    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.16), transparent 16%),
-    linear-gradient(180deg, #f5f2ed 0%, #fcfaf7 32%, #fffaf7 100%);
+    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.12), transparent 18%),
+    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.1), transparent 16%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 32%, #dfead8 100%);
 }
 
 .order-platforms__inner,
@@ -304,7 +304,7 @@ body.page-order {
 
 .order-help {
   padding: clamp(3.5rem, 6vw, 5rem) 1rem clamp(4.2rem, 6vw, 5.6rem);
-  background: linear-gradient(180deg, #fffaf7 0%, #f4efea 100%);
+  background: linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .order-help__content {

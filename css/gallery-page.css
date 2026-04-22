@@ -3,8 +3,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: #261a1a;
   background:
-    radial-gradient(circle at top left, rgba(255, 228, 228, 0.34), transparent 28%),
-    linear-gradient(180deg, #fffdfa 0%, #fff8f4 50%, #fffdfb 100%);
+    radial-gradient(circle at top left, rgba(255, 228, 228, 0.16), transparent 28%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 50%, #dfead8 100%);
   overflow-x: hidden;
 }
 
@@ -33,9 +33,9 @@ body {
   padding: clamp(4rem, 6vw, 5rem) 1rem clamp(3.5rem, 6vw, 5rem);
   overflow: hidden;
   background:
-    radial-gradient(circle at 14% 16%, rgba(255, 214, 224, 0.24), transparent 20%),
-    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.16), transparent 18%),
-    linear-gradient(180deg, #fffaf8 0%, #fff4ef 58%, #fffaf7 100%);
+    radial-gradient(circle at 14% 16%, rgba(255, 214, 224, 0.14), transparent 20%),
+    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.1), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 58%, #dfead8 100%);
 }
 
 .gallery-hero__inner {
@@ -179,8 +179,8 @@ body {
 
 .gallery-featured {
   background:
-    radial-gradient(circle at 10% 14%, rgba(255, 214, 224, 0.16), transparent 16%),
-    linear-gradient(180deg, #fffaf7 0%, #f5f1ec 100%);
+    radial-gradient(circle at 10% 14%, rgba(255, 214, 224, 0.1), transparent 16%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .gallery-featured__inner,
@@ -267,8 +267,8 @@ body {
 
 .gallery-band {
   background:
-    radial-gradient(circle at 88% 12%, rgba(133, 216, 210, 0.1), transparent 18%),
-    linear-gradient(180deg, #f5f1ec 0%, #fffaf7 100%);
+    radial-gradient(circle at 88% 12%, rgba(133, 216, 210, 0.08), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .gallery-band__label {
@@ -365,7 +365,7 @@ body {
 
 .gallery-collage {
   background:
-    linear-gradient(180deg, #fffaf7 0%, #f7f2ed 100%);
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .gallery-collage__layout {
@@ -403,8 +403,8 @@ body {
 
 .gallery-store {
   background:
-    radial-gradient(circle at 12% 14%, rgba(248, 193, 205, 0.14), transparent 18%),
-    linear-gradient(180deg, #f7f2ed 0%, #fffaf7 100%);
+    radial-gradient(circle at 12% 14%, rgba(248, 193, 205, 0.1), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .gallery-store__inner {
@@ -488,7 +488,7 @@ body {
 
 .gallery-large-order {
   background:
-    linear-gradient(180deg, #fffaf7 0%, #f4efea 100%);
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .gallery-large-order__grid {
@@ -506,8 +506,8 @@ body {
 
 .gallery-final-cta {
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.16), transparent 18%),
-    linear-gradient(180deg, #f4efea 0%, #fffaf7 100%);
+    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.1), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .gallery-final-cta__inner {

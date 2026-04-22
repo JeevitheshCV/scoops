@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(3.5rem, 6vw, 5.5rem) 1rem clamp(4rem, 6vw, 5.5rem);
   background:
-    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.26), transparent 18%),
-    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.2), transparent 16%),
-    linear-gradient(180deg, #f5f2ed 0%, #fcfaf7 26%, #fffaf7 100%);
+    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.18), transparent 18%),
+    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.12), transparent 16%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 26%, #dfead8 100%);
 }
 
 .menu-preview__inner {

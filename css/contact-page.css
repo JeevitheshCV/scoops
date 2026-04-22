@@ -3,8 +3,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: #261a1a;
   background:
-    radial-gradient(circle at top left, rgba(255, 232, 232, 0.42), transparent 30%),
-    linear-gradient(180deg, #fffdfb 0%, #fff9f5 46%, #fffdfb 100%);
+    radial-gradient(circle at top left, rgba(255, 232, 232, 0.16), transparent 30%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 46%, #dfead8 100%);
   overflow-x: hidden;
 }
 
@@ -14,9 +14,9 @@ body {
   position: relative;
   padding: clamp(4.6rem, 7vw, 6.8rem) 1rem clamp(2.8rem, 5vw, 4rem);
   background:
-    radial-gradient(circle at 12% 14%, rgba(255, 211, 223, 0.62), transparent 24%),
-    radial-gradient(circle at 86% 18%, rgba(164, 179, 253, 0.24), transparent 22%),
-    linear-gradient(180deg, #fffaf8 0%, #fff4ef 62%, #fffaf7 100%);
+    radial-gradient(circle at 12% 14%, rgba(255, 211, 223, 0.18), transparent 24%),
+    radial-gradient(circle at 86% 18%, rgba(164, 179, 253, 0.12), transparent 22%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 62%, #dfead8 100%);
   overflow: hidden;
 }
 
@@ -74,8 +74,8 @@ body {
 .contact-quick {
   padding: clamp(3.2rem, 5vw, 4.8rem) 1rem;
   background:
-    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.2), transparent 16%),
-    linear-gradient(180deg, #fffaf7 0%, #f7f2ed 100%);
+    radial-gradient(circle at 10% 10%, rgba(255, 214, 224, 0.12), transparent 16%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .contact-quick__inner,
@@ -196,8 +196,8 @@ body {
 .contact-main {
   padding: clamp(3.6rem, 6vw, 5.6rem) 1rem;
   background:
-    radial-gradient(circle at 88% 12%, rgba(133, 216, 210, 0.12), transparent 18%),
-    linear-gradient(180deg, #f4efea 0%, #fffaf7 100%);
+    radial-gradient(circle at 88% 12%, rgba(133, 216, 210, 0.08), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .contact-main__inner {
@@ -363,8 +363,8 @@ body {
 .contact-visit {
   padding: clamp(3.8rem, 6vw, 5.6rem) 1rem;
   background:
-    radial-gradient(circle at 12% 14%, rgba(248, 193, 205, 0.14), transparent 18%),
-    linear-gradient(180deg, #fffaf7 0%, #f5f1ec 100%);
+    radial-gradient(circle at 12% 14%, rgba(248, 193, 205, 0.1), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .contact-visit__intro {
@@ -478,7 +478,7 @@ body {
 
 .contact-order-cta {
   padding: clamp(3.2rem, 5vw, 4.8rem) 1rem clamp(4rem, 6vw, 5.4rem);
-  background: linear-gradient(180deg, #f5f1ec 0%, #fffaf7 100%);
+  background: linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .contact-order-cta__inner {

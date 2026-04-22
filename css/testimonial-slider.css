@@ -1,7 +1,7 @@
 .testimonial-slider {
   position: relative;
   padding: clamp(3.5rem, 6vw, 5.5rem) 1rem;
-  background: #f3efec;
+  background: #dbe7d4;
   overflow: hidden;
 }
 
@@ -51,7 +51,7 @@
   position: relative;
   min-height: 500px;
   border-radius: 34px;
-  background: linear-gradient(180deg, #fff7f1 0%, #fff3ea 100%);
+  background: linear-gradient(180deg, #edf4e9 0%, #e3eddc 100%);
   box-shadow:
     0 24px 60px rgba(89, 56, 56, 0.08),
     0 8px 22px rgba(89, 56, 56, 0.05);

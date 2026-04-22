@@ -27,13 +27,20 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   color: var(--text-main);
   background:
     radial-gradient(circle at top left, rgba(255, 232, 232, 0.5), transparent 30%),
     linear-gradient(180deg, #fffdfb 0%, #fffaf7 46%, #fffdfb 100%);
+  overflow-x: hidden;
+} */
+ body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--text-main);
+  background: #dfead8;
   overflow-x: hidden;
 }
 
@@ -279,13 +286,13 @@ body {
   min-height: 48px;
   padding: 0 22px;
   color: #ffffff;
-  background: linear-gradient(135deg, #8d2323 0%, #6d1414 100%);
+  background: linear-gradient(135deg, #f08aa0 0%, #ef7d91 100%);
   box-shadow: 0 12px 22px rgba(127, 29, 29, 0.22);
 }
 
 .order-btn:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #991b1b 0%, #5f1313 100%);
+  background: linear-gradient(135deg, #f08aa0 0%, #ef7d91 100%);
   box-shadow: 0 16px 26px rgba(127, 29, 29, 0.28);
 }
 
@@ -375,14 +382,14 @@ body {
 
 .mobile-menu__nav a:hover {
   background: rgba(127, 29, 29, 0.06);
-  color: #7f1d1d;
+  color: #f08aa0 0%, #ef7d91 100%;
 }
 
 .mobile-order-btn {
   min-height: 50px;
   margin-top: 8px;
   color: #ffffff !important;
-  background: linear-gradient(135deg, #8d2323 0%, #6d1414 100%);
+  background: linear-gradient(135deg, #f08aa0 0%, #ef7d91 100%);
 }
 
 /* =========================

@@ -1,7 +1,7 @@
 .menu-jump {
   position: relative;
   padding: 1.25rem 1rem 0.5rem;
-  background: linear-gradient(180deg, #f7f2ec 0%, #fbf7f2 100%);
+  background: linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .menu-jump__inner {
@@ -70,27 +70,27 @@
 
 .menu-section--icecream {
   background:
-    radial-gradient(circle at 10% 16%, rgba(255, 214, 224, 0.2), transparent 18%),
-    linear-gradient(180deg, #fbf7f2 0%, #fffaf7 100%);
+    radial-gradient(circle at 10% 16%, rgba(255, 214, 224, 0.14), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .menu-section--milkshakes {
   background:
-    radial-gradient(circle at 88% 18%, rgba(255, 201, 223, 0.18), transparent 20%),
-    linear-gradient(180deg, #fffaf7 0%, #f8f2ef 100%);
+    radial-gradient(circle at 88% 18%, rgba(255, 201, 223, 0.14), transparent 20%),
+    linear-gradient(180deg, #dbe7d4 0%, #d4e2cc 100%);
 }
 
 .menu-section--bubbletea {
   background:
-    radial-gradient(circle at 84% 14%, rgba(101, 208, 205, 0.14), transparent 20%),
-    radial-gradient(circle at 14% 80%, rgba(255, 210, 129, 0.12), transparent 18%),
-    linear-gradient(180deg, #f6f2ed 0%, #fffaf7 100%);
+    radial-gradient(circle at 84% 14%, rgba(101, 208, 205, 0.1), transparent 20%),
+    radial-gradient(circle at 14% 80%, rgba(255, 210, 129, 0.08), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .menu-section--coffee {
   background:
-    radial-gradient(circle at 16% 12%, rgba(240, 180, 120, 0.14), transparent 20%),
-    linear-gradient(180deg, #fffaf7 0%, #f7f1eb 100%);
+    radial-gradient(circle at 16% 12%, rgba(240, 180, 120, 0.08), transparent 20%),
+    linear-gradient(180deg, #dbe7d4 0%, #d4e2cc 100%);
 }
 
 .menu-section__inner {
@@ -306,9 +306,9 @@
   position: relative;
   padding: clamp(3rem, 6vw, 5rem) 1rem;
   background:
-    radial-gradient(circle at 12% 22%, rgba(255, 214, 224, 0.2), transparent 18%),
-    radial-gradient(circle at 86% 24%, rgba(164, 179, 253, 0.16), transparent 18%),
-    linear-gradient(180deg, #f7f1eb 0%, #fffaf7 100%);
+    radial-gradient(circle at 12% 22%, rgba(255, 214, 224, 0.14), transparent 18%),
+    radial-gradient(circle at 86% 24%, rgba(164, 179, 253, 0.12), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .menu-cta__inner {

@@ -2,9 +2,9 @@
   position: relative;
   padding: clamp(4rem, 6vw, 5.75rem) 1rem;
   background:
-    radial-gradient(circle at 12% 14%, rgba(255, 214, 224, 0.22), transparent 18%),
-    radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.14), transparent 18%),
-    linear-gradient(180deg, #fffaf7 0%, #f7f2ed 52%, #f4efea 100%);
+    radial-gradient(circle at 12% 14%, rgba(255, 214, 224, 0.16), transparent 18%),
+    radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.1), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 52%, #dfead8 100%);
   overflow: hidden;
 }
 

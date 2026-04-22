@@ -3,9 +3,9 @@
   overflow: hidden;
   padding: clamp(2.75rem, 5vw, 4.5rem) 1rem clamp(3.25rem, 5vw, 4.75rem);
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.28), transparent 22%),
-    radial-gradient(circle at 86% 14%, rgba(164, 179, 253, 0.18), transparent 22%),
-    linear-gradient(180deg, #fffdfa 0%, #f7f2ec 100%);
+    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.18), transparent 22%),
+    radial-gradient(circle at 86% 14%, rgba(164, 179, 253, 0.12), transparent 22%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .menu-hero__inner {

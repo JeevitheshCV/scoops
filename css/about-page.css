@@ -26,8 +26,8 @@ body {
   font-family: "Manrope", sans-serif;
   color: var(--about-ink);
   background:
-    radial-gradient(circle at top left, rgba(255, 220, 227, 0.36), transparent 24%),
-    linear-gradient(180deg, #fffdfa 0%, #fff7f1 40%, #fffdfa 100%);
+    radial-gradient(circle at top left, rgba(255, 220, 227, 0.18), transparent 24%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 40%, #dfead8 100%);
   overflow-x: hidden;
 }
 
@@ -123,9 +123,9 @@ body {
   overflow: hidden;
   padding: clamp(4rem, 6vw, 6rem) 1rem clamp(4rem, 8vw, 6rem);
   background:
-    radial-gradient(circle at 12% 14%, rgba(255, 187, 201, 0.3), transparent 18%),
-    radial-gradient(circle at 88% 12%, rgba(142, 214, 240, 0.2), transparent 18%),
-    linear-gradient(180deg, #fffaf7 0%, #fff3ec 58%, #fffaf7 100%);
+    radial-gradient(circle at 12% 14%, rgba(255, 187, 201, 0.18), transparent 18%),
+    radial-gradient(circle at 88% 12%, rgba(142, 214, 240, 0.12), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 58%, #dfead8 100%);
 }
 
 .about-hero-v2__backdrop {
@@ -370,12 +370,11 @@ body {
 .about-promise {
   padding: clamp(4rem, 7vw, 5.8rem) 1rem;
   background:
-    radial-gradient(circle at 14% 16%, rgba(239, 138, 160, 0.16), transparent 18%),
-    radial-gradient(circle at 86% 14%, rgba(255, 214, 224, 0.28), transparent 20%),
-    linear-gradient(180deg, #fff7f2 0%, #fdf1ea 58%, #fff8f3 100%);
+    radial-gradient(circle at 14% 16%, rgba(239, 138, 160, 0.12), transparent 18%),
+    radial-gradient(circle at 86% 14%, rgba(255, 214, 224, 0.14), transparent 20%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 58%, #dfead8 100%);
   color: var(--about-ink);
 }
-
 .about-promise__header,
 .about-promise__grid {
   width: min(1240px, 100%);
@@ -523,8 +522,8 @@ body {
 .about-story-v2 {
   padding: clamp(4rem, 6vw, 5.6rem) 1rem;
   background:
-    radial-gradient(circle at 12% 12%, rgba(239, 138, 160, 0.16), transparent 18%),
-    linear-gradient(180deg, #fffaf7 0%, #f4eee8 100%);
+    radial-gradient(circle at 12% 12%, rgba(239, 138, 160, 0.12), transparent 18%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .about-story-v2__inner {
@@ -610,8 +609,8 @@ body {
 .about-features {
   padding: clamp(3rem, 5vw, 4rem) 1rem clamp(4rem, 7vw, 6rem);
   background:
-    radial-gradient(circle at 88% 14%, rgba(245, 200, 77, 0.18), transparent 18%),
-    linear-gradient(180deg, #f4eee8 0%, #fffaf7 100%);
+    radial-gradient(circle at 88% 14%, rgba(245, 200, 77, 0.1), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .feature-card + .feature-card {
@@ -780,7 +779,7 @@ body {
 .about-scene {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, #f7f1ea 0%, #fffaf7 100%);
+  background: linear-gradient(180deg, #dbe7d4 0%, #dfead8 100%);
 }
 
 .about-scene__inner {
@@ -1023,8 +1022,8 @@ body {
 .about-large-orders-v2 {
   padding: clamp(3.5rem, 5vw, 5rem) 1rem;
   background:
-    radial-gradient(circle at 12% 12%, rgba(239, 138, 160, 0.15), transparent 16%),
-    linear-gradient(180deg, #fffaf7 0%, #f5efe9 100%);
+    radial-gradient(circle at 12% 12%, rgba(239, 138, 160, 0.1), transparent 16%),
+    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
 }
 
 .about-large-orders-v2__inner {
@@ -1067,8 +1066,8 @@ body {
 .about-final-cta-v2 {
   padding: clamp(4rem, 7vw, 5.6rem) 1rem clamp(4.5rem, 7vw, 6rem);
   background:
-    radial-gradient(circle at 88% 12%, rgba(245, 200, 77, 0.16), transparent 18%),
-    linear-gradient(180deg, #f5efe9 0%, #fffaf7 100%);
+    radial-gradient(circle at 88% 12%, rgba(245, 200, 77, 0.1), transparent 18%),
+    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
 }
 
 .about-final-cta-v2__inner {
