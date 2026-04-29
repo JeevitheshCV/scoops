@@ -120,7 +120,34 @@
   width: 26px;
   height: 26px;
 }
+.visit-card__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.9rem;
+  min-height: 44px;
+  padding: 0 1rem;
+  border-radius: 999px;
+  background: rgba(240, 138, 160, 0.12);
+  color: #9d5261;
+  text-decoration: none;
+  font-weight: 800;
+  transition:
+    background-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
 
+.visit-card__link:hover {
+  background: rgba(240, 138, 160, 0.2);
+  color: #7f1d1d;
+  transform: translateY(-1px);
+}
+
+.visit-card__link:focus-visible {
+  outline: 3px solid rgba(101, 189, 199, 0.35);
+  outline-offset: 4px;
+}
 .visit-card__label {
   margin: 0 0 0.35rem;
   color: #b24e61;

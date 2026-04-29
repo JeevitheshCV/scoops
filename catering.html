@@ -45,6 +45,7 @@
     </a>
 
     <!-- Header -->
+    <!-- Header -->
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
@@ -57,21 +58,61 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-          <a href="./catering.html" aria-current="page">Catering</a>
-          <a href="./index.html#visit">Visit</a>
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
         </nav>
 
         <div class="site-header__actions">
-          <button
-            class="order-btn js-open-inquiry"
-            type="button"
-            data-service="General Catering Inquiry"
-          >
-            Inquire Now
-          </button>
+          <div class="order-dropdown">
+            <button
+              class="order-btn order-dropdown__toggle"
+              id="orderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="orderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="order-dropdown__menu"
+              id="orderDropdownMenu"
+              role="menu"
+              aria-labelledby="orderDropdownToggle"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
 
           <button
             class="menu-toggle"
@@ -88,26 +129,63 @@
         </div>
       </div>
 
+      <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-          <a href="./catering.html" aria-current="page">Catering</a>
-          <a href="./index.html#visit">Visit</a>
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
-          <button
-            class="mobile-order-btn js-open-inquiry"
-            type="button"
-            data-service="General Catering Inquiry"
-          >
-            Inquire Now
-          </button>
+
+          <div class="mobile-order-dropdown">
+            <button
+              class="mobile-order-btn mobile-order-dropdown__toggle"
+              id="mobileOrderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileOrderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="mobile-order-dropdown__menu"
+              id="mobileOrderDropdownMenu"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
-
+    
     <div class="top-offset"></div>
 
     <main>

@@ -58,6 +58,7 @@
     </a>
 
     <!-- Header -->
+    <!-- Header -->
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
@@ -70,14 +71,61 @@
         <nav class="site-nav" aria-label="Primary navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
- 
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
         </nav>
 
         <div class="site-header__actions">
-          <a href="./order.html" class="order-btn">Order Online</a>
+          <div class="order-dropdown">
+            <button
+              class="order-btn order-dropdown__toggle"
+              id="orderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="orderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="order-dropdown__menu"
+              id="orderDropdownMenu"
+              role="menu"
+              aria-labelledby="orderDropdownToggle"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
 
           <button
             class="menu-toggle"
@@ -99,15 +147,57 @@
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
-
           <a href="./about.html">About</a>
           <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
-          <a href="./order.html" class="mobile-order-btn">Order Online</a>
+
+          <div class="mobile-order-dropdown">
+            <button
+              class="mobile-order-btn mobile-order-dropdown__toggle"
+              id="mobileOrderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileOrderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="mobile-order-dropdown__menu"
+              id="mobileOrderDropdownMenu"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
-
     <!-- Spacer so fixed top UI doesn't overlap content -->
     <div class="top-offset"></div>
 
@@ -465,6 +555,8 @@
                 </div>
               </article>
 
+
+
               <article class="visit-card">
                 <div class="visit-card__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
@@ -475,7 +567,8 @@
                 <div class="visit-card__content">
                   <p class="visit-card__label">Hours</p>
                   <h3>Open Daily</h3>
-                  <p>9 AM – 9 PM</p>
+                  <p><strong>Mon – Thu:</strong> 10:00 AM – 10:30 PM</p>
+                  <p><strong>Fri – Sun:</strong> 10:00 AM – 11:00 PM</p>
                 </div>
               </article>
 
@@ -488,13 +581,20 @@
                     <path d="M18.5 8.5l-5 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
                   </svg>
                 </div>
+
                 <div class="visit-card__content">
                   <p class="visit-card__label">Parking</p>
-                  <ul class="visit-card__list">
-                    <li>Free street parking</li>
-                    <li>On-site parking available</li>
-                    <li>Paid garage nearby</li>
-                  </ul>
+                  <h3>15-Minute Parking</h3>
+                  <p>Use the 15-minute parking lot in the back of PakMail.</p>
+
+                  <a
+                    class="visit-card__link"
+                    href="https://www.google.com/maps/search/?api=1&query=29+Baker+St+NW,+Atlanta,+GA+30308"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open in Google Maps
+                  </a>
                 </div>
               </article>
 
@@ -525,7 +625,7 @@
                   title="Map to Scoops @ Peachtree"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps?q=300%20Peachtree%20St%20NE%2C%20CS-2%2C%20Atlanta&z=16&output=embed"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.2316638849356!2d-84.38852173042496!3d33.762561113253916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f505b27ce04ef5%3A0xa0af5904982a30f9!2sScoops%40Peachtree!5e0!3m2!1sen!2sus!4v1777434342187!5m2!1sen!2sus"
                   allowfullscreen>
                 </iframe>
               </div>

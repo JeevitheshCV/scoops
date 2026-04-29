@@ -51,6 +51,7 @@
       </div>
     </a>
 
+    <!-- Header -->
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
@@ -64,12 +65,60 @@
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
           <a href="./about.html">About</a>
-          <a href="./gallery.html" aria-current="page">Gallery</a>
+          <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
         </nav>
 
         <div class="site-header__actions">
-          <a href="./order.html" class="order-btn">Order Online</a>
+          <div class="order-dropdown">
+            <button
+              class="order-btn order-dropdown__toggle"
+              id="orderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="orderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="order-dropdown__menu"
+              id="orderDropdownMenu"
+              role="menu"
+              aria-labelledby="orderDropdownToggle"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="order-dropdown__item"
+                role="menuitem"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
 
           <button
             class="menu-toggle"
@@ -86,18 +135,62 @@
         </div>
       </div>
 
+      <!-- Mobile Menu -->
       <div class="mobile-menu" id="mobileMenu">
         <nav class="mobile-menu__nav" aria-label="Mobile navigation">
           <a href="./index.html">Home</a>
           <a href="./menu.html">Menu</a>
           <a href="./about.html">About</a>
-          <a href="./gallery.html" aria-current="page">Gallery</a>
+          <a href="./gallery.html">Gallery</a>
           <a href="./contact.html">Contact</a>
-          <a href="./order.html" class="mobile-order-btn">Order Online</a>
+
+          <div class="mobile-order-dropdown">
+            <button
+              class="mobile-order-btn mobile-order-dropdown__toggle"
+              id="mobileOrderDropdownToggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="mobileOrderDropdownMenu"
+            >
+              <span>Order Online</span>
+              <span class="order-dropdown__icon" aria-hidden="true">▾</span>
+            </button>
+
+            <div
+              class="mobile-order-dropdown__menu"
+              id="mobileOrderDropdownMenu"
+            >
+              <a
+                href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                DoorDash
+              </a>
+
+              <a
+                href="https://www.grubhub.com/restaurant/scoopspeachtree-300-peachtree-street-northeast--cs2-atlanta/12946424"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Grubhub
+              </a>
+
+              <a
+                href="https://www.ubereats.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mobile-order-dropdown__item"
+              >
+                Uber Eats
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
-
     <div class="top-offset"></div>
 
     <main>
@@ -169,18 +262,18 @@
           <div class="gallery-band__layout gallery-band__layout--editorial">
             <figure class="gallery-frame gallery-frame--feature">
               <!-- Replace with: strongest real scoop image / signature flavor close-up / cone shot -->
-              <img src="./assets/images/icecream-card.png" alt="Signature ice cream scoops" />
+              <img src="./assets/images/icecream/scoops-1.png" alt="Signature ice cream scoops" />
             </figure>
 
             <div class="gallery-band__stack">
               <figure class="gallery-frame">
                 <!-- Replace with: alternate ice cream detail shot / toppings / cup presentation -->
-                <img src="./assets/images/hero_section-2.png" alt="Seasonal dessert presentation" />
+                <img src="./assets/images/icecream/scoops-2.png" alt="Seasonal dessert presentation" />
               </figure>
 
               <figure class="gallery-frame">
                 <!-- Replace with: second supporting ice cream image / customer-ready serving shot -->
-                <img src="./assets/images/icecream-card.png" alt="Ice cream treat presentation" />
+                <img src="./assets/images/icecream/scoops-3.png" alt="Ice cream treat presentation" />
               </figure>
             </div>
           </div>
@@ -202,12 +295,12 @@
 
             <figure class="gallery-frame">
               <!-- Replace with: close-up of one drink / topping detail / fruit tea shot -->
-              <img src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png" alt="Drink lineup" />
+              <img src="./assets/images/bubbleteaandmilkshakes/Milkshake-2.png" alt="Drink lineup" />
             </figure>
 
             <figure class="gallery-frame">
               <!-- Replace with: second drink detail shot / cup branding / colorful boba scene -->
-              <img src="./assets/images/BubbleTea andDrinks-card.png" alt="Refreshing drinks" />
+              <img src="./assets/images/bubbleteaandmilkshakes/Milkshake-1.png" alt="Refreshing drinks" />
             </figure>
           </div>
         </div>
@@ -216,7 +309,7 @@
       <section class="gallery-banner section-reveal" aria-labelledby="gallery-banner-title">
         <div class="gallery-banner__media">
           <!-- Replace with: premium wide atmosphere image / signature product spread / best full-width visual -->
-          <img src="./assets/images/hero_section-2.png" alt="Scoops dessert spread" />
+          <img src="./assets/images/hero_section-3.png" alt="Scoops dessert spread" />
         </div>
 
         <div class="gallery-banner__content">
@@ -295,7 +388,7 @@
           <div class="gallery-large-order__grid">
             <figure class="gallery-frame">
               <!-- Replace with: grouped product lineup for larger order / dessert-ready arrangement -->
-              <img src="./assets/orders/orders-2.png" alt="Larger order product display" />
+              <img src="./assets/images/orders/orders-3.png" alt="Larger order product display" />
             </figure>
 
             <figure class="gallery-frame">
@@ -305,7 +398,7 @@
 
             <figure class="gallery-frame">
               <!-- Replace with: drinks lineup for larger order / multiple items together -->
-              <img src="./assets/images/catering/Bubble Tea Catering - Drink lineup.png" alt="Drink lineup for larger order" />
+              <img src="./assets/images/orders/orders-4.png" alt="Drink lineup for larger order" />
             </figure>
           </div>
 
