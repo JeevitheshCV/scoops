@@ -3,9 +3,8 @@
   overflow: hidden;
   padding: clamp(2.75rem, 5vw, 4.5rem) 1rem clamp(3.25rem, 5vw, 4.75rem);
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.18), transparent 22%),
-    radial-gradient(circle at 86% 14%, rgba(164, 179, 253, 0.12), transparent 22%),
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
+    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.2), transparent 22%),
+    radial-gradient(circle at 86% 14%, rgba(164, 179, 253, 0.14), transparent 22%);
 }
 
 .menu-hero__inner {
@@ -123,22 +122,22 @@
 
 .menu-hero__btn--primary {
   color: #ffffff;
-  background: linear-gradient(135deg, #16b1bf 0%, #0d98aa 100%);
+  background: linear-gradient(135deg, #b24e61 0%, #7b3448 100%);
   box-shadow:
-    0 14px 28px rgba(13, 152, 170, 0.22),
-    0 6px 16px rgba(13, 152, 170, 0.14);
+    0 14px 28px rgba(123, 52, 72, 0.22),
+    0 6px 16px rgba(123, 52, 72, 0.14);
 }
 
 .menu-hero__btn--primary:hover {
   box-shadow:
-    0 18px 34px rgba(13, 152, 170, 0.28),
-    0 8px 18px rgba(13, 152, 170, 0.16);
+    0 18px 34px rgba(123, 52, 72, 0.28),
+    0 8px 18px rgba(123, 52, 72, 0.16);
 }
 
 .menu-hero__btn--secondary {
-  color: #b62f73;
-  background: rgba(255, 255, 255, 0.74);
-  border: 2px solid rgba(182, 47, 115, 0.7);
+  color: #b24e61;
+  background: rgba(255, 255, 255, 0.76);
+  border: 2px solid rgba(178, 78, 97, 0.62);
   box-shadow: 0 10px 22px rgba(83, 47, 47, 0.06);
 }
 
@@ -175,11 +174,11 @@
     background:
       linear-gradient(
         90deg,
-        rgba(255, 250, 246, 0.92) 0%,
-        rgba(255, 250, 246, 0.86) 16%,
-        rgba(255, 250, 246, 0.68) 32%,
-        rgba(255, 250, 246, 0.16) 52%,
-        rgba(255, 250, 246, 0) 66%
+        rgba(255, 247, 250, 0.94) 0%,
+        rgba(255, 239, 246, 0.88) 16%,
+        rgba(255, 250, 247, 0.7) 32%,
+        rgba(255, 250, 247, 0.18) 52%,
+        rgba(255, 250, 247, 0) 66%
       );
   }
 }
@@ -245,7 +244,7 @@
         180deg,
         rgba(255, 251, 247, 0.08) 0%,
         rgba(255, 251, 247, 0.02) 34%,
-        rgba(255, 251, 247, 0.18) 100%
+        rgba(255, 239, 246, 0.18) 100%
       );
   }
 

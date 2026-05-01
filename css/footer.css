@@ -2,13 +2,13 @@
   position: relative;
   padding: 4.5rem 1rem 1.4rem;
   background:
-    radial-gradient(circle at 14% 18%, rgba(255, 255, 255, 0.07), transparent 22%),
-    radial-gradient(circle at 86% 22%, rgba(232, 140, 162, 0.06), transparent 20%),
-    linear-gradient(180deg, #97ab88 0%, #839773 38%, #6f8461 100%);
-  color: #1e271c;
+    radial-gradient(circle at 14% 18%, rgba(255, 238, 246, 0.12), transparent 24%),
+    radial-gradient(circle at 86% 22%, rgba(239, 138, 160, 0.12), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(227, 169, 46, 0.08), transparent 28%),
+    linear-gradient(180deg, #7b3448 0%, #5f2838 46%, #3a1f24 100%);
+  color: #fff8f4;
   overflow: hidden;
 }
-
 
 .site-footer__glow {
   position: absolute;
@@ -23,13 +23,13 @@
 .site-footer__glow--left {
   left: -110px;
   top: -120px;
-  background: radial-gradient(circle, rgba(255, 240, 214, 0.55) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 239, 246, 0.42) 0%, transparent 70%);
 }
 
 .site-footer__glow--right {
   right: -90px;
   bottom: -140px;
-  background: radial-gradient(circle, rgba(244, 170, 132, 0.28) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(227, 169, 46, 0.18) 0%, transparent 70%);
 }
 
 .site-footer__inner {
@@ -69,11 +69,11 @@
   max-width: 190px;
   padding: 0.6rem 0.9rem;
   border-radius: 22px;
-  background: rgba(245, 248, 240, 0.6);
+  background: rgba(255, 250, 247, 0.88);
   backdrop-filter: blur(6px);
   box-shadow:
-    0 16px 36px rgba(60, 72, 56, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+    0 16px 36px rgba(31, 14, 18, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.48);
 }
 
 .site-footer__logo img {
@@ -88,19 +88,19 @@
   font-size: clamp(1.65rem, 2.8vw, 2.25rem);
   line-height: 1.05;
   letter-spacing: -0.03em;
-  color: #3a1f19;
+  color: #fff8f4;
 }
 
 .site-footer__tagline {
   max-width: 28ch;
   margin: 0.9rem 0 0;
-  color: rgba(73, 43, 35, 0.86);
+  color: rgba(255, 248, 244, 0.78);
   line-height: 1.75;
 }
 
 .site-footer__label {
   margin: 0 0 0.9rem;
-  color: #8a4b49;
+  color: #f4b6c5;
   font-size: 0.76rem;
   font-weight: 800;
   letter-spacing: 0.16em;
@@ -110,14 +110,14 @@
 .site-footer__text {
   margin: 0;
   max-width: 24ch;
-  color: rgba(73, 43, 35, 0.9);
+  color: rgba(255, 248, 244, 0.82);
   line-height: 1.75;
 }
 
 .site-footer__phone,
 .site-footer__directions {
   display: inline-flex;
-  color: #3a1f19;
+  color: #fff8f4;
   text-decoration: none;
   font-weight: 700;
   margin-top: 0.9rem;
@@ -128,14 +128,14 @@
 
 .site-footer__phone:hover,
 .site-footer__directions:hover {
-  color: #8a4b49;
+  color: #f4b6c5;
   transform: translateY(-1px);
 }
 
 .site-footer__social-text {
   max-width: 22ch;
   margin: 0 0 1rem;
-  color: rgba(73, 43, 35, 0.84);
+  color: rgba(255, 248, 244, 0.76);
   line-height: 1.7;
 }
 
@@ -152,11 +152,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: #fffaf4;
-  background: linear-gradient(135deg, #c96f7f 0%, #a94f63 100%);
+  color: #3a1f24;
+  background: linear-gradient(135deg, #fff8f4 0%, #f4b6c5 100%);
   box-shadow:
-    0 12px 24px rgba(100, 46, 56, 0.16),
-    0 5px 12px rgba(100, 46, 56, 0.1);
+    0 12px 24px rgba(31, 14, 18, 0.22),
+    0 5px 12px rgba(31, 14, 18, 0.16);
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
@@ -166,8 +166,8 @@
 .site-footer__icon:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 16px 28px rgba(100, 46, 56, 0.22),
-    0 8px 16px rgba(100, 46, 56, 0.14);
+    0 16px 28px rgba(31, 14, 18, 0.28),
+    0 8px 16px rgba(31, 14, 18, 0.2);
   filter: saturate(1.05);
 }
 
@@ -176,21 +176,9 @@
   height: 20px;
 }
 
-.site-footer__logo {
-  display: inline-flex;
-  max-width: 190px;
-  padding: 0.6rem 0.9rem;
-  border-radius: 22px;
-  background: rgba(245, 248, 240, 0.6);
-  backdrop-filter: blur(6px);
-  box-shadow:
-    0 16px 36px rgba(60, 72, 56, 0.08),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
-}
-
 .site-footer__bottom p {
   margin: 0;
-  color: rgba(73, 43, 35, 0.74);
+  color: rgba(255, 248, 244, 0.58);
   font-size: 0.92rem;
   line-height: 1.6;
 }

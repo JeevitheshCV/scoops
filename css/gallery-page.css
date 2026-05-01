@@ -3,8 +3,10 @@ body {
   font-family: "Manrope", sans-serif;
   color: #261a1a;
   background:
-    radial-gradient(circle at top left, rgba(255, 228, 228, 0.16), transparent 28%),
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 50%, #dfead8 100%);
+    radial-gradient(circle at 12% 18%, rgba(255, 182, 193, 0.22), transparent 40%),
+    radial-gradient(circle at 85% 70%, rgba(255, 192, 203, 0.18), transparent 45%),
+    radial-gradient(circle at 70% 10%, rgba(196, 181, 253, 0.14), transparent 40%),
+    linear-gradient(135deg, #fff7fa 0%, #ffeef4 45%, #fff5f8 100%);
   overflow-x: hidden;
 }
 
@@ -15,10 +17,10 @@ body {
   margin: 0;
   padding: 0.58rem 0.94rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.78);
   border: 1px solid rgba(126, 84, 84, 0.08);
   box-shadow: 0 10px 24px rgba(83, 47, 47, 0.06);
-  color: #b25063;
+  color: #b24e61;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.14em;
@@ -33,9 +35,9 @@ body {
   padding: clamp(4rem, 6vw, 5rem) 1rem clamp(3.5rem, 6vw, 5rem);
   overflow: hidden;
   background:
-    radial-gradient(circle at 14% 16%, rgba(255, 214, 224, 0.14), transparent 20%),
-    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.1), transparent 18%),
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 58%, #dfead8 100%);
+    radial-gradient(circle at 14% 16%, rgba(255, 255, 255, 0.24), transparent 22%),
+    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.14), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(227, 169, 46, 0.08), transparent 26%);
 }
 
 .gallery-hero__inner {
@@ -147,17 +149,17 @@ body {
 .gallery-hero__btn--primary,
 .gallery-large-order__btn--primary,
 .gallery-final-cta__btn--primary {
-  background: linear-gradient(135deg, #ef8aa0 0%, #ea728c 100%);
-  color: #1f1212;
+  background: linear-gradient(135deg, #b24e61 0%, #7b3448 100%);
+  color: #fffaf7;
   box-shadow:
-    0 16px 28px rgba(239, 125, 145, 0.2),
-    0 6px 14px rgba(239, 125, 145, 0.12);
+    0 16px 28px rgba(123, 52, 72, 0.22),
+    0 6px 14px rgba(123, 52, 72, 0.12);
 }
 
 .gallery-hero__btn--secondary,
 .gallery-large-order__btn--secondary,
 .gallery-final-cta__btn--secondary {
-  background: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.84);
   color: #1d1414;
   box-shadow:
     0 14px 26px rgba(69, 38, 38, 0.08),
@@ -179,8 +181,8 @@ body {
 
 .gallery-featured {
   background:
-    radial-gradient(circle at 10% 14%, rgba(255, 214, 224, 0.1), transparent 16%),
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
+    radial-gradient(circle at 10% 14%, rgba(255, 255, 255, 0.24), transparent 20%),
+    radial-gradient(circle at 88% 84%, rgba(164, 179, 253, 0.1), transparent 24%);
 }
 
 .gallery-featured__inner,
@@ -267,8 +269,8 @@ body {
 
 .gallery-band {
   background:
-    radial-gradient(circle at 88% 12%, rgba(133, 216, 210, 0.08), transparent 18%),
-    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
+    radial-gradient(circle at 88% 12%, rgba(227, 169, 46, 0.08), transparent 20%),
+    radial-gradient(circle at 12% 82%, rgba(255, 255, 255, 0.24), transparent 24%);
 }
 
 .gallery-band__label {
@@ -325,6 +327,19 @@ body {
   inset: 0;
 }
 
+.gallery-banner__media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(32, 22, 22, 0.72) 0%,
+      rgba(32, 22, 22, 0.46) 42%,
+      rgba(32, 22, 22, 0.14) 100%
+    );
+}
+
 .gallery-banner__media img {
   transform: scale(1.04);
 }
@@ -365,7 +380,8 @@ body {
 
 .gallery-collage {
   background:
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
+    radial-gradient(circle at 14% 14%, rgba(255, 255, 255, 0.22), transparent 22%),
+    radial-gradient(circle at 86% 86%, rgba(244, 182, 197, 0.12), transparent 24%);
 }
 
 .gallery-collage__layout {
@@ -399,12 +415,10 @@ body {
 
 /* store */
 
-/* store */
-
 .gallery-store {
   background:
-    radial-gradient(circle at 12% 14%, rgba(248, 193, 205, 0.1), transparent 18%),
-    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
+    radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.24), transparent 22%),
+    radial-gradient(circle at 88% 84%, rgba(227, 169, 46, 0.08), transparent 24%);
 }
 
 .gallery-store__inner {
@@ -425,11 +439,11 @@ body {
 
 .gallery-store__button {
   margin-top: 1.4rem;
-  background: linear-gradient(135deg, #f4c94f 0%, #efb44a 100%);
+  background: linear-gradient(135deg, #e3a92e 0%, #c58a22 100%);
   color: #211515;
   box-shadow:
-    0 16px 30px rgba(239, 180, 74, 0.18),
-    0 6px 14px rgba(239, 180, 74, 0.1);
+    0 16px 30px rgba(197, 138, 34, 0.18),
+    0 6px 14px rgba(197, 138, 34, 0.1);
 }
 
 .gallery-store__visuals {
@@ -461,34 +475,12 @@ body {
   object-position: center center;
 }
 
-@media (max-width: 980px) {
-  .gallery-featured__grid,
-  .gallery-band__layout--mosaic,
-  .gallery-large-order__grid,
-  .gallery-store__visuals {
-    grid-template-columns: 1fr;
-  }
-
-  .gallery-tile,
-  .gallery-tile--large,
-  .gallery-frame,
-  .gallery-frame--feature,
-  .gallery-frame--wide,
-  .gallery-large-order__grid .gallery-frame {
-    min-height: 320px;
-  }
-
-  .gallery-store__visual--primary,
-  .gallery-store__visual--secondary {
-    height: 320px;
-  }
-}
-
 /* large order */
 
 .gallery-large-order {
   background:
-    linear-gradient(180deg, #dfead8 0%, #d7e5cf 100%);
+    radial-gradient(circle at 12% 18%, rgba(164, 179, 253, 0.1), transparent 22%),
+    radial-gradient(circle at 88% 80%, rgba(255, 255, 255, 0.24), transparent 24%);
 }
 
 .gallery-large-order__grid {
@@ -506,13 +498,23 @@ body {
 
 .gallery-final-cta {
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.1), transparent 18%),
-    linear-gradient(180deg, #d7e5cf 0%, #dfead8 100%);
+    radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.24), transparent 22%),
+    radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.1), transparent 22%),
+    radial-gradient(circle at 50% 100%, rgba(227, 169, 46, 0.08), transparent 28%);
 }
 
 .gallery-final-cta__inner {
   text-align: center;
   max-width: 920px;
+  padding: 2rem 1.2rem;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at 18% 16%, rgba(255, 255, 255, 0.5), transparent 26%),
+    linear-gradient(180deg, rgba(255, 250, 247, 0.88) 0%, rgba(255, 239, 246, 0.78) 100%);
+  border: 1px solid rgba(126, 84, 84, 0.08);
+  box-shadow:
+    0 18px 40px rgba(74, 43, 43, 0.06),
+    0 6px 18px rgba(74, 43, 43, 0.04);
 }
 
 .gallery-final-cta__inner p:last-of-type {
@@ -606,6 +608,11 @@ body {
   .gallery-store__visual--secondary,
   .gallery-large-order__grid .gallery-frame {
     min-height: 320px;
+  }
+
+  .gallery-store__visual--primary,
+  .gallery-store__visual--secondary {
+    height: 320px;
   }
 }
 
