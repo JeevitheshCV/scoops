@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="./css/contact-page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/global-background.css" />
-    
   </head>
+
   <body>
     <div class="bg-blobs">
       <span class="bubble bubble--1"></span>
@@ -29,6 +29,7 @@
       <span class="bubble bubble--3"></span>
       <span class="bubble bubble--4"></span>
     </div>
+
     <a href="./menu.html" class="announcement-bar" aria-label="See latest updates and specials">
       <div class="announcement-bar__track">
         <div class="announcement-bar__content">
@@ -63,10 +64,7 @@
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
-          <img
-            src="./assets/logo/logo.png"
-            alt="Scoops at Peachtree"
-          />
+          <img src="./assets/logo/logo.png" alt="Scoops at Peachtree" />
         </a>
 
         <nav class="site-nav" aria-label="Primary navigation">
@@ -164,10 +162,7 @@
               <span class="order-dropdown__icon" aria-hidden="true">▾</span>
             </button>
 
-            <div
-              class="mobile-order-dropdown__menu"
-              id="mobileOrderDropdownMenu"
-            >
+            <div class="mobile-order-dropdown__menu" id="mobileOrderDropdownMenu">
               <a
                 href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
                 target="_blank"
@@ -290,7 +285,7 @@
               </p>
             </div>
 
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" id="contactForm">
               <div class="contact-form__grid">
                 <div class="contact-form__field">
                   <label for="name">Name</label>
@@ -311,11 +306,11 @@
                   <label for="inquiry-type">Inquiry Type</label>
                   <select id="inquiry-type" name="inquiry_type" required>
                     <option value="" selected disabled>Select an inquiry type</option>
-                    <option value="general-question">General Question</option>
-                    <option value="large-order">Large Order</option>
-                    <option value="order-help">Order Help</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="store-hours-location">Store Hours / Location</option>
+                    <option value="General Question">General Question</option>
+                    <option value="Large Order">Large Order</option>
+                    <option value="Order Help">Order Help</option>
+                    <option value="Feedback">Feedback</option>
+                    <option value="Store Hours / Location">Store Hours / Location</option>
                   </select>
                 </div>
 
@@ -331,7 +326,15 @@
                 </div>
               </div>
 
-              <button type="submit" class="contact-form__submit">Send Message</button>
+              <button type="submit" class="contact-form__submit" id="contactSubmitBtn">
+                Send Message
+              </button>
+
+              <p
+                id="contactFormStatus"
+                aria-live="polite"
+                style="display: none; margin-top: 14px; font-weight: 700;"
+              ></p>
             </form>
           </div>
 
@@ -444,10 +447,7 @@
           <div class="site-footer__top">
             <div class="site-footer__brand">
               <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
-                <img
-                  src="./assets/logo/logo.png"
-                  alt="Scoops @ Peachtree"
-                />
+                <img src="./assets/logo/logo.png" alt="Scoops @ Peachtree" />
               </a>
 
               <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
@@ -514,5 +514,56 @@
 
     <script src="./js/announcement-header.js"></script>
     <script src="./js/footer.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="./js/contact-email.js"></script>
+
+    <script>
+      (function () {
+        emailjs.init("K7CcTpw6Aa1NbyQL1");
+      })();
+
+      const contactForm = document.getElementById("contactForm");
+      const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+      const contactFormStatus = document.getElementById("contactFormStatus");
+
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        contactSubmitBtn.disabled = true;
+        contactSubmitBtn.textContent = "Sending...";
+
+        contactFormStatus.style.display = "block";
+        contactFormStatus.style.color = "#2c3e50";
+        contactFormStatus.textContent = "Sending your message...";
+
+        emailjs
+          .send("service_2uaa94i", "template_itn4r5f", {
+            name: document.getElementById("name").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            inquiry_type: document.getElementById("inquiry-type").value,
+            message: document.getElementById("message").value.trim()
+          })
+          .then(function () {
+            contactForm.reset();
+
+            contactFormStatus.style.color = "#1f7a3f";
+            contactFormStatus.textContent = "Message sent successfully. We will follow up soon.";
+
+            contactSubmitBtn.disabled = false;
+            contactSubmitBtn.textContent = "Send Message";
+          })
+          .catch(function (error) {
+            console.error("EmailJS error:", error);
+
+            contactFormStatus.style.color = "#b00020";
+            contactFormStatus.textContent = "Message failed to send. Please try again or email scoopsatpeachtree@gmail.com.";
+
+            contactSubmitBtn.disabled = false;
+            contactSubmitBtn.textContent = "Send Message";
+          });
+      });
+    </script>
   </body>
 </html>
