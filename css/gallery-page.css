@@ -2,11 +2,6 @@ body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   color: #261a1a;
-  background:
-    radial-gradient(circle at 12% 18%, rgba(255, 182, 193, 0.22), transparent 40%),
-    radial-gradient(circle at 85% 70%, rgba(255, 192, 203, 0.18), transparent 45%),
-    radial-gradient(circle at 70% 10%, rgba(196, 181, 253, 0.14), transparent 40%),
-    linear-gradient(135deg, #fff7fa 0%, #ffeef4 45%, #fff5f8 100%);
   overflow-x: hidden;
 }
 
@@ -34,10 +29,7 @@ body {
   min-height: min(980px, calc(100vh - 40px));
   padding: clamp(4rem, 6vw, 5rem) 1rem clamp(3.5rem, 6vw, 5rem);
   overflow: hidden;
-  background:
-    radial-gradient(circle at 14% 16%, rgba(255, 255, 255, 0.24), transparent 22%),
-    radial-gradient(circle at 88% 16%, rgba(164, 179, 253, 0.14), transparent 20%),
-    radial-gradient(circle at 50% 100%, rgba(227, 169, 46, 0.08), transparent 26%);
+  background: transparent;
 }
 
 .gallery-hero__inner {

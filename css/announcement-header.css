@@ -529,7 +529,7 @@ body {
 ========================= */
 
 .top-offset {
-  height: calc(var(--announcement-height) + var(--header-height) + 24px);
+  height: calc(var(--announcement-height) + var(--header-height));
 }
 
 /* =========================
@@ -586,7 +586,7 @@ body {
   }
 
   .top-offset {
-    height: calc(var(--announcement-height) + var(--header-height) + 22px);
+    height: calc(var(--announcement-height) + var(--header-height));
   }
 }
 
@@ -644,6 +644,6 @@ body {
   }
 
   .top-offset {
-    height: calc(var(--announcement-height) + var(--header-height) + 18px);
+    height: calc(var(--announcement-height) + var(--header-height));
   }
 }

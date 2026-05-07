@@ -22,7 +22,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+/* body {
   margin: 0;
   font-family: "Manrope", sans-serif;
   color: var(--about-ink);
@@ -32,8 +32,13 @@ body {
     radial-gradient(circle at 70% 10%, rgba(196, 181, 253, 0.14), transparent 40%),
     linear-gradient(135deg, #fff7fa 0%, #ffeef4 45%, #fff5f8 100%);
   overflow-x: hidden;
+} */
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--about-ink);
+  overflow-x: hidden;
 }
-
 .about-reimagined {
   position: relative;
   isolation: isolate;
@@ -121,7 +126,7 @@ body {
 
 /* hero */
 
-.about-hero-v2 {
+/* .about-hero-v2 {
   position: relative;
   overflow: hidden;
   padding: clamp(4rem, 6vw, 6rem) 1rem clamp(4rem, 8vw, 6rem);
@@ -129,6 +134,13 @@ body {
     radial-gradient(circle at 12% 14%, rgba(255, 255, 255, 0.24), transparent 20%),
     radial-gradient(circle at 88% 12%, rgba(164, 179, 253, 0.16), transparent 20%),
     radial-gradient(circle at 50% 100%, rgba(255, 239, 246, 0.16), transparent 26%);
+} */
+
+.about-hero-v2 {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4rem, 6vw, 6rem) 1rem clamp(4rem, 8vw, 6rem);
+  background: transparent;
 }
 
 .about-hero-v2__backdrop {

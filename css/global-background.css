@@ -1,23 +1,47 @@
 /* =========================
    GLOBAL BACKGROUND SYSTEM
+   Sunny Scoop Festival Background
+========================= */
+
+:root {
+  --scoop-cream: #fbf7e8;
+  --scoop-cream-deep: #f7f0d6;
+
+  --scoop-pink: #ff92c8;
+  --scoop-pink-soft: #ffd9eb;
+
+  --scoop-blue: #abd8ff;
+  --scoop-blue-soft: #e2f2ff;
+
+  --scoop-lavender: #b7b0ff;
+
+  --scoop-coral: #ff6f6f;
+  --scoop-coral-hover: #ff6262;
+
+  --scoop-chocolate: #4a2c2a;
+}
+
+/* =========================
+   PAGE BASE
 ========================= */
 
 body {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 182, 193, 0.22), transparent 40%),
-    radial-gradient(circle at 85% 70%, rgba(255, 192, 203, 0.18), transparent 45%),
-    radial-gradient(circle at 70% 10%, rgba(196, 181, 253, 0.14), transparent 40%),
-    linear-gradient(135deg, #fff7fa 0%, #ffeef4 45%, #fff5f8 100%);
+    radial-gradient(circle at 12% 10%, rgba(255, 146, 200, 0.14), transparent 22%),
+    radial-gradient(circle at 86% 12%, rgba(171, 216, 255, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 96%, rgba(183, 176, 255, 0.06), transparent 26%),
+    linear-gradient(135deg, #fbf7e8 0%, #faf5e2 55%, #f8f2df 100%);
 }
 
 /* =========================
-   GLASS BUBBLE LAYER
+   BACKGROUND CONTAINER
 ========================= */
 
-.bg-blobs {
+.background {
   position: fixed;
   inset: 0;
   z-index: 0;
@@ -25,99 +49,552 @@ body {
   overflow: hidden;
 }
 
-/* REAL GLASS BUBBLE */
-.bubble {
+/* =========================
+   SOFT GLOW BLOBS
+========================= */
+
+.bg-glow {
   position: absolute;
   border-radius: 50%;
-  overflow: hidden;
+  filter: blur(60px);
+  opacity: 0.26;
+  will-change: transform;
+  animation: bgGlowFloat 12s ease-in-out infinite alternate;
+}
+
+.bg-glow--pink-top {
+  width: 360px;
+  height: 360px;
+  top: -40px;
+  left: -100px;
+  background: rgba(255, 146, 200, 0.30);
+}
+
+.bg-glow--blue-top {
+  width: 300px;
+  height: 300px;
+  top: 120px;
+  right: -80px;
+  background: rgba(171, 216, 255, 0.28);
+  animation-delay: 1s;
+}
+
+.bg-glow--pink-mid {
+  width: 420px;
+  height: 420px;
+  top: 48%;
+  left: 8%;
+  background: rgba(255, 146, 200, 0.14);
+  animation-delay: 2s;
+}
+
+.bg-glow--blue-bottom {
+  width: 390px;
+  height: 390px;
+  bottom: -90px;
+  right: 8%;
+  background: rgba(171, 216, 255, 0.14);
+  animation-delay: 0.6s;
+}
+
+/* =========================
+   MOVING SUNBURST RAYS
+========================= */
+
+.sunburst-rays {
+  position: absolute;
+  width: 720px;
+  height: 720px;
+  border-radius: 50%;
+  opacity: 0.85;
+  will-change: transform;
+  pointer-events: none;
 
   background:
-    radial-gradient(circle at 30% 30%, rgba(255,255,255,0.9), transparent 35%),
-    radial-gradient(circle at 70% 70%, rgba(255,182,193,0.35), transparent 65%),
-    radial-gradient(circle at 50% 50%, rgba(255,255,255,0.12), transparent 75%);
+    repeating-conic-gradient(
+      from 0deg,
+      rgba(255, 255, 255, 0) 0deg 10deg,
+      rgba(255, 146, 200, 0.065) 10deg 13deg,
+      rgba(255, 255, 255, 0) 13deg 20deg,
+      rgba(171, 216, 255, 0.065) 20deg 23deg,
+      rgba(255, 255, 255, 0) 23deg 32deg
+    );
 
-  box-shadow:
-    inset -12px -12px 30px rgba(255, 182, 193, 0.25),
-    inset 12px 12px 28px rgba(255,255,255,0.6),
-    0 25px 60px rgba(0,0,0,0.08);
+  mask-image: radial-gradient(
+    circle at 20% 55%,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.46) 40%,
+    transparent 72%
+  );
 
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  -webkit-mask-image: radial-gradient(
+    circle at 20% 55%,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.46) 40%,
+    transparent 72%
+  );
 
-  opacity: 0.9;
+  animation: sunburstSweep 9s ease-in-out infinite alternate;
+}
 
-  /* CRITICAL FOR ANIMATION */
+.sunburst-rays--hero {
+  top: -140px;
+  right: -90px;
+  transform-origin: 16% 58%;
+}
+
+.sunburst-rays--footer {
+  width: 560px;
+  height: 560px;
+  bottom: -160px;
+  left: -140px;
+  opacity: 0.45;
+  transform-origin: 76% 42%;
+  animation-duration: 12s;
+  animation-direction: alternate-reverse;
+}
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti-piece {
+  position: absolute;
+  display: block;
+  opacity: 0.34;
+  border-radius: 999px;
   will-change: transform;
-  transform: translate3d(0,0,0);
+  animation: confettiDrift linear infinite;
+}
+
+.confetti-piece:nth-of-type(3n) {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.confetti-piece:nth-of-type(3n + 1) {
+  width: 9px;
+  height: 20px;
+}
+
+.confetti-piece:nth-of-type(3n + 2) {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+}
+
+.confetti-piece--1 {
+  left: 4%;
+  background: #ff92c8;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+.confetti-piece--2 {
+  left: 10%;
+  background: #abd8ff;
+  animation-duration: 12s;
+  animation-delay: 1s;
+}
+
+.confetti-piece--3 {
+  left: 16%;
+  background: #b7b0ff;
+  animation-duration: 11s;
+  animation-delay: 2.5s;
+}
+
+.confetti-piece--4 {
+  left: 22%;
+  background: #ffd9eb;
+  animation-duration: 14s;
+  animation-delay: 0.8s;
+}
+
+.confetti-piece--5 {
+  left: 28%;
+  background: #8ecbff;
+  animation-duration: 10s;
+  animation-delay: 3s;
+}
+
+.confetti-piece--6 {
+  left: 34%;
+  background: #ff6f6f;
+  animation-duration: 13s;
+  animation-delay: 1.2s;
+}
+
+.confetti-piece--7 {
+  left: 40%;
+  background: #abd8ff;
+  animation-duration: 12s;
+  animation-delay: 4s;
+}
+
+.confetti-piece--8 {
+  left: 46%;
+  background: #ff92c8;
+  animation-duration: 11s;
+  animation-delay: 0.4s;
+}
+
+.confetti-piece--9 {
+  left: 52%;
+  background: #e2f2ff;
+  animation-duration: 15s;
+  animation-delay: 2s;
+}
+
+.confetti-piece--10 {
+  left: 58%;
+  background: #b7b0ff;
+  animation-duration: 10s;
+  animation-delay: 1.4s;
+}
+
+.confetti-piece--11 {
+  left: 64%;
+  background: #ff92c8;
+  animation-duration: 13s;
+  animation-delay: 3.6s;
+}
+
+.confetti-piece--12 {
+  left: 70%;
+  background: #abd8ff;
+  animation-duration: 12s;
+  animation-delay: 2.3s;
+}
+
+.confetti-piece--13 {
+  left: 76%;
+  background: #ffd9eb;
+  animation-duration: 14s;
+  animation-delay: 0.7s;
+}
+
+.confetti-piece--14 {
+  left: 82%;
+  background: #8ecbff;
+  animation-duration: 10s;
+  animation-delay: 4.2s;
+}
+
+.confetti-piece--15 {
+  left: 88%;
+  background: #ff6f6f;
+  animation-duration: 15s;
+  animation-delay: 1s;
+}
+
+.confetti-piece--16 {
+  left: 94%;
+  background: #abd8ff;
+  animation-duration: 12s;
+  animation-delay: 2.7s;
 }
 
 /* =========================
-   INDIVIDUAL BUBBLES
+   ROAMING ICE CREAM ICONS
 ========================= */
 
-.bubble--1 {
-  width: 200px;
-  height: 200px;
+.dessert-icon {
+  position: absolute;
+  font-size: clamp(1.25rem, 2vw, 2rem);
+  opacity: 0.30;
+  filter:
+    brightness(1.12)
+    saturate(1.1)
+    drop-shadow(0 8px 14px rgba(74, 44, 42, 0.08));
+  user-select: none;
+  will-change: transform;
+  animation: dessertRoam var(--duration, 16s) ease-in-out infinite alternate;
+}
+
+.dessert-icon--1 {
+  top: 4%;
+  left: 16%;
+  --duration: 16s;
+  --x1: 25px;
+  --y1: -20px;
+  --x2: -12px;
+  --y2: 18px;
+  --x3: 18px;
+  --y3: -8px;
+  --x4: -20px;
+  --y4: 16px;
+}
+
+.dessert-icon--2 {
+  top: 8%;
+  left: 72%;
+  --duration: 14s;
+  --x1: -20px;
+  --y1: 10px;
+  --x2: 18px;
+  --y2: -18px;
+  --x3: -26px;
+  --y3: 12px;
+  --x4: 20px;
+  --y4: -14px;
+}
+
+.dessert-icon--3 {
+  top: 16%;
+  left: 4%;
+  --duration: 17s;
+}
+
+.dessert-icon--4 {
+  top: 20%;
+  left: 84%;
+  --duration: 13s;
+}
+
+.dessert-icon--5 {
+  top: 30%;
+  left: 12%;
+  --duration: 15s;
+}
+
+.dessert-icon--6 {
+  top: 38%;
+  left: 91%;
+  --duration: 18s;
+}
+
+.dessert-icon--7 {
+  top: 46%;
+  left: 5%;
+  --duration: 14s;
+}
+
+.dessert-icon--8 {
+  top: 52%;
+  left: 78%;
+  --duration: 16s;
+}
+
+.dessert-icon--9 {
+  top: 60%;
+  left: 11%;
+  --duration: 17s;
+}
+
+.dessert-icon--10 {
   top: 65%;
-  left: 8%;
-  animation: float1 18s ease-in-out infinite;
+  left: 88%;
+  --duration: 13s;
 }
 
-.bubble--2 {
-  width: 280px;
-  height: 280px;
-  bottom: 8%;
-  right: 6%;
-  animation: float2 22s ease-in-out infinite;
+.dessert-icon--11 {
+  top: 74%;
+  left: 22%;
+  --duration: 15s;
 }
 
-.bubble--3 {
-  width: 150px;
-  height: 150px;
-  top: 25%;
-  right: 28%;
-  animation: float3 20s ease-in-out infinite;
-}
-
-.bubble--4 {
-  width: 100px;
-  height: 100px;
-  top: 72%;
-  left: 42%;
-  animation: float4 16s ease-in-out infinite;
+.dessert-icon--12 {
+  top: 80%;
+  left: 68%;
+  --duration: 16s;
 }
 
 /* =========================
-   STRONGER MOTION SYSTEM
+   SPARKLES
 ========================= */
 
-@keyframes float1 {
-  0%   { transform: translate3d(0, 0, 0); }
-  25%  { transform: translate3d(60px, -80px, 0); }
-  50%  { transform: translate3d(-40px, -120px, 0); }
-  75%  { transform: translate3d(-80px, 40px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+.bg-sparkle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.95);
+  clip-path: polygon(
+    50% 0%,
+    62% 38%,
+    100% 50%,
+    62% 62%,
+    50% 100%,
+    38% 62%,
+    0% 50%,
+    38% 38%
+  );
+  opacity: 0.74;
+  will-change: transform, opacity;
+  animation: sparkleTwinkle 2s ease-in-out infinite alternate;
 }
 
-@keyframes float2 {
-  0%   { transform: translate3d(0, 0, 0); }
-  25%  { transform: translate3d(-80px, 60px, 0); }
-  50%  { transform: translate3d(-120px, -40px, 0); }
-  75%  { transform: translate3d(60px, -60px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+.bg-sparkle--1 {
+  top: 8%;
+  left: 28%;
+  animation-delay: 0.2s;
 }
 
-@keyframes float3 {
-  0%   { transform: translate3d(0, 0, 0); }
-  50%  { transform: translate3d(70px, 90px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+.bg-sparkle--2 {
+  top: 12%;
+  left: 56%;
+  animation-delay: 1s;
 }
 
-@keyframes float4 {
-  0%   { transform: translate3d(0, 0, 0); }
-  50%  { transform: translate3d(-60px, -70px, 0); }
-  100% { transform: translate3d(0, 0, 0); }
+.bg-sparkle--3 {
+  top: 18%;
+  left: 82%;
+  animation-delay: 0.7s;
 }
+
+.bg-sparkle--4 {
+  top: 24%;
+  left: 18%;
+  animation-delay: 1.4s;
+}
+
+.bg-sparkle--5 {
+  top: 32%;
+  left: 66%;
+  animation-delay: 0.3s;
+}
+
+.bg-sparkle--6 {
+  top: 42%;
+  left: 34%;
+  animation-delay: 1.7s;
+}
+
+.bg-sparkle--7 {
+  top: 50%;
+  left: 88%;
+  animation-delay: 0.9s;
+}
+
+.bg-sparkle--8 {
+  top: 58%;
+  left: 10%;
+  animation-delay: 1.1s;
+}
+
+.bg-sparkle--9 {
+  top: 66%;
+  left: 58%;
+  animation-delay: 0.5s;
+}
+
+.bg-sparkle--10 {
+  top: 74%;
+  left: 30%;
+  animation-delay: 1.6s;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes bgGlowFloat {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(22px, -16px, 0) scale(1.06);
+  }
+}
+
+@keyframes sunburstSweep {
+  0% {
+    transform: rotate(-8deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(2deg) translate3d(-12px, 8px, 0);
+  }
+
+  50% {
+    transform: rotate(10deg) translate3d(-24px, 0, 0);
+  }
+
+  75% {
+    transform: rotate(-2deg) translate3d(-12px, -6px, 0);
+  }
+
+  100% {
+    transform: rotate(7deg) translate3d(-18px, 10px, 0);
+  }
+}
+
+@keyframes confettiDrift {
+  0% {
+    transform: translate3d(0, -6vh, 0) rotate(0deg);
+  }
+
+  40% {
+    transform: translate3d(35px, 38vh, 0) rotate(160deg);
+  }
+
+  100% {
+    transform: translate3d(-30px, 106vh, 0) rotate(360deg);
+  }
+}
+
+@keyframes dessertRoam {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-18deg);
+  }
+
+  25% {
+    transform: translate3d(var(--x1, 18px), var(--y1, -20px), 0) rotate(70deg);
+  }
+
+  50% {
+    transform: translate3d(var(--x2, -16px), var(--y2, 18px), 0) rotate(180deg);
+  }
+
+  75% {
+    transform: translate3d(var(--x3, 24px), var(--y3, -12px), 0) rotate(270deg);
+  }
+
+  100% {
+    transform: translate3d(var(--x4, -22px), var(--y4, 20px), 0) rotate(360deg);
+  }
+}
+
+@keyframes sparkleTwinkle {
+  from {
+    transform: scale(0.7) rotate(0deg);
+    opacity: 0.32;
+  }
+
+  to {
+    transform: scale(1.25) rotate(45deg);
+    opacity: 0.98;
+  }
+}
+
+/* =========================
+   BUTTON COLOR RESTORE
+========================= */
+
+.order-btn,
+.mobile-order-btn,
+.hero-section-two__btn--primary,
+.large-order__btn--primary,
+button[type="submit"] {
+  background: var(--scoop-coral);
+  color: #ffffff;
+  border-color: var(--scoop-coral);
+  box-shadow: 0 16px 32px rgba(255, 111, 111, 0.24);
+}
+
+.order-btn:hover,
+.mobile-order-btn:hover,
+.hero-section-two__btn--primary:hover,
+.large-order__btn--primary:hover,
+button[type="submit"]:hover {
+  background: var(--scoop-coral-hover);
+  border-color: var(--scoop-coral-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 38px rgba(255, 111, 111, 0.30);
+}
+
 
 /* =========================
    CONTENT LAYER FIX
@@ -125,7 +602,8 @@ body {
 
 header,
 main,
-footer {
+footer,
+.announcement-bar {
   position: relative;
   z-index: 2;
 }
@@ -135,15 +613,45 @@ footer {
 ========================= */
 
 .glass {
-  background: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.58);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
   border-radius: 24px;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.46);
 
   box-shadow:
-    0 20px 50px rgba(120, 60, 80, 0.12),
-    inset 0 1px 0 rgba(255,255,255,0.5);
+    0 20px 50px rgba(120, 60, 80, 0.10),
+    inset 0 1px 0 rgba(255,255,255,0.55);
+}
+
+/* =========================
+   RESPONSIVE SAFETY
+========================= */
+
+@media (max-width: 768px) {
+  .dessert-icon {
+    opacity: 0.22;
+    font-size: 1.35rem;
+  }
+
+  .confetti-piece {
+    opacity: 0.24;
+  }
+
+  .sunburst-rays--hero {
+    width: 520px;
+    height: 520px;
+    top: -120px;
+    right: -160px;
+  }
+
+  .sunburst-rays--footer {
+    display: none;
+  }
+
+  .bg-glow {
+    opacity: 0.20;
+  }
 }
 
 /* =========================
@@ -151,7 +659,11 @@ footer {
 ========================= */
 
 @media (prefers-reduced-motion: reduce) {
-  .bubble {
+  .bg-glow,
+  .sunburst-rays,
+  .confetti-piece,
+  .dessert-icon,
+  .bg-sparkle {
     animation: none;
   }
 }
