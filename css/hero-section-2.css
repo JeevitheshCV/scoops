@@ -2,7 +2,7 @@
    HERO SECTION 1
 ========================= */
 
-.hero-placeholder {
+/* .hero-placeholder {
   position: relative;
   overflow: hidden;
   padding: clamp(4.75rem, 8vw, 7.25rem) 1.25rem clamp(3.4rem, 5vw, 5rem);
@@ -10,9 +10,14 @@
     radial-gradient(circle at 12% 12%, rgba(255, 211, 223, 0.28), transparent 26%),
     radial-gradient(circle at 88% 18%, rgba(164, 179, 253, 0.18), transparent 22%),
     radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.18), transparent 28%);
+} */
+.hero-placeholder {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(4.75rem, 8vw, 7.25rem) 1.25rem clamp(3.4rem, 5vw, 5rem);
+  background: transparent;
 }
-
-.hero-placeholder::before {
+/* .hero-placeholder::before {
   content: "";
   position: absolute;
   inset: auto auto 8% -3%;
@@ -32,7 +37,7 @@
   background: radial-gradient(circle, rgba(164, 179, 253, 0.22), rgba(164, 179, 253, 0));
   filter: blur(10px);
   pointer-events: none;
-}
+} */
 
 .hero-placeholder__content {
   position: relative;

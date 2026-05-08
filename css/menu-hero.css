@@ -1,12 +1,14 @@
+
+.top-offset--menu {
+  height: 0;
+}
+
 .menu-hero {
   position: relative;
   overflow: hidden;
-  padding: clamp(2.75rem, 5vw, 4.5rem) 1rem clamp(3.25rem, 5vw, 4.75rem);
-  background:
-    radial-gradient(circle at 12% 12%, rgba(255, 214, 224, 0.2), transparent 22%),
-    radial-gradient(circle at 86% 14%, rgba(164, 179, 253, 0.14), transparent 22%);
+  padding: 0 1rem clamp(3.25rem, 5vw, 4.75rem);
+  background: transparent;
 }
-
 .menu-hero__inner {
   position: relative;
   z-index: 2;
