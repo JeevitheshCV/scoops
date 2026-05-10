@@ -647,3 +647,70 @@ body {
     height: calc(var(--announcement-height) + var(--header-height));
   }
 }
+
+/* =========================
+   Mobile Header Polish
+========================= */
+
+@media (max-width: 640px) {
+  :root {
+    --announcement-height: 36px;
+    --header-height: 78px;
+    --header-height-scrolled: 70px;
+  }
+
+  .site-header__inner {
+    min-height: var(--header-height);
+    width: calc(100% - 28px);
+    margin-top: 10px;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 22px;
+  }
+
+  .site-header.is-condensed .site-header__inner {
+    min-height: var(--header-height-scrolled);
+  }
+
+  .site-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .site-logo img {
+    height: 56px;
+  }
+
+  .site-header.is-condensed .site-logo img {
+    height: 50px;
+  }
+
+  .site-header__actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+  }
+
+  .top-offset {
+    height: calc(var(--announcement-height) + var(--header-height) + 4px);
+  }
+}
+
+@media (max-width: 380px) {
+  .site-logo img {
+    height: 50px;
+  }
+
+  .menu-toggle {
+    width: 44px;
+    height: 44px;
+    flex-basis: 44px;
+  }
+}

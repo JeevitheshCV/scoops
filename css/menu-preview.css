@@ -243,3 +243,147 @@
   background:
     linear-gradient(180deg, rgba(78, 49, 20, 0.08) 10%, rgba(78, 49, 20, 0.74) 100%);
 }
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1180px) {
+  .menu-preview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .menu-card {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-preview {
+    padding: 3.25rem 0.9rem 3.75rem;
+  }
+
+  .menu-preview__intro {
+    margin-bottom: 1.75rem;
+  }
+
+  .menu-preview__eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .menu-preview__intro h2 {
+    font-size: clamp(2.15rem, 9vw, 3rem);
+    line-height: 0.98;
+  }
+
+  .menu-preview__lead {
+    max-width: 31ch;
+    margin-top: 0.85rem;
+    font-size: 0.96rem;
+    line-height: 1.55;
+  }
+
+  .menu-preview__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.95rem;
+  }
+
+  .menu-card {
+    min-height: 360px;
+    border-radius: 26px;
+  }
+
+  .menu-card::before {
+    border-radius: 26px;
+  }
+
+  .menu-card__content {
+    padding: 1rem 0.85rem 1rem;
+  }
+
+  .menu-card__kicker {
+    margin-bottom: 0.55rem;
+    font-size: 0.62rem;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+  }
+
+  .menu-card__content h3 {
+    font-size: clamp(1.35rem, 6vw, 1.8rem);
+    line-height: 0.96;
+  }
+
+  .menu-card__content p {
+    margin-top: 0.65rem;
+    font-size: 0.82rem;
+    line-height: 1.42;
+    max-width: 18ch;
+  }
+
+  .menu-card__cta {
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-preview__grid {
+    gap: 0.8rem;
+  }
+
+  .menu-card {
+    min-height: 335px;
+    border-radius: 24px;
+  }
+
+  .menu-card::before {
+    border-radius: 24px;
+  }
+
+  .menu-card__content {
+    padding: 0.9rem 0.75rem 0.9rem;
+  }
+
+  .menu-card__kicker {
+    font-size: 0.58rem;
+  }
+
+  .menu-card__content h3 {
+    font-size: clamp(1.2rem, 6.8vw, 1.55rem);
+  }
+
+  .menu-card__content p {
+    font-size: 0.78rem;
+    line-height: 1.38;
+  }
+
+  .menu-card__cta {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 340px) {
+  .menu-preview__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-card {
+    min-height: 320px;
+  }
+
+  .menu-card__content p {
+    max-width: 26ch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-preview__intro,
+  .menu-card,
+  .menu-card__media img,
+  .menu-card__overlay,
+  .menu-card__cta::after {
+    transition: none;
+  }
+}

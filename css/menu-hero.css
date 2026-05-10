@@ -1,14 +1,17 @@
-
 .top-offset--menu {
-  height: 0;
+  height: var(--menu-hero-header-offset, 190px);
 }
 
 .menu-hero {
+  --menu-hero-header-offset: 190px;
+
   position: relative;
   overflow: hidden;
-  padding: 0 1rem clamp(3.25rem, 5vw, 4.75rem);
+  margin-top: calc(-1 * var(--menu-hero-header-offset));
+  padding: var(--menu-hero-header-offset) 1rem clamp(3.25rem, 5vw, 4.75rem);
   background: transparent;
 }
+
 .menu-hero__inner {
   position: relative;
   z-index: 2;
@@ -164,15 +167,47 @@
   transform: scale(1.015);
 }
 
+/* =========================
+   DESKTOP BLENDED OFFSET
+========================= */
+
 @media (min-width: 981px) {
+  .top-offset--menu {
+    height: var(--menu-hero-header-offset, 190px);
+  }
+
+  .menu-hero {
+    --menu-hero-header-offset: 190px;
+  }
+
   .menu-hero__content {
     padding-left: 2rem;
+  }
+
+  .menu-hero__media::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: calc(var(--menu-hero-header-offset) + 120px);
+    z-index: 2;
+    pointer-events: none;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 239, 246, 0.96) 0%,
+        rgba(255, 244, 248, 0.9) 28%,
+        rgba(255, 247, 250, 0.72) 52%,
+        rgba(255, 250, 247, 0.28) 78%,
+        rgba(255, 250, 247, 0) 100%
+      );
   }
 
   .menu-hero__media::after {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 3;
+    pointer-events: none;
     background:
       linear-gradient(
         90deg,
@@ -201,8 +236,15 @@
 }
 
 @media (max-width: 980px) {
+  .top-offset--menu {
+    height: var(--menu-hero-header-offset, 136px);
+  }
+
   .menu-hero {
-    padding: 1rem 1rem 2.6rem;
+    --menu-hero-header-offset: 136px;
+
+    margin-top: calc(-1 * var(--menu-hero-header-offset));
+    padding: calc(var(--menu-hero-header-offset) + 1rem) 1rem 2.6rem;
   }
 
   .menu-hero__inner {
@@ -237,10 +279,28 @@
       0 6px 18px rgba(78, 53, 53, 0.04);
   }
 
+  .menu-hero__media::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 42%;
+    z-index: 2;
+    pointer-events: none;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 239, 246, 0.62) 0%,
+        rgba(255, 247, 250, 0.28) 52%,
+        rgba(255, 247, 250, 0) 100%
+      );
+  }
+
   .menu-hero__media::after {
     content: "";
     position: absolute;
     inset: 0;
+    z-index: 3;
+    pointer-events: none;
     background:
       linear-gradient(
         180deg,
@@ -256,10 +316,18 @@
     object-position: 68% center;
   }
 }
-
+/* =========================
+   TABLET & MOBILE BLENDED OFFSET
+========================= */
 @media (max-width: 640px) {
+  .top-offset--menu {
+    height: var(--menu-hero-header-offset, 100px);
+  }
+
   .menu-hero {
-    padding: 0.8rem 0.85rem 2.2rem;
+    --menu-hero-header-offset: 118px;
+
+    padding: calc(var(--menu-hero-header-offset) + 0.8rem) 0.85rem 2.2rem;
   }
 
   .menu-hero__content {
