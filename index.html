@@ -26,20 +26,18 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/global-background.css" />
   </head>
+
   <body>
     <!-- Global animated background -->
     <div class="background" aria-hidden="true">
-      <!-- Soft cream / pink / blue glow layers -->
       <span class="bg-glow bg-glow--pink-top"></span>
       <span class="bg-glow bg-glow--blue-top"></span>
       <span class="bg-glow bg-glow--pink-mid"></span>
       <span class="bg-glow bg-glow--blue-bottom"></span>
 
-      <!-- Moving sunburst rays -->
       <span class="sunburst-rays sunburst-rays--hero"></span>
       <span class="sunburst-rays sunburst-rays--footer"></span>
 
-      <!-- Falling confetti -->
       <span class="confetti-piece confetti-piece--1"></span>
       <span class="confetti-piece confetti-piece--2"></span>
       <span class="confetti-piece confetti-piece--3"></span>
@@ -57,7 +55,6 @@
       <span class="confetti-piece confetti-piece--15"></span>
       <span class="confetti-piece confetti-piece--16"></span>
 
-      <!-- Roaming ice cream / dessert icons -->
       <span class="dessert-icon dessert-icon--1">🍦</span>
       <span class="dessert-icon dessert-icon--2">🍨</span>
       <span class="dessert-icon dessert-icon--3">🍧</span>
@@ -71,7 +68,6 @@
       <span class="dessert-icon dessert-icon--11">🍦</span>
       <span class="dessert-icon dessert-icon--12">🍨</span>
 
-      <!-- Sparkles -->
       <span class="bg-sparkle bg-sparkle--1"></span>
       <span class="bg-sparkle bg-sparkle--2"></span>
       <span class="bg-sparkle bg-sparkle--3"></span>
@@ -83,6 +79,7 @@
       <span class="bg-sparkle bg-sparkle--9"></span>
       <span class="bg-sparkle bg-sparkle--10"></span>
     </div>
+
     <!-- Announcement Bar -->
     <a href="#specials" class="announcement-bar" aria-label="See latest updates and specials">
       <div class="announcement-bar__track">
@@ -115,14 +112,10 @@
     </a>
 
     <!-- Header -->
-    <!-- Header -->
     <header class="site-header" id="siteHeader">
       <div class="site-header__inner">
         <a href="./index.html" class="site-logo" aria-label="Scoops at Peachtree home">
-          <img
-            src="./assets/logo/logo.png"
-            alt="Scoops at Peachtree"
-          />
+          <img src="./assets/logo/logo.png" alt="Scoops at Peachtree" />
         </a>
 
         <nav class="site-nav" aria-label="Primary navigation">
@@ -220,10 +213,7 @@
               <span class="order-dropdown__icon" aria-hidden="true">▾</span>
             </button>
 
-            <div
-              class="mobile-order-dropdown__menu"
-              id="mobileOrderDropdownMenu"
-            >
+            <div class="mobile-order-dropdown__menu" id="mobileOrderDropdownMenu">
               <a
                 href="https://www.doordash.com/store/scoops-@-peachtree-atlanta-37848883/102619750/?srsltid=AfmBOopWC3pFAUiFpz06vebUOqA6ONpNEwSDxGyI-1xGWV3KAdnwGKV1"
                 target="_blank"
@@ -255,12 +245,11 @@
         </nav>
       </div>
     </header>
+
     <!-- Spacer so fixed top UI doesn't overlap content -->
     <div class="top-offset"></div>
 
     <main>
-
-
       <section class="hero-placeholder" id="hero">
         <div class="hero-placeholder__content">
           <div class="hero-placeholder__text">
@@ -275,6 +264,7 @@
             <div class="hero-placeholder__mascot-wrap">
               <video
                 class="hero-placeholder__mascot"
+                id="mascotVideo"
                 autoplay
                 muted
                 loop
@@ -282,11 +272,6 @@
                 preload="auto"
                 aria-label="Scoops ice cream mascot animation"
               >
-                <source
-                  src="./assets/mascot/Ice_Cream_Mascot_Animation.mov"
-                  type='video/quicktime; codecs="hvc1"'
-                />
-
                 <source
                   src="./assets/mascot/Ice_Cream_Mascot_Animation.webm"
                   type="video/webm"
@@ -407,8 +392,6 @@
                 <span class="menu-card__cta">Explore Menu</span>
               </div>
             </a>
-
-
           </div>
         </div>
       </section>
@@ -456,10 +439,10 @@
                 alt="Dessert lineup for larger group orders"
               />
             </div>
-
           </div>
         </div>
       </section>
+
       <!-- Testimonial Slider -->
       <section class="testimonial-slider" aria-labelledby="testimonial-slider-title">
         <div class="testimonial-slider__inner">
@@ -620,8 +603,6 @@
                 </div>
               </article>
 
-
-
               <article class="visit-card">
                 <div class="visit-card__icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="none">
@@ -708,10 +689,7 @@
           <div class="site-footer__top">
             <div class="site-footer__brand">
               <a href="./index.html" class="site-footer__logo" aria-label="Scoops @ Peachtree home">
-                <img
-                  src="./assets/logo/logo.png"
-                  alt="Scoops @ Peachtree"
-                />
+                <img src="./assets/logo/logo.png" alt="Scoops @ Peachtree" />
               </a>
 
               <h2 id="footer-title" class="site-footer__title">Scoops @ Peachtree</h2>
@@ -751,13 +729,15 @@
                     <path d="M18.9 3H21l-6.9 7.9L22.2 21h-6.4l-5-6-5.2 6H3.5l7.4-8.4L2.2 3h6.5l4.5 5.4L18.9 3Zm-1.1 16h1.8L7.2 4.9H5.3L17.8 19Z"/>
                   </svg>
                 </a>
+
                 <a
                   class="site-footer__icon"
                   href="https://www.instagram.com/scoops_at_peachtree?igsh=MTVlZjNndXl3eXMyeQ=="
                   aria-label="Instagram"
                   target="_blank"
                   rel="noopener noreferrer"
-                >                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                >
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
                     <rect x="3.5" y="3.5" width="17" height="17" rx="4.5" stroke="currentColor" stroke-width="1.8"/>
                     <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
                     <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/>
@@ -786,7 +766,6 @@
       </footer>
 
       <section id="menu"></section>
-      <!-- <section id="visit"></section> -->
       <section id="about"></section>
       <section id="gallery"></section>
       <section id="contact"></section>
@@ -796,6 +775,34 @@
 
     <script src="https://elfsightcdn.com/platform.js" async></script>
 
+    <!-- Force Safari / iOS Safari to use the MOV file instead of WebM -->
+    <script>
+      (function () {
+        const video = document.getElementById("mascotVideo");
+
+        if (!video) return;
+
+        const userAgent = navigator.userAgent || "";
+        const isSafari =
+          /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(userAgent);
+
+        if (isSafari) {
+          video.innerHTML = "";
+          video.src = "./assets/mascot/Ice_Cream_Mascot_Animation.mov";
+          video.type = "video/quicktime";
+          video.load();
+
+          const playPromise = video.play();
+
+          if (playPromise !== undefined) {
+            playPromise.catch(function () {
+              /* Safari may delay autoplay in rare cases. */
+            });
+          }
+        }
+      })();
+    </script>
+
     <script src="./js/announcement-header.js"></script>
     <script src="./js/hero-section-2.js"></script>
     <script src="./js/menu-preview.js"></script>
@@ -803,5 +810,4 @@
     <script src="./js/visit-us.js"></script>
     <script src="./js/footer.js"></script>
   </body>
-
 </html>
