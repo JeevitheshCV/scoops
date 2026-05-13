@@ -17,7 +17,7 @@
     />
 
     <link rel="stylesheet" href="./css/announcement-header.css" />
-    <link rel="stylesheet" href="./css/hero-section-2.css" />
+    <link rel="stylesheet" href="./css/hero-section-2.css?v=22" />
     <link rel="stylesheet" href="./css/menu-preview.css" />
     <link rel="stylesheet" href="./css/large-order-section.css" />
     <link rel="stylesheet" href="./css/testimonial-slider.css" />
@@ -259,27 +259,34 @@
               Handcrafted ice cream, bubble tea, shakes, pastries, and downtown dessert vibes.
             </p>
           </div>
-
           <div class="hero-placeholder__visual" aria-hidden="true">
+
             <div class="hero-placeholder__mascot-wrap">
+              <img
+                class="hero-placeholder__mascot mascot-apng"
+                id="mascotApng"
+                src="./assets/mascot/Ice_Cream_Mascot_Animation-safari.webp?v=23"
+                alt="Scoops ice cream mascot animation"
+              />
+
               <video
-                class="hero-placeholder__mascot"
+                class="hero-placeholder__mascot mascot-video"
                 id="mascotVideo"
                 autoplay
                 muted
                 loop
                 playsinline
+                webkit-playsinline
                 preload="auto"
                 aria-label="Scoops ice cream mascot animation"
               >
                 <source
-                  src="./assets/mascot/Ice_Cream_Mascot_Animation1.webm"
-                  type="video/webm"
+                  src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm?v=22"
+                  type='video/webm; codecs="vp9"'
                 />
-
                 Your browser does not support the mascot animation.
               </video>
-            </div>
+            </div>            
           </div>
         </div>
       </section>
@@ -768,44 +775,13 @@
       <section id="menu"></section>
       <section id="about"></section>
       <section id="gallery"></section>
-      <section id="contact"></section>
       <section id="order"></section>
       <section id="specials"></section>
     </main>
 
     <script src="https://elfsightcdn.com/platform.js" async></script>
-
-    <!-- Force Safari / iOS Safari to use the MOV file instead of WebM -->
-    <script>
-      (function () {
-        const video = document.getElementById("mascotVideo");
-
-        if (!video) return;
-
-        const userAgent = navigator.userAgent || "";
-        const isSafari =
-          /^((?!chrome|android|crios|fxios|edgios).)*safari/i.test(userAgent);
-
-        if (isSafari) {
-          video.innerHTML = "";
-          // video.src = "./assets/mascot/Ice_Cream_Mascot_Animation1.mov";
-          video.src = "./assets/mascot/Ice_Cream_Mascot_Animation1.mov?v=3";
-          video.type = "video/quicktime";
-          video.load();
-
-          const playPromise = video.play();
-
-          if (playPromise !== undefined) {
-            playPromise.catch(function () {
-              /* Safari may delay autoplay in rare cases. */
-            });
-          }
-        }
-      })();
-    </script>
-
     <script src="./js/announcement-header.js"></script>
-    <script src="./js/hero-section-2.js"></script>
+    <script src="./js/hero-section-2.js?v=22"></script>
     <script src="./js/menu-preview.js"></script>
     <script src="./js/testimonial-slider.js"></script>
     <script src="./js/visit-us.js"></script>

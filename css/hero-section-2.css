@@ -154,6 +154,22 @@
   transform-origin: center bottom;
 }
 
+.mascot-apng {
+  display: none;
+}
+
+.mascot-video {
+  display: block;
+}
+
+body.is-safari .mascot-apng {
+  display: block;
+}
+
+body.is-safari .mascot-video {
+  display: none;
+}
+
 @keyframes heroMascotFloat {
   0% {
     transform: translateX(24px) scale(1.55) translateY(0) rotate(-1.2deg);
@@ -695,5 +711,38 @@
   .hero-section-two__actions,
   .hero-section-two__btn {
     transition: none;
+  }
+}
+
+/* =========================
+   MASCOT SAFARI / WEBM SWITCH
+========================= */
+
+/* Default: non-Safari browsers use WebM video */
+.hero-placeholder__mascot-wrap .mascot-apng {
+  display: none !important;
+}
+
+.hero-placeholder__mascot-wrap .mascot-video {
+  display: block !important;
+}
+
+/* JS Safari class fallback */
+body.is-safari .hero-placeholder__mascot-wrap .mascot-apng {
+  display: block !important;
+}
+
+body.is-safari .hero-placeholder__mascot-wrap .mascot-video {
+  display: none !important;
+}
+
+/* iPhone/iPad Safari CSS-only fallback */
+@supports (-webkit-touch-callout: none) {
+  .hero-placeholder__mascot-wrap .mascot-apng {
+    display: block !important;
+  }
+
+  .hero-placeholder__mascot-wrap .mascot-video {
+    display: none !important;
   }
 }
