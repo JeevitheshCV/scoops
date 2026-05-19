@@ -469,6 +469,12 @@ body {
 
 /* large order */
 
+/* large order */
+
+#large-orders {
+  scroll-margin-top: 180px;
+}
+
 .gallery-large-order {
   background:
     radial-gradient(circle at 12% 18%, rgba(164, 179, 253, 0.1), transparent 22%),
@@ -633,6 +639,10 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  #large-orders {
+    scroll-margin-top: 150px;
+  }
   .gallery-hero {
     min-height: auto;
     padding: 2.2rem 0.95rem 3rem;

@@ -15,7 +15,7 @@
 .hero-placeholder {
   position: relative;
   overflow: hidden;
-  padding: clamp(4.75rem, 8vw, 7.25rem) 1.25rem clamp(3.4rem, 5vw, 5rem);
+  padding: clamp(0.25rem, 1.5vw, 1.25rem) 1.25rem clamp(3.4rem, 5vw, 5rem);
   background: transparent;
 }
 
