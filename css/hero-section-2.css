@@ -265,12 +265,12 @@ body.is-safari .mascot-video {
 .hero-section-two__card {
   pointer-events: auto;
   position: relative;
-  width: min(43%, 800px);
+  width: min(47%, 800px);
   min-height: 290px;
   margin-top: 1rem;
   background: #f4f4f2;
   border-radius: 0 0 86px 0;
-  padding: 2.2rem 2.4rem 2rem;
+  padding: 2.2rem 3rem 2rem 2.6rem;
   box-shadow: none;
   opacity: 0;
   transform: translateY(34px);
