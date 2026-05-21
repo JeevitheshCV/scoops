@@ -162,13 +162,13 @@
   display: block;
 }
 
-body.is-safari .mascot-apng {
+/* body.is-safari .mascot-apng {
   display: block;
 }
 
 body.is-safari .mascot-video {
   display: none;
-}
+} */
 
 @keyframes heroMascotFloat {
   0% {
@@ -718,26 +718,26 @@ body.is-safari .mascot-video {
    MASCOT SAFARI / WEBM SWITCH
 ========================= */
 
-/* Default: non-Safari browsers use WebM video */
+/* Default: non-Safari browsers use WebM video
 .hero-placeholder__mascot-wrap .mascot-apng {
   display: none !important;
 }
 
 .hero-placeholder__mascot-wrap .mascot-video {
   display: block !important;
-}
+} */
 
 /* JS Safari class fallback */
-body.is-safari .hero-placeholder__mascot-wrap .mascot-apng {
+/* body.is-safari .hero-placeholder__mascot-wrap .mascot-apng {
   display: block !important;
 }
 
 body.is-safari .hero-placeholder__mascot-wrap .mascot-video {
   display: none !important;
-}
+} */
 
 /* iPhone/iPad Safari CSS-only fallback */
-@supports (-webkit-touch-callout: none) {
+/* @supports (-webkit-touch-callout: none) {
   .hero-placeholder__mascot-wrap .mascot-apng {
     display: block !important;
   }
@@ -745,4 +745,16 @@ body.is-safari .hero-placeholder__mascot-wrap .mascot-video {
   .hero-placeholder__mascot-wrap .mascot-video {
     display: none !important;
   }
+} */
+
+/* =========================
+   MASCOT VIDEO
+========================= */
+
+.hero-placeholder__mascot-wrap .mascot-apng {
+  display: none !important;
+}
+
+.hero-placeholder__mascot-wrap .mascot-video {
+  display: block !important;
 }
