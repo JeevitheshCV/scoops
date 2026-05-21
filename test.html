@@ -9,36 +9,59 @@
     body {
       margin: 0;
       min-height: 100vh;
-      display: grid;
-      place-items: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       background: linear-gradient(135deg, #ff92c8, #abd8ff, #fff1b8);
       font-family: Arial, sans-serif;
     }
 
-    .stage {
-      width: min(900px, calc(100% - 32px));
-      min-height: 620px;
-      display: grid;
-      place-items: center;
+    .test-area {
+      width: 90vw;
+      max-width: 900px;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       border-radius: 28px;
       border: 3px dashed #7b3448;
-      background:
-        linear-gradient(45deg, rgba(0,0,0,0.12) 25%, transparent 25%),
-        linear-gradient(-45deg, rgba(0,0,0,0.12) 25%, transparent 25%),
-        linear-gradient(45deg, transparent 75%, rgba(0,0,0,0.12) 75%),
-        linear-gradient(-45deg, transparent 75%, rgba(0,0,0,0.12) 75%),
-        linear-gradient(135deg, #ff92c8, #abd8ff, #fff1b8);
-      background-size: 40px 40px, 40px 40px, 40px 40px, 40px 40px, 100% 100%;
-      background-position: 0 0, 0 20px, 20px -20px, -20px 0, center;
       overflow: hidden;
-      box-shadow: 0 24px 70px rgba(0,0,0,0.18);
+
+      background:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.12) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 0, 0, 0.12) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.12) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.12) 75%),
+        linear-gradient(135deg, #ff92c8, #abd8ff, #fff1b8);
+
+      background-size:
+        40px 40px,
+        40px 40px,
+        40px 40px,
+        40px 40px,
+        100% 100%;
+
+      background-position:
+        0 0,
+        0 20px,
+        20px -20px,
+        -20px 0,
+        center;
     }
 
-    video {
+    .hero-placeholder__mascot {
+      display: block;
       width: min(420px, 80vw);
       height: auto;
-      display: block;
       object-fit: contain;
+    }
+
+    .mascot-apng {
+      display: none;
+    }
+
+    .mascot-video {
+      display: block;
     }
 
     .note {
@@ -47,34 +70,46 @@
       right: 16px;
       bottom: 16px;
       padding: 12px 16px;
-      border-radius: 16px;
-      background: rgba(255,255,255,0.9);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.9);
       color: #261a1a;
-      font-weight: 800;
+      font-weight: 700;
       text-align: center;
     }
   </style>
 </head>
 
 <body>
-  <div class="stage">
-    <video autoplay muted loop playsinline webkit-playsinline controls>
-      <source
-        src="./assets/mascot/Ice_Cream_Mascot_Animation-1%20copy.mov"
-        type='video/quicktime; codecs="hvc1"'
-      />
+  <div class="test-area">
+    <img
+      class="hero-placeholder__mascot mascot-apng"
+      id="mascotApng"
+      src="./assets/mascot/Ice_Cream_Mascot_Animation-safari.png?v=24"
+      alt="Scoops ice cream mascot animation"
+    />
 
+    <video
+      class="hero-placeholder__mascot mascot-video"
+      id="mascotVideo"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+      preload="auto"
+      controls
+      aria-label="Scoops ice cream mascot animation"
+    >
       <source
         src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm?v=22"
         type='video/webm; codecs="vp9"'
       />
-
-      Your browser does not support this video.
+      Your browser does not support the mascot animation.
     </video>
   </div>
 
   <div class="note">
-    Pass = mascot moves and checkerboard is visible around it. Fail = black/white rectangle around mascot.
+    If transparency works, you should see the checkerboard/color background around the mascot. If you see a black box, transparency is not working.
   </div>
 </body>
 </html>
