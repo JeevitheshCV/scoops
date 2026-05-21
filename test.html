@@ -1,24 +1,125 @@
-<img
-  class="hero-placeholder__mascot mascot-apng"
-  id="mascotApng"
-  src="./assets/mascot/Ice_Cream_Mascot_Animation-safari.png?v=24"
-  alt="Scoops ice cream mascot animation"
-/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mascot Transparency Test</title>
 
-<video
-  class="hero-placeholder__mascot mascot-video"
-  id="mascotVideo"
-  autoplay
-  muted
-  loop
-  playsinline
-  webkit-playsinline
-  preload="auto"
-  aria-label="Scoops ice cream mascot animation"
->
-  <source
-    src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm?v=22"
-    type='video/webm; codecs="vp9"'
-  />
-  Your browser does not support the mascot animation.
-</video>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 20% 20%, #ff92c8 0%, transparent 28%),
+        radial-gradient(circle at 80% 25%, #abd8ff 0%, transparent 30%),
+        radial-gradient(circle at 50% 85%, #fff1b8 0%, transparent 32%),
+        linear-gradient(135deg, #ffe6f1 0%, #e2f2ff 50%, #fff8f0 100%);
+    }
+
+    .test-card {
+      width: min(900px, calc(100% - 32px));
+      padding: 32px;
+      border-radius: 32px;
+      background: rgba(255, 255, 255, 0.72);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      box-shadow: 0 24px 70px rgba(60, 35, 35, 0.18);
+      text-align: center;
+    }
+
+    .checkerboard {
+      position: relative;
+      min-height: 520px;
+      border-radius: 28px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(45deg, rgba(0, 0, 0, 0.08) 25%, transparent 25%),
+        linear-gradient(-45deg, rgba(0, 0, 0, 0.08) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.08) 75%),
+        linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.08) 75%),
+        linear-gradient(135deg, #ff92c8 0%, #abd8ff 50%, #fff1b8 100%);
+      background-size:
+        40px 40px,
+        40px 40px,
+        40px 40px,
+        40px 40px,
+        100% 100%;
+      background-position:
+        0 0,
+        0 20px,
+        20px -20px,
+        -20px 0,
+        center;
+      border: 2px dashed rgba(123, 52, 72, 0.35);
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #261a1a;
+      font-size: 28px;
+    }
+
+    p {
+      margin: 0 0 24px;
+      color: #5d4d4d;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    video {
+      width: min(560px, 90%);
+      height: auto;
+      display: block;
+      filter: drop-shadow(0 24px 36px rgba(60, 35, 35, 0.18));
+    }
+
+    .result-note {
+      margin-top: 22px;
+      padding: 14px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      color: #261a1a;
+      font-weight: 800;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="test-card">
+    <h1>Mascot Transparency Test</h1>
+    <p>
+      If the export worked, the mascot should animate and the colorful checkerboard
+      should be visible around it. There should be no black rectangle.
+    </p>
+
+    <div class="checkerboard">
+      <video autoplay muted loop playsinline webkit-playsinline controls>
+        <source
+          src="./assets/mascot/Ice_Cream_Mascot_Animation-1%20copy.mov"
+          type='video/quicktime; codecs="hvc1"'
+        />
+
+        <source
+          src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm"
+          type='video/webm; codecs="vp9"'
+        />
+
+        Your browser does not support this video.
+      </video>
+    </div>
+
+    <div class="result-note">
+      Pass: animated mascot + transparent background.  
+      Fail: black box, white box, or solid rectangle around mascot.
+    </div>
+  </main>
+</body>
+</html>
