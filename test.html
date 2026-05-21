@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mascot Transparency Test</title>
+  <title>Mascot Hero Transparency Test</title>
 
   <style>
     * {
@@ -12,113 +12,342 @@
 
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: Arial, sans-serif;
-      display: grid;
-      place-items: center;
+      color: #261a1a;
+      overflow-x: hidden;
       background:
-        radial-gradient(circle at 20% 20%, #ff92c8 0%, transparent 28%),
-        radial-gradient(circle at 80% 25%, #abd8ff 0%, transparent 30%),
-        radial-gradient(circle at 50% 85%, #fff1b8 0%, transparent 32%),
-        linear-gradient(135deg, #ffe6f1 0%, #e2f2ff 50%, #fff8f0 100%);
+        radial-gradient(circle at 12% 18%, rgba(255, 146, 200, 0.55), transparent 28%),
+        radial-gradient(circle at 88% 20%, rgba(171, 216, 255, 0.58), transparent 30%),
+        radial-gradient(circle at 54% 84%, rgba(255, 241, 184, 0.58), transparent 32%),
+        linear-gradient(135deg, #fff4ec 0%, #ffe6f1 45%, #e2f2ff 100%);
+      min-height: 100vh;
     }
 
-    .test-card {
-      width: min(900px, calc(100% - 32px));
-      padding: 32px;
-      border-radius: 32px;
-      background: rgba(255, 255, 255, 0.72);
-      border: 2px solid rgba(255, 255, 255, 0.8);
-      box-shadow: 0 24px 70px rgba(60, 35, 35, 0.18);
-      text-align: center;
+    .test-header {
+      width: min(calc(100% - 32px), 1240px);
+      min-height: 96px;
+      margin: 24px auto 0;
+      padding: 0 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 24px;
+      background: rgba(249, 249, 247, 0.9);
+      border: 1px solid rgba(80, 48, 48, 0.08);
+      box-shadow: 0 14px 40px rgba(60, 35, 35, 0.08);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
     }
 
-    .checkerboard {
+    .test-logo {
+      font-weight: 900;
+      font-size: 1.1rem;
+      color: #7b3448;
+    }
+
+    .test-nav {
+      display: flex;
+      gap: 1.3rem;
+      font-weight: 800;
+      font-size: 0.95rem;
+    }
+
+    .test-nav span {
+      color: #261a1a;
+    }
+
+    .hero-placeholder {
       position: relative;
-      min-height: 520px;
-      border-radius: 28px;
       overflow: hidden;
+      padding: clamp(1.5rem, 4vw, 3.5rem) 1.25rem clamp(3rem, 5vw, 5rem);
+      background: transparent;
+    }
+
+    .hero-placeholder__content {
+      position: relative;
+      z-index: 2;
+      width: min(1160px, 100%);
+      margin: 0 auto;
       display: grid;
-      place-items: center;
+      grid-template-columns: minmax(320px, 0.95fr) minmax(280px, 0.85fr);
+      gap: clamp(1.5rem, 4vw, 3rem);
+      align-items: center;
+    }
+
+    .hero-placeholder__text {
+      display: grid;
+      gap: 1.3rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      margin: 0;
+      padding: 0.58rem 0.92rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.74);
+      border: 1px solid rgba(126, 84, 84, 0.08);
+      box-shadow: 0 10px 24px rgba(83, 47, 47, 0.06);
+      color: #b25063;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .hero-placeholder h1 {
+      margin: 0;
+      max-width: 11.5ch;
+      font-family: Georgia, serif;
+      font-size: clamp(3.15rem, 7vw, 6.35rem);
+      line-height: 0.9;
+      letter-spacing: -0.055em;
+      color: #221515;
+    }
+
+    .hero-placeholder p:last-child {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(1.05rem, 1.8vw, 1.34rem);
+      line-height: 1.72;
+      color: #5f4b4b;
+      font-weight: 600;
+    }
+
+    .hero-placeholder__text::after {
+      content: "";
+      width: min(240px, 42vw);
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #f26c8d 0%, #ffc0cb 35%, #a4b3fd 100%);
+      box-shadow: 0 10px 24px rgba(242, 108, 141, 0.2);
+    }
+
+    .hero-placeholder__visual {
+      position: relative;
+      min-height: clamp(360px, 42vw, 620px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: visible;
+    }
+
+    .hero-placeholder__visual::before {
+      content: "";
+      position: absolute;
+      inset: 12% 10% 10% 14%;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 216, 228, 0.55) 0%, rgba(255, 216, 228, 0) 70%);
+      filter: blur(18px);
+      z-index: 0;
+    }
+
+    .hero-placeholder__visual::after {
+      content: "";
+      position: absolute;
+      inset: 20% 2% auto auto;
+      width: clamp(90px, 10vw, 140px);
+      height: clamp(90px, 10vw, 140px);
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(164, 179, 253, 0.28) 0%, rgba(164, 179, 253, 0) 72%);
+      filter: blur(10px);
+      z-index: 0;
+    }
+
+    .hero-placeholder__mascot-wrap {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 520px);
+      transform: translateX(24px) scale(1.55);
+      transform-origin: center center;
+      animation: heroMascotFloat 5.8s ease-in-out infinite;
+      filter: drop-shadow(0 28px 40px rgba(83, 47, 47, 0.16));
+    }
+
+    .hero-placeholder__mascot {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      transform-origin: center bottom;
+    }
+
+    .mascot-video {
+      display: block;
+    }
+
+    @keyframes heroMascotFloat {
+      0% {
+        transform: translateX(24px) scale(1.55) translateY(0) rotate(-1.2deg);
+      }
+
+      50% {
+        transform: translateX(24px) scale(1.55) translateY(-10px) rotate(1deg);
+      }
+
+      100% {
+        transform: translateX(24px) scale(1.55) translateY(0) rotate(-1.2deg);
+      }
+    }
+
+    .transparency-check {
+      width: min(1160px, calc(100% - 32px));
+      margin: 0 auto 40px;
+      padding: 18px;
+      border-radius: 24px;
       background:
         linear-gradient(45deg, rgba(0, 0, 0, 0.08) 25%, transparent 25%),
         linear-gradient(-45deg, rgba(0, 0, 0, 0.08) 25%, transparent 25%),
         linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, 0.08) 75%),
         linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, 0.08) 75%),
-        linear-gradient(135deg, #ff92c8 0%, #abd8ff 50%, #fff1b8 100%);
+        linear-gradient(135deg, #ff92c8 0%, #abd8ff 52%, #fff1b8 100%);
       background-size:
-        40px 40px,
-        40px 40px,
-        40px 40px,
-        40px 40px,
+        36px 36px,
+        36px 36px,
+        36px 36px,
+        36px 36px,
         100% 100%;
       background-position:
         0 0,
-        0 20px,
-        20px -20px,
-        -20px 0,
+        0 18px,
+        18px -18px,
+        -18px 0,
         center;
       border: 2px dashed rgba(123, 52, 72, 0.35);
-    }
-
-    h1 {
-      margin: 0 0 10px;
-      color: #261a1a;
-      font-size: 28px;
-    }
-
-    p {
-      margin: 0 0 24px;
-      color: #5d4d4d;
-      font-weight: 700;
-      line-height: 1.5;
-    }
-
-    video {
-      width: min(560px, 90%);
-      height: auto;
-      display: block;
-      filter: drop-shadow(0 24px 36px rgba(60, 35, 35, 0.18));
-    }
-
-    .result-note {
-      margin-top: 22px;
-      padding: 14px 18px;
-      border-radius: 18px;
-      background: rgba(255, 255, 255, 0.78);
-      color: #261a1a;
       font-weight: 800;
+      text-align: center;
+      color: #261a1a;
+    }
+
+    @media (max-width: 980px) {
+      .test-nav {
+        display: none;
+      }
+
+      .hero-placeholder__content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-placeholder__mascot-wrap {
+        width: min(100%, 420px);
+        transform: scale(1.18);
+      }
+
+      @keyframes heroMascotFloat {
+        0% {
+          transform: scale(1.18) translateY(0) rotate(-1.2deg);
+        }
+
+        50% {
+          transform: scale(1.18) translateY(-10px) rotate(1deg);
+        }
+
+        100% {
+          transform: scale(1.18) translateY(0) rotate(-1.2deg);
+        }
+      }
+    }
+
+    @media (max-width: 640px) {
+      .test-header {
+        min-height: 78px;
+      }
+
+      .hero-placeholder {
+        padding: 1rem 0.9rem 1.5rem;
+      }
+
+      .hero-placeholder h1 {
+        font-size: clamp(2.15rem, 10vw, 3.3rem);
+        line-height: 1;
+      }
+
+      .hero-placeholder__visual {
+        min-height: 260px;
+        margin-top: -1.25rem;
+      }
+
+      .hero-placeholder__mascot-wrap {
+        width: min(100%, 330px);
+        transform: scale(1.12);
+      }
+
+      @keyframes heroMascotFloat {
+        0% {
+          transform: scale(1.12) translateY(0) rotate(-1.2deg);
+        }
+
+        50% {
+          transform: scale(1.12) translateY(-8px) rotate(1deg);
+        }
+
+        100% {
+          transform: scale(1.12) translateY(0) rotate(-1.2deg);
+        }
+      }
     }
   </style>
 </head>
 
 <body>
-  <main class="test-card">
-    <h1>Mascot Transparency Test</h1>
-    <p>
-      If the export worked, the mascot should animate and the colorful checkerboard
-      should be visible around it. There should be no black rectangle.
-    </p>
+  <header class="test-header">
+    <div class="test-logo">Scoops @ Peachtree</div>
+    <nav class="test-nav">
+      <span>Home</span>
+      <span>Menu</span>
+      <span>About</span>
+      <span>Gallery</span>
+      <span>Large Orders</span>
+      <span>Contact</span>
+    </nav>
+  </header>
 
-    <div class="checkerboard">
-      <video autoplay muted loop playsinline webkit-playsinline controls>
-        <source
-          src="./assets/mascot/Ice_Cream_Mascot_Animation-1%20copy.mov"
-          type='video/quicktime; codecs="hvc1"'
-        />
+  <main>
+    <section class="hero-placeholder" id="hero">
+      <div class="hero-placeholder__content">
+        <div class="hero-placeholder__text">
+          <p class="eyebrow">Scoops at Peachtree</p>
+          <h1>Best Locally Made Ice Cream in Georgia</h1>
+          <p>
+            Handcrafted ice cream, bubble tea, shakes, pastries, and downtown dessert vibes.
+          </p>
+        </div>
 
-        <source
-          src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm"
-          type='video/webm; codecs="vp9"'
-        />
+        <div class="hero-placeholder__visual" aria-hidden="true">
+          <div class="hero-placeholder__mascot-wrap">
+            <video
+              class="hero-placeholder__mascot mascot-video"
+              id="mascotVideo"
+              autoplay
+              muted
+              loop
+              playsinline
+              webkit-playsinline
+              preload="auto"
+              aria-label="Scoops ice cream mascot animation"
+            >
+              <source
+                src="./assets/mascot/Ice_Cream_Mascot_Animation-1%20copy.mov"
+                type='video/quicktime; codecs="hvc1"'
+              />
 
-        Your browser does not support this video.
-      </video>
-    </div>
+              <source
+                src="./assets/mascot/Ice_Cream_Mascot_Animation-webm.webm?v=22"
+                type='video/webm; codecs="vp9"'
+              />
 
-    <div class="result-note">
-      Pass: animated mascot + transparent background.  
-      Fail: black box, white box, or solid rectangle around mascot.
+              Your browser does not support the mascot animation.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="transparency-check">
+      If the video is transparent, the mascot should float over the pastel hero background with no black or white rectangle.
     </div>
   </main>
 </body>
